@@ -1,6 +1,6 @@
 ## django_start - Initial Django framework test drive
 
-django_start is a basic demonstration of Django functionality. 
+django_start is a basic demonstration of Django functionality.
 
 
 
@@ -8,7 +8,7 @@ django_start is a basic demonstration of Django functionality.
 ## Features
  - None. Two simple web pages build with Django
 
-### Live Demo on Heroku: 
+### Live Demo on Heroku:
  - [django-start](https://peaceful-beach-56605.herokuapp.com/)
 ### Docker Container Image:
 
@@ -20,7 +20,7 @@ django_start is a basic demonstration of Django functionality.
 ---
 [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/kevinbowen777/django_start/blob/master/LICENSE)
 ---
-### Reporting Bugs                                                              
-                                                                                 
+### Reporting Bugs
+
    Visit the [Issues page](https://github.com/kevinbowen777/django_start/issues)
       to view currently open bug reports or open a new issue.
