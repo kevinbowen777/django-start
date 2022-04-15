@@ -1,0 +1,23 @@
+[tool.black]
+line-length = 119
+# include =
+exclude = '''
+/(
+    \.git
+  | __pycache__
+  | .pytest_cache
+  | .venv
+  | alembic
+  | staticfiles
+  | build
+  | dist
+  | ^.*\b(migrations)\b.*$
+)/
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+skip = ["*.gitignore"]
+extend_skip = ["*.md", "*.json"]
+line_length = 119
