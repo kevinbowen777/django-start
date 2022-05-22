@@ -1,5 +1,5 @@
 [tool.black]
-line-length = 119
+line-length = 79
 # include =
 exclude = '''
 /(
@@ -11,8 +11,7 @@ exclude = '''
   | staticfiles
   | build
   | dist
-  | pages/migrations
-  | ^.*\b(migrations)\b.*$
+  | staticfiles
 )/
 '''
 
