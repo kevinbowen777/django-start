@@ -115,9 +115,11 @@ STATICFILE_FINDERS = [
 ]
 
 # django-debug-toolbar
-# import socket
+
+import socket
+
 # Use the following in Docker only:
-# hostname, _, ips = socket.gethostbyname_ex(socket.gethostname())
-# INTERNAL_IPS = [ip[:-1] + "1" for ip in ips]
+hostname, _, ips = socket.gethostbyname_ex(socket.gethostname())
+INTERNAL_IPS = [ip[:-1] + "1" for ip in ips]
 # The following is for use locally:
-INTERNAL_IPS = ["127.0.0.1"]
+# INTERNAL_IPS = ["127.0.0.1"]
