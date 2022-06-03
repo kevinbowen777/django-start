@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     # third-party apps
     "debug_toolbar",
     # local apps
+    "accounts",
     "pages",
 ]
 
@@ -113,6 +114,8 @@ STATICFILE_FINDERS = [
     "django.contrib.staticfiles.finders.FileSystemFinder",
     "django.contrib.staticfiles.finders.AppDirectorFinder",
 ]
+
+AUTH_USER_MODEL = "accounts.CustomUser"
 
 # django-debug-toolbar
 
