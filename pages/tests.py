@@ -36,3 +36,11 @@ class AboutPageTests(SimpleTestCase):
     def test_about_page_template(self):
         response = self.client.get("/about/")
         self.assertTemplateUsed(response, "about.html")
+
+    def test_about_page_contains_correct_html(self):
+        response = self.client.get("/about/")
+        self.assertContains(response, "About page")
+
+    def test_about_page_does_not_contain_incorrect_html(self):
+        response = self.client.get("/about/")
+        self.assertNotContains(response, "Not the About page")
