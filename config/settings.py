@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # third-party apps
+    "crispy_forms",
     "debug_toolbar",
     # local apps
     "accounts",
@@ -119,6 +120,9 @@ AUTH_USER_MODEL = "accounts.CustomUser"
 
 LOGIN_REDIRECT_URL = "home"
 LOGOUT_REDIRECT_URL = "home"
+
+# django-crispy-forms
+CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 # django-debug-toolbar
 
