@@ -11,3 +11,8 @@ h2 a:hover {
   color: red;
   font-weight: 400;
 }
+
+.bookcover {
+  height: 300px;
+  width: autho;
+}
