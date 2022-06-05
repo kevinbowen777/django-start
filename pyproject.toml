@@ -21,6 +21,20 @@ source = ["accounts", "config", "pages"]
 [tool.coverage.run]
 branch = true
 source = ["config"]
+omit = [
+    "*/__init__.py",
+    "*manage.py",
+    "*settings*.py",
+    "*urls.py",
+    "*admin.py",
+    "*migrations/*",
+    "*tests/*",
+    "*test_*.py",
+    "*tests.py",
+    "*wsgi.py",
+    "*conftest.py",
+    "*/extra*",
+]
 
 [tool.coverage.report]
 show_missing = true
