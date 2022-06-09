@@ -11,22 +11,27 @@ repos:
       - id: end-of-file-fixer
       - id: requirements-txt-fixer
       - id: trailing-whitespace
-  - repo: https://github.com/psf/black
-    rev: 22.3.0
+  - repo: local
     hooks:
     - id: black
+      name: black
+      entry: poetry run black
+      language: system
+      types: [python]
       exclude: ^.*\b(migrations)\b.*$
       # See bug: https://github.com/psf/black/issues/2964
       # If possible, run rev: 22.3.0 to obviate the need for pinning click
       # additional_dependencies: ["click==8.0.4"]
-  - repo: https://github.com/PyCQA/flake8
-    rev: 4.0.1
-    hooks:
-      - id: flake8
-  - repo: https://github.com/PyCQA/isort
-    rev: 5.10.1
-    hooks:
-      - id: isort
+    - id: flake8
+      name: flake8
+      entry: poetry run flake8
+      language: system
+      types: [python]
+    - id: isort
+      name: isort
+      entry: poetry run isort
+      language: system
+      types: [python]
 #  - repo: https://github.com/pre-commit/mirrors-eslint
 #    rev: v8.3.0
 #    hooks:
