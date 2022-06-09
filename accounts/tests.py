@@ -34,7 +34,7 @@ class CustomUserTests(TestCase):
         self.assertTrue(user.is_superuser)
 
 
-class SignupPageTests(TestCase):  # new
+class SignupPageTests(TestCase):
     def setUp(self):
         url = reverse("signup")
         self.response = self.client.get(url)

@@ -46,7 +46,7 @@ class AboutPageTests(SimpleTestCase):
     def test_about_page_does_not_contain_incorrect_html(self):
         self.assertNotContains(self.response, "Not the About page")
 
-    def test_homepage_url_resolves_homepageview(self):
+    def test_aboutpage_url_resolves_aboutpageview(self):
         view = resolve("/about/")
         self.assertEqual(
             view.func.__name__,
