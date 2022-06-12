@@ -200,6 +200,18 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "django-coverage-plugin"
+version = "2.0.3"
+description = "Django template coverage.py plugin"
+category = "dev"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+coverage = "*"
+six = ">=1.4.0"
+
+[[package]]
 name = "django-crispy-forms"
 version = "1.14.0"
 description = "Best way to have Django DRY forms"
@@ -840,7 +852,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "b2561093856a1627aa2c0dba4d57a8863f30798ba66844cf078d14b6b0a4717d"
+content-hash = "a1a2eb1bbb0b6b6dd79ceaa6ef0c149f751b31df5a3dcd9ecc518327fa0ed2ec"
 
 [metadata.files]
 appdirs = [
@@ -978,6 +990,10 @@ django = [
 django-cache-url = [
     {file = "django-cache-url-3.4.2.tar.gz", hash = "sha256:6cc9901a99a99751f5458aa7de08ce06e48c1441b1a94c9457d78af74fab9a26"},
     {file = "django_cache_url-3.4.2-py2.py3-none-any.whl", hash = "sha256:c4a62634cffc9d636073cef597a44576d67b07660ab2ef1f02b160ee7ecf0e98"},
+]
+django-coverage-plugin = [
+    {file = "django_coverage_plugin-2.0.3-py3-none-any.whl", hash = "sha256:fd888f2ff41e3410a004d799b198cf8b19694d692a2d2264e8c944b9321bedc3"},
+    {file = "django_coverage_plugin-2.0.3.tar.gz", hash = "sha256:e73231e3bfddb2ac836fd43cb0e6ec2ab3a97457b1d9ca2468085e506beb7935"},
 ]
 django-crispy-forms = [
     {file = "django-crispy-forms-1.14.0.tar.gz", hash = "sha256:35887b8851a931374dd697207a8f56c57a9c5cb9dbf0b9fa54314da5666cea5b"},
