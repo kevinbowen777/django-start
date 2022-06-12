@@ -72,6 +72,10 @@ pytest = "^7.1.2"
 pytest-django = "^4.5.2"
 coverage = {extras = ["toml"], version = "^6.4.1"}
 pytest-cov = "^3.0.0"
+django-extensions = "^3.1.5"
+ipython = "^8.4.0"
+friendly = "^0.5.26"
+colorama = "^0.4.4"
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "config.settings"

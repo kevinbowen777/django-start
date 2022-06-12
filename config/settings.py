@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     # third-party apps
     "crispy_forms",
     "debug_toolbar",
+    "django_extensions",
     # local apps
     "accounts",
     "pages",
