@@ -14,9 +14,15 @@ class CustomUserAdmin(UserAdmin):
     list_display = [
         "email",
         "username",
+        "is_staff",
     ]
     fieldsets = UserAdmin.fieldsets
-    fieldsets[1][1]["fields"] = fieldsets[1][1]["fields"] + ("bio",)
+    fieldsets[1][1]["fields"] = fieldsets[1][1]["fields"] + (
+        "age",
+        "country",
+        "profile_pic",
+        "bio",
+    )
 
 
 admin.site.register(User, CustomUserAdmin)
