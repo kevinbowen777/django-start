@@ -32,6 +32,16 @@ class CustomUserTests(TestCase):
         self.assertTrue(user.is_staff)
         self.assertTrue(user.is_superuser)
 
+    def test___str__(self):
+        User = get_user_model()
+        user = User.objects.create_user(
+            username="kevin",
+            email="kevin@example.com",
+            password="T3stP@5s123",
+        )
+        assert user.__str__() == user.username
+        assert str(user) == user.username
+
 
 class SignupPageTests(TestCase):
 
