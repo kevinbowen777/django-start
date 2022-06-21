@@ -17,6 +17,15 @@ class CustomUserTests(TestCase):
             password="T3stP@5s123",
         )
 
+    def test___str__(self):
+        assert self.user.__str__() == self.user.username
+        assert str(self.user) == self.user.username
+
+    def test_user_get_absolute_url(self):
+        assert (
+            self.user.get_absolute_url() == f"/accounts/{self.user.username}/"
+        )
+
     def test_create_user(self):
         self.assertEqual(self.user.username, "kevin")
         self.assertEqual(self.user.email, "kevin@example.com")
@@ -57,7 +66,3 @@ class CustomUserTests(TestCase):
                 password="foo",
                 is_superuser=False,
             )
-
-    def test___str__(self):
-        assert self.user.__str__() == self.user.username
-        assert str(self.user) == self.user.username
