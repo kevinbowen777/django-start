@@ -4,14 +4,19 @@ from django.contrib.auth.admin import UserAdmin
 
 from .forms import CustomUserChangeForm, CustomUserCreationForm
 
-CustomUser = get_user_model()
+User = get_user_model()
 
 
 class CustomUserAdmin(UserAdmin):
     add_form = CustomUserCreationForm
     form = CustomUserChangeForm
-    model = CustomUser
-    list_display = ["email", "username"]
+    model = User
+    list_display = [
+        "email",
+        "username",
+    ]
+    fieldsets = UserAdmin.fieldsets
+    fieldsets[1][1]["fields"] = fieldsets[1][1]["fields"] + ("bio",)
 
 
-admin.site.register(CustomUser, CustomUserAdmin)
+admin.site.register(User, CustomUserAdmin)
