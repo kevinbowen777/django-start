@@ -1,4 +1,5 @@
 from pathlib import Path
+import socket  # noqa: E402 # Comment out if not using debug_toolbar
 
 from environs import Env
 
@@ -143,9 +144,6 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 # django-debug-toolbar
-
-import socket  # noqa: E402
-
 # Use the following in Docker only:
 hostname, _, ips = socket.gethostbyname_ex(socket.gethostname())
 INTERNAL_IPS = [ip[:-1] + "1" for ip in ips]
