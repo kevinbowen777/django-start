@@ -7,23 +7,25 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('accounts', '0002_customuser_bio_customuser_name'),
+        ("accounts", "0002_customuser_bio_customuser_name"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='customuser',
-            name='age',
+            model_name="customuser",
+            name="age",
             field=models.PositiveIntegerField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='customuser',
-            name='country',
-            field=django_countries.fields.CountryField(blank=True, max_length=2, verbose_name='Country'),
+            model_name="customuser",
+            name="country",
+            field=django_countries.fields.CountryField(
+                blank=True, max_length=2, verbose_name="Country"
+            ),
         ),
         migrations.AddField(
-            model_name='customuser',
-            name='profile_pic',
-            field=models.ImageField(blank=True, upload_to='profile_pics/'),
+            model_name="customuser",
+            name="profile_pic",
+            field=models.ImageField(blank=True, upload_to="profile_pics/"),
         ),
     ]
