@@ -1,7 +1,8 @@
 [flake8]
-select = B,B9,BLK,C,E,F,I,S,W
+select = B,B9,BLK,C,D,E,F,I,S,W
 ignore = E203,E501,W503
 application-import-names = tests
+docstring-convention = google
 import-order-style = google
 max-complexity = 10
 max-line-length = 80
