@@ -144,7 +144,7 @@ CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 # django-debug-toolbar
 
-import socket
+import socket  # noqa: E402
 
 # Use the following in Docker only:
 hostname, _, ips = socket.gethostbyname_ex(socket.gethostname())
