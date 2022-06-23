@@ -1,6 +1,6 @@
 [flake8]
-select = B,B9,BLK,C,D,E,F,I,S,W
-ignore = D101,D102,E203,E501,W503
+select = B,B9,BLK,C,E,F,I,S,W
+ignore = E203,E501,W503
 application-import-names = tests
 docstring-convention = google
 import-order-style = google
