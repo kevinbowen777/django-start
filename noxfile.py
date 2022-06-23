@@ -31,6 +31,13 @@ def black(session):
 
 
 @nox.session(python=["3.10", "3.9"])
+def docs(session):
+    """Build the documentation."""
+    install_with_constraints(session, "sphinx")
+    session.run("sphinx-build", "docs", "docs/_build")
+
+
+@nox.session(python=["3.10", "3.9"])
 def lint(session):
     """Lint using flake8."""
     args = session.posargs or locations
