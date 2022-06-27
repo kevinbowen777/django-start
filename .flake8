@@ -8,6 +8,9 @@ import-order-style = google
 max-complexity = 10
 max-line-length = 80
 per-file-ignores =
+    accounts/tests.py:S101,S106
     accounts/tests/*:S101,S106
-    config/tests/*:S101
-    pages/tests/*:S101
+    config/tests.py:S101,S106
+    config/tests/*:S101,S106
+    pages/tests.py:S101,S106
+    pages/tests/*:S101,S106
