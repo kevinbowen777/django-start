@@ -1,8 +1,7 @@
-import pytest
-from django.test import RequestFactory
-
 from accounts.models import CustomUser
 from accounts.tests.factories import UserFactory
+from django.test import RequestFactory
+import pytest
 
 
 @pytest.fixture(autouse=True)
