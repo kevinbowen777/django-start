@@ -69,6 +69,7 @@ pytest-sugar = "^0.9.4"
 django-allauth = "^0.51.0"
 Pillow = "^9.1.1"
 django-countries = "^7.3.2"
+whitenoise = "5.3.0"
 
 [tool.poetry.dev-dependencies]
 pre-commit = "^2.19.0"
