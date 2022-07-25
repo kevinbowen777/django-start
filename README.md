@@ -16,7 +16,7 @@ django_start is a basic demonstration of Django functionality.
  - None. Two simple web pages build with Django
 
 ### Live Demo on Heroku:
- - [django-start](https://peaceful-beach-56605.herokuapp.com/)
+ - [django-start](https://kbowen-django-start.herokuapp.com/)
 ### Docker Container Image:
 
  - N/A
