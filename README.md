@@ -9,16 +9,21 @@ The purpose of this repository is twofold:
 ### Installation
  - `git clone https://github.com/kevinbowen777/django_start.git`
  - `cd django_start`
- - Local installation
+ - Local installation:
+     - `poetry shell`
      - `poetry install`
      - `python manage.py migrate`
      - `python manage.py createsuperuser`
      - `python manage.py runserver`
- - Docker installation
+ - Docker installation:
      - `docker-compose up --build`
      - `docker-compose python manage.py migrate`
      - `docker-compose python manage.py createsuperuser`
- - Open browser to http://127.0.0.1:8000`
+ - Browse to http://127.0.0.1:8000 or http://127.0.0.1:8000/admin/
+
+### Testing
+ - `docker-compose exec web python manage.py test`
+
 
 ---
 ## Features
