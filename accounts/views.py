@@ -1,23 +1,15 @@
 """Views for django-start user accounts."""
 from django.contrib.auth import get_user_model
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.urls import reverse, reverse_lazy
+from django.urls import reverse
 from django.views.generic import (
-    CreateView,
     DetailView,
     RedirectView,
     UpdateView,
 )
 
-from .forms import CustomUserCreationForm
 
 User = get_user_model()
-
-
-class SignupPageView(CreateView):
-    form_class = CustomUserCreationForm
-    success_url = reverse_lazy("account_login")
-    template_name = "account/signup.html"
 
 
 class UserDetailView(LoginRequiredMixin, DetailView):
