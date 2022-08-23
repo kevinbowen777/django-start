@@ -98,6 +98,8 @@ Sphinx = "^5.0.2"
 flake8 = "4.0.1"
 flake8-bandit = "^3.0.0"
 safety = "^2.1.0"
+pip-check = "^2.7"
+pip-audit = "^2.4.3"
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "config.settings"
