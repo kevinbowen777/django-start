@@ -12,7 +12,7 @@ The purpose of this repository is twofold:
 
  - A basic demonstration of Django functionality.
  - A reference template of "best practices" & standards to be employed in
-    all of my other Django projects.
+    all of my other Django projects. See [Features][#Features].
 
 ### Installation
  - `git clone https://github.com/kevinbowen777/django_start.git`
@@ -36,6 +36,9 @@ The purpose of this repository is twofold:
 ---
 ## Features
  - User registration with email verification & social(GitHub) login
+ - image carousel
+ - pagination
+ - test examples
 
 ### Live Demo on Heroku:
  - [django-start](https://kbowen-django-start.herokuapp.com/)
