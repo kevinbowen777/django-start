@@ -1,5 +1,3 @@
-## django_start - Django framework reference repository
-
 <div align="center">
 
   [![Status](https://img.shields.io/badge/status-active-success.svg)]() 
@@ -8,11 +6,13 @@
 
 </div>
 
-The purpose of this repository is twofold:
+## django_start 
+
+- Django framework reference repository
 
  - A basic demonstration of Django functionality.
  - A reference template of "best practices" & standards to be employed in
-    all of my other Django projects. See [Features][#Features].
+    all of my other Django projects. See [Features](#Features).
 
 ### Installation
  - `git clone https://github.com/kevinbowen777/django_start.git`
@@ -31,6 +31,10 @@ The purpose of this repository is twofold:
 
 ### Testing
  - `docker-compose exec web python manage.py test`
+ - `coverage run -m pytest`
+ - Nox (includes sessions for black, lint, safety, tests)
+     - testing supported for Python 3.9, 3.10, 3.11
+     - e.g. `nox`, `nox -rs lint-3.11`, `nox -s tests`
 
 
 ---
