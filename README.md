@@ -1,3 +1,5 @@
+## django_start 
+
 <div align="center">
 
   [![Status](https://img.shields.io/badge/status-active-success.svg)]() 
@@ -6,13 +8,11 @@
 
 </div>
 
-## django_start 
 
 - Django framework reference repository
 
  - A basic demonstration of Django functionality.
- - A reference template of "best practices" & standards to be employed in
-    all of my other Django projects. See [Features](#Features).
+ - A reference template of "best practices" & standards to be employed in [my other Django projects](https://github.com/kevinbowen777/web-project-index).  See the [Features](#Features) section for details on the functionality provided.
 
 ### Installation
  - `git clone https://github.com/kevinbowen777/django_start.git`
