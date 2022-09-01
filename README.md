@@ -40,9 +40,12 @@
 ---
 ## Features
  - User registration with email verification & social(GitHub) login
+ - Bootstrap4 & crispy-forms decorations
+ - Customizable user profile pages with bio, profile pic, & country flags
  - image carousel
- - pagination
- - test examples
+ - pagination template
+ - basic module testing templates
+ - Nox testing sessions (black, linting, pytest, coverage, Sphinx doc generation)
 
 ### Live Demo on Heroku:
  - [django-start](https://kbowen-django-start.herokuapp.com/)
