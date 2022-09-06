@@ -13,4 +13,5 @@ jobs:
     - run: pip install poetry==1.1.14
     - run: |
         export SECRET_KEY=${{secrets.SECRET_KEY}}
+        export EMAIL_HOST_PASSWORD=${{secrets.EMAIL_HOST_PASSWORD}}
         nox
