@@ -6,7 +6,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v4
-    - uses: SECRET_KEY=${{secrets.django_start}}
+    - uses: SECRET_KEY=${{secrets.SECRET_KEY}}
       with:
         python-version: '3.10.6'
         architecture: x64
