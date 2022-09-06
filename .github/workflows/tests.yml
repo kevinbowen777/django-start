@@ -9,7 +9,7 @@ jobs:
     name: Python ${{ matrix.python-version }} django_start
     steps:
       - uses: actions/checkout@v3
-      - name: Set up Python
+        name: Set up Python
       - uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
