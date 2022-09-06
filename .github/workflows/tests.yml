@@ -14,4 +14,5 @@ jobs:
     - run: |
         export SECRET_KEY=${{secrets.SECRET_KEY}}
         export EMAIL_HOST_PASSWORD=${{secrets.EMAIL_HOST_PASSWORD}}
+        export DATABASE_URL=${{secrets.DATABASE_URL}}
         nox
