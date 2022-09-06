@@ -5,8 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [ "3.9", "3.10", "3.11.0-rc.1" ]
-    name: Python ${{ matrix.python-version }} sample
+        python-version: [ "3.9", "3.10.6", "3.11.0-rc.1" ]
+    name: Python ${{ matrix.python-version }} django_start
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python
