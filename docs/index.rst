@@ -33,7 +33,7 @@ Features
    * Nox testing sessions for latest Python 3.9, 3.10, and 3.11
 
      * black
-     * Sphinx documentaion generations
+     * Sphinx documentaion generation
      * linting
        
        * flake8
@@ -65,8 +65,8 @@ Local install:
    $ python manage.py createsuperuser
    
 
-Docker install:
----------------
+Docker install
+--------------
 
 .. code-block:: console
 

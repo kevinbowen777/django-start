@@ -30,7 +30,7 @@
      - `shell_plus` with IPython via `django-extensions` package
      - Nox testing sessions for latest Python 3.9, 3.10, and 3.11
          - black
-         - Sphinx documentaion generations
+         - Sphinx documentaion generation
          - linting
              - flake8
              - flake8-bugbear
@@ -64,7 +64,7 @@
      - e.g. `nox`, `nox -rs lint-3.11`, `nox -s tests`
 
 ---
-### Live Demo on Heroku:
+### Live Application Demo on Heroku:
  - [django-start](https://kbowen-django-start.herokuapp.com/)
 
 ---
