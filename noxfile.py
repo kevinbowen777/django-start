@@ -1,4 +1,4 @@
-"""Nox sessions."""
+"""Nox sessions - default template - django_start"""
 import tempfile
 
 import nox
