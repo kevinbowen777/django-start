@@ -7,11 +7,16 @@ Django Start - A Django web framework template project
 
    license
 
-The template repository for the
+.. contents:: Table of Contents
+   :local:
+   :backlinks: top
+   :depth: 2
+
+The template repository for the collection of
 `Web Framework Projects <https://github.com/kevinbowen777/web-project-index>`_
 assembled by Kevin Bowen.
-This repository runs a Django 4.1 application demonstrating some of its
-basic functionality.
+This repository runs a Django 4.1 application demonstrating some of basic
+basic functionality also available applications linked above.
 
 Features
 --------
@@ -54,8 +59,8 @@ run this command in your terminal:
    $ git clone https://github.com/kevinbowen777/django_start.git
    $ cd django_start
 
-Local install:
---------------
+Local installation
+------------------
 
 .. code-block:: console
 
@@ -65,8 +70,8 @@ Local install:
    $ python manage.py createsuperuser
    
 
-Docker install
---------------
+Docker installation
+-------------------
 
 .. code-block:: console
 
@@ -99,8 +104,10 @@ Testing
    $ nox -rs lint-3.11
    $ nox -s tests
 
-Live Application Demonstration on Heroku
-----------------------------------------
+Application Demo
+----------------
+Live demonstration of application running on Heroku:
+
 `kbowen-django-start <https://kbowen-django-start.herokuapp.com/>`_
 
 Reporting Bugs
