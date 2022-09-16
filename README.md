@@ -17,16 +17,16 @@
    functionality.
 
 ##### Table of Contents
- - [Features](#Features)
- - [Installation](#Installation)
- - [Testing](#Testing)
- - [Application Demo](#Application Demo)
- - [Screenshots](#Screenshots)
- - [Reporting Bugs](#Reporting Bugs)
+ - [Features](#features)
+ - [Installation](#installation)
+ - [Testing](#testing)
+ - [Application Demo](#application-demo)
+ - [Screenshots](#screenshots)
+ - [Reporting Bugs](#reporting-bugs)
 
 ---
-<a name="Features"/>
-## Features
+
+### Features
  - Application
      - User registration with email verification & social(GitHub) login
      - Bootstrap4 & crispy-forms decorations
@@ -51,7 +51,7 @@
          - pytest sessions with coverage
 
 ---
-<a name="Installation"/>
+
 ### Installation
  - `git clone https://github.com/kevinbowen777/django_start.git`
  - `cd django_start`
@@ -68,7 +68,7 @@
  - Browse to http://127.0.0.1:8000 or http://127.0.0.1:8000/admin/
 
 ---
-<a name="Testing"/>
+
 ### Testing
  - `docker-compose exec web python manage.py test`
  - `coverage run -m pytest`
@@ -77,17 +77,17 @@
      - e.g. `nox`, `nox -rs lint-3.11`, `nox -s tests`
 
 ---
-<a name="Application Demo"/>
+
 ### Application Demo:
 A live application demonstration hosted at Heroku
  - [django-start](https://kbowen-django-start.herokuapp.com/)
 
 ---
-<a name="Screenshots"/>
+
 ### Screenshots
 
 ---
-<a name="Reporting Bugs"/>
+
 ### Reporting Bugs
 
    Visit the [Issues page](https://github.com/kevinbowen777/django_start/issues)
