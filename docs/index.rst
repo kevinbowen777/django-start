@@ -1,5 +1,5 @@
-Django Start - A Django web framework template project
-======================================================
+Django Start
+============
 
 .. toctree::
    :hidden:
@@ -26,11 +26,12 @@ Features
    * User registration with email verification & social(GitHub) login
    * Bootstrap4 & crispy-forms decorations
    * Customizable user profile pages with bio, profile pic, & country flags
-   * image carousel
-   * pagination template
+   * Image carousel
+   * Pagination template
+   * Centered account templates(login, registration, verification, etc.)
  * Dev/testing
 
-   * basic module testing templates
+   * Basic module testing templates
    * Coverage reports
    * Debug-toolbar available
    * Examples of using Factories & pytest fixtures in account app testing
@@ -45,8 +46,8 @@ Features
        * flake8-bugbear
        * flake8-docstrings
        * flake8-import-order
-       * safety(python package vulnerability testing)
-       * pytest sessions with coverage
+     * safety(python package vulnerability testing)
+     * pytest sessions with coverage
 
 Installation
 ------------

@@ -31,10 +31,11 @@
      - User registration with email verification & social(GitHub) login
      - Bootstrap4 & crispy-forms decorations
      - Customizable user profile pages with bio, profile pic, & country flags
-     - image carousel
-     - pagination template
+     - Image carousel
+     - Pagination template
+     - Centered account templates(login, registration, verification, etc.)
  - Dev/testing
-     - basic module testing templates
+     - Basic module testing templates
      - Coverage reports
      - Debug-toolbar available
      - Examples of using Factories & pytest fixtures in account app testing
@@ -78,7 +79,7 @@
 
 ---
 
-### Application Demo:
+### Application Demo
 A live application demonstration hosted at Heroku
  - [django-start](https://kbowen-django-start.herokuapp.com/)
 
