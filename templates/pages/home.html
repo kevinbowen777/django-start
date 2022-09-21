@@ -1,5 +1,5 @@
 <!-- templates/pages/home.html -->
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% load static %}
 
 {% block title %}Welcome Home{% endblock title %}
@@ -8,6 +8,7 @@
 <div class="container">
   <p>
     <h2>Homepage</h2>
+    <!-- Begin carousel template -->
     <div id="demo" class="carousel slide" data-ride="carousel">
 
     <!-- Indicators -->
@@ -39,6 +40,7 @@
     </a>
 
   </div>
+  <!-- End carousel template -->
   </p>
 </div>
 {% endblock content %}
