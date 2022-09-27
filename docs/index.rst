@@ -114,4 +114,4 @@ Live demonstration of application running on Heroku:
 Reporting Bugs
 --------------
 
-Visit the django_start `Issues page <https://github.com/kevinbowen777/django_start/issues>`_ on GitHub.
+Visit the django_start `Issues page <https://github.com/kevinbowen777/django-start/issues>`_ on GitHub.
