@@ -4,6 +4,7 @@
 
   [![Status](https://img.shields.io/badge/status-active-success.svg)]()
   [![GitHub Issues](https://img.shields.io/github/issues/kevinbowen777/django-start.svg)](https://github.com/kevinbowen777/django-start/issues)
+  [![Coverage Status](https://coveralls.io/repos/github/kevinbowen777/django-start/badge.svg?branch=master)](https://coveralls.io/github/kevinbowen777/django-start?branch=master)
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
