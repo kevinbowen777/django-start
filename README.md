@@ -29,28 +29,28 @@
 
 ### Features
  - Application
-     - User registration with email verification & social(GitHub) login
-     - Bootstrap4 & crispy-forms decorations
-     - Customizable user profile pages with bio, profile pic, & country flags
+     - User registration with email verification & social(GitHub) login using [django-allauth](https://pypi.org/project/django-allauth/)
+     - [Bootstrap4](https://pypi.org/project/django-bootstrap4/) & [crispy-forms](https://pypi.org/project/django-crispy-forms/) decorations
+     - Customizable user profile pages with bio, profile pic, & [country flags](https://pypi.python.org/pypi/django-countries)
      - Image carousel
      - Pagination template
      - Centered account templates(login, registration, verification, etc.)
  - Dev/testing
      - Basic module testing templates
-     - Coverage reports
-     - Debug-toolbar available
-     - Examples of using Factories & pytest fixtures in account app testing
-     - `shell_plus` with IPython via `django-extensions` package
-     - Nox testing sessions for latest Python 3.9, 3.10, and 3.11
-         - black
-         - Sphinx documentaion generation
+     - [Coverage](https://pypi.org/project/coverage/) reports in `htmlcov` directory
+     - [Debug-toolbar](https://pypi.org/project/django-debug-toolbar/) available. See notes in `config/settings.py` for enabling.
+     - Examples of using [Factories](https://pypi.org/project/factory-boy/) & [pytest](https://pypi.org/project/pytest/) fixtures in account app testing
+     - [shell_plus](https://django-extensions.readthedocs.io/en/latest/shell_plus.html) with [IPython](https://pypi.org/project/ipython/) via [django-extensions](https://pypi.python.org/pypi/django-extensions/) package
+     - [Nox](https://pypi.org/project/nox/) testing sessions for latest Python 3.9, 3.10, and 3.11
+         - [black](https://pypi.org/project/black/)
+         - [Sphinx](https://pypi.org/project/Sphinx/) documentaion generation
          - linting
-             - flake8
-             - flake8-bugbear
-             - flake8-docstrings
-             - flake8-import-order
-         - safety(python package vulnerability testing)
-         - pytest sessions with coverage
+             - [flake8](https://pypi.org/project/flake8/)
+             - [flake8-bandit](https://pypi.org/project/flake8-bandit/)
+             - [flake8-bugbear](https://pypi.org/project/flake8-bugbear/)
+             - [flake8-import-order](https://pypi.org/project/flake8-import-order/)
+         - [safety](https://pypi.org/project/safety/)(python package vulnerability testing)
+         - [pytest](https://docs.pytest.org/en/latest/) sessions with [pytest-cov](https://pypi.org/project/pytest-cov/) & [pytest-django](https://pypi.org/project/pytest-django/)
 
 ---
 
