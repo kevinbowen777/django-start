@@ -51,6 +51,7 @@
              - [flake8-import-order](https://pypi.org/project/flake8-import-order/)
          - [safety](https://pypi.org/project/safety/)(python package vulnerability testing)
          - [pytest](https://docs.pytest.org/en/latest/) sessions with [pytest-cov](https://pypi.org/project/pytest-cov/) & [pytest-django](https://pypi.org/project/pytest-django/)
+     - For additional links to package resources used in this repository, see the [Package Index](docs/package_index.md)
 
 ---
 
