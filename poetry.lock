@@ -313,7 +313,7 @@ python-versions = "*"
 
 [[package]]
 name = "django"
-version = "4.1.1"
+version = "4.1.2"
 description = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
 category = "main"
 optional = false
@@ -1962,8 +1962,8 @@ dj-email-url = [
     {file = "dj_email_url-1.0.6-py2.py3-none-any.whl", hash = "sha256:cbd08327fbb08b104eac160fb4703f375532e4c0243eb230f5b960daee7a96db"},
 ]
 django = [
-    {file = "Django-4.1.1-py3-none-any.whl", hash = "sha256:acb21fac9275f9972d81c7caf5761a89ec3ea25fe74545dd26b8a48cb3a0203e"},
-    {file = "Django-4.1.1.tar.gz", hash = "sha256:a153ffd5143bf26a877bfae2f4ec736ebd8924a46600ca089ad96b54a1d4e28e"},
+    {file = "Django-4.1.2-py3-none-any.whl", hash = "sha256:26dc24f99c8956374a054bcbf58aab8dc0cad2e6ac82b0fe036b752c00eee793"},
+    {file = "Django-4.1.2.tar.gz", hash = "sha256:b8d843714810ab88d59344507d4447be8b2cf12a49031363b6eed9f1b9b2280f"},
 ]
 django-allauth = [
     {file = "django-allauth-0.51.0.tar.gz", hash = "sha256:ca1622733b6faa591580ccd3984042f12d8c79ade93438212de249b7ffb6f91f"},
