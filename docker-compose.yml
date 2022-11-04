@@ -13,7 +13,7 @@ services:
       - "DEBUG=True"
   db:
     container_name: django_start-db
-    image: postgres:11
+    image: postgres:13.8
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     environment:
