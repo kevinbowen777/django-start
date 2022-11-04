@@ -5,7 +5,7 @@ LABEL maintainer="Kevin Bowen <kevin.bowen@gmail.com>"
 ARG DJANGO_START
 
 # Set environment variables
-ENV DJANGO_START=${DJANGO_START} \
+ENV DEBUG="${DEBUG}" \
   PYTHONDONTWRITEBYTECODE=1 \
   PYTHONFAULTHANDLER=1 \
   PYTHONUNBUFFERED=1 \
