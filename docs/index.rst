@@ -16,7 +16,7 @@ Django Start
 The template repository for the collection of
 `Web Framework Projects <https://github.com/kevinbowen777/web-project-index>`_
 assembled by Kevin Bowen.
-This repository runs a Django 4.1 application demonstrating some of basic
+This repository runs a Django 4.1.x application demonstrating some of basic
 basic functionality also available applications linked above.
 
 Features
@@ -77,9 +77,14 @@ Docker installation
 
 .. code-block:: console
 
-   $ docker-compose up --build
-   $ docker-compose python manage.py migrate
-   $ docker-compose python manage.py createsuperuser
+   $ docker compose up --build
+   $ docker compose python manage.py migrate
+   $ docker compose python manage.py createsuperuser
+   Additional commands:
+   $ docker compose exec web python manage.py shell_plus
+     (loads Django shell autoloading project models & classes)
+   $ docker run -it django-start-web bash`
+     (CLI access to container)
 
 
 Usage
@@ -99,7 +104,7 @@ Testing
 .. code-block:: console
 
    $ python manage.py runserver
-   $ docker-compose exec web python manage.py test
+   $ docker compose exec web python manage.py test
    $ coverage run -m pytest
    $ nox --list-sessions
    $ nox
