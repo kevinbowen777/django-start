@@ -1,13 +1,7 @@
-# Pull base image
-FROM python:3.11-slim-bullseye AS code
+# `python-base` sets up all our shared environment variables
+FROM python:3.11-slim-bullseye AS python-base
 LABEL maintainer="Kevin Bowen <kevin.bowen@gmail.com>"
 
-RUN apt-get update \
-  && apt-get install -y --no-install-recommends build-essential curl libpq-dev \
-  && rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man \
-  && apt-get clean \
-
-# Set python environment variables
 ENV DEBUG="${DEBUG}" \
   PYTHONUNBUFFERED=true \
   PYTHONDONTWRITEBYTECODE=true \
@@ -18,9 +12,16 @@ ENV DEBUG="${DEBUG}" \
   PIP_DEFAULT_TIMEOUT=100
 
 ENV PATH="/root/.local/bin:$PATH"
+
+FROM python-base as builder-base
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends build-essential curl libpq-dev \
+  && rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man \
+  && apt-get clean
+
 COPY poetry.lock pyproject.toml /code/
 
-# Set work directory
+# Set working directory
 WORKDIR /code
 
 RUN curl -sSL https://install.python-poetry.org | python3 - \
@@ -29,5 +30,3 @@ RUN curl -sSL https://install.python-poetry.org | python3 - \
 
 # Copy project
 COPY . /code/
-
-# CMD ["gunicorn", "-c", "config/gunicorn.py", "config.wsgi"]
