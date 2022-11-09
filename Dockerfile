@@ -1,32 +1,33 @@
 # Pull base image
-FROM python:3.11
+FROM python:3.11-slim-bullseye AS code
 LABEL maintainer="Kevin Bowen <kevin.bowen@gmail.com>"
 
-ARG DJANGO_START
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends build-essential curl libpq-dev \
+  && rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man \
+  && apt-get clean \
 
-# Set environment variables
+# Set python environment variables
 ENV DEBUG="${DEBUG}" \
-  PYTHONDONTWRITEBYTECODE=1 \
-  PYTHONFAULTHANDLER=1 \
-  PYTHONUNBUFFERED=1 \
+  PYTHONUNBUFFERED=true \
+  PYTHONDONTWRITEBYTECODE=true \
+  PYTHONFAULTHANDLER=true \
   PYTHONHASHSEED=random \
   PIP_NO_CACHE_DIR=off \
   PIP_DISABLE_PIP_VERSION_CHECK=on \
-  PIP_DEFAULT_TIMEOUT=100 \
-  POETRY_VERSION=1.2.2
+  PIP_DEFAULT_TIMEOUT=100
 
-# System dependencies
-RUN pip install "poetry==$POETRY_VERSION"
+ENV PATH="/root/.local/bin:$PATH"
+COPY poetry.lock pyproject.toml /code/
 
 # Set work directory
 WORKDIR /code
 
-# Install dependencies
-COPY poetry.lock pyproject.toml /code/
-
-# Project initialization:
-RUN poetry config virtualenvs.create false
-RUN poetry install
+RUN curl -sSL https://install.python-poetry.org | python3 - \
+    && poetry config virtualenvs.create false \
+    && poetry install --no-interaction --no-ansi
 
 # Copy project
 COPY . /code/
+
+# CMD ["gunicorn", "-c", "config/gunicorn.py", "config.wsgi"]
