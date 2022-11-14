@@ -78,7 +78,7 @@
 ---
 
 ### Testing
- - `docker-compose exec web python manage.py test`
+ - `docker compose exec web python manage.py test`
  - `coverage run -m pytest`
  - Nox (includes sessions for black, lint, safety, tests)
      - testing supported for Python 3.9, 3.10, 3.11
