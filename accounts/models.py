@@ -26,5 +26,8 @@ class CustomUser(AbstractUser):
         Returns:
             str: URL for user detail.
 
+        **Template:**
+            :template:`account/user_detail.html`
+
         """
         return reverse("user_detail", kwargs={"username": self.username})

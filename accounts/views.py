@@ -14,7 +14,19 @@ User = get_user_model()
 
 
 class UserDetailView(LoginRequiredMixin, DetailView):
-    """Tell the view to index lookups by username."""
+    """
+    Tell the view to index lookups by username.
+    Display an individual :model:`accounts.CustomUser`
+
+    **Context**
+
+    ``accounts``
+        An instance of :model:`accounts.CustomUser`
+
+    **Template**
+
+    :template:`account/user_detail.html`
+    """
 
     model = User
     slug_field = "username"
@@ -24,6 +36,20 @@ class UserDetailView(LoginRequiredMixin, DetailView):
 
 
 class UserUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
+    """
+    Permit user to edit own account information.
+    Display an individual :model:`accounts.CustomUser`
+
+    **Context**
+
+    ``accounts``
+        An instance of :model:`accounts.CustomUser`
+
+    **Template**
+
+    :template:`account/user_form.html`
+    """
+
     fields = [
         "name",
         "age",
