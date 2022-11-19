@@ -83,7 +83,11 @@ def safety(session):
         )
         install_with_constraints(session, "safety")
         session.run(
-            "safety", "check", f"--file={requirements.name}", "--full-report"
+            "safety",
+            "check",
+            f"--file={requirements.name}",
+            "--ignore=51457",
+            "--full-report",
         )
 
 
