@@ -81,14 +81,14 @@
  - `docker compose exec web python manage.py test`
  - `coverage run -m pytest`
  - Nox (includes sessions for black, lint, safety, tests)
-     - testing supported for Python 3.9, 3.10, 3.11
+     - testing supported for Python 3.9, 3.10, 3.11, 3.12
      - e.g. `nox`, `nox -rs lint-3.11`, `nox -s tests`
 
 ---
 
 ### Application Demo
-A live application demonstration hosted at Heroku
- - [django-start](https://kbowen-django-start.herokuapp.com/)
+A live application demonstration hosted at ~~Heroku~~
+ - TBD
 
 ---
 
