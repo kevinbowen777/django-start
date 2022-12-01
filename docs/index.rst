@@ -46,6 +46,7 @@ Features
        * `flake8 <https://pypi.org/project/flake8/>`_
        * `flake8-bandit <https://pypi.org/project/flake8-bandit/>`_
        * `flake8-bugbear <https://pypi.org/project/flake8-bugbear/>`_
+       * `flake8-import-order <https://pypi.org/project/flake8-import-order/>`_
      * `safety <https://pypi.org/project/safety/)(python package vulnerability testing>`_
      * `pytest sessions <https://docs.pytest.org/en/latest/>`_ with `pytest-cov <https://pypi.org/project/pytest-cov/>`_ & `pytest-django <https://pypi.org/project/pytest-django/>`_
 

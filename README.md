@@ -41,13 +41,13 @@
      - [Debug-toolbar](https://pypi.org/project/django-debug-toolbar/) available. See notes in `config/settings.py` for enabling.
      - Examples of using [Factories](https://pypi.org/project/factory-boy/) & [pytest](https://pypi.org/project/pytest/) fixtures in account app testing
      - [shell_plus](https://django-extensions.readthedocs.io/en/latest/shell_plus.html) with [IPython](https://pypi.org/project/ipython/) via [django-extensions](https://pypi.python.org/pypi/django-extensions/) package
-     - [Nox](https://pypi.org/project/nox/) testing sessions for latest Python 3.9, 3.10, and 3.11, 3.12
-         - [black](https://pypi.org/project/black/)
+     - [Nox](https://pypi.org/project/nox/) testing sessions for latest Python 3.9, 3.10, 3.11, and 3.12 - [black](https://pypi.org/project/black/)
          - [Sphinx](https://pypi.org/project/Sphinx/) documentaion generation
          - linting
              - [flake8](https://pypi.org/project/flake8/)
              - [flake8-bandit](https://pypi.org/project/flake8-bandit/)
              - [flake8-bugbear](https://pypi.org/project/flake8-bugbear/)
+             - [flake8-import-order](https://pypi.org/project/flake8-import-order/)
          - [safety](https://pypi.org/project/safety/)(python package vulnerability testing)
          - [pytest](https://docs.pytest.org/en/latest/) sessions with [pytest-cov](https://pypi.org/project/pytest-cov/) & [pytest-django](https://pypi.org/project/pytest-django/)
      - For additional links to package resources used in this repository, see the [Package Index](docs/package_index.md)
