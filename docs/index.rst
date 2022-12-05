@@ -30,6 +30,7 @@ Features
    * Image carousel
    * Pagination template
    * Centered account templates(login, registration, verification, etc.)
+   * For links to additional package resources used in this repository, see the :doc:`Package Index <package_index>`
  * Dev/testing
 
    * Basic module testing templates
@@ -108,8 +109,11 @@ Testing
    $ coverage run -m pytest
    $ nox --list-sessions
    $ nox
-   $ nox -rs lint-3.11
-   $ nox -s tests
+   $ nox -s black-3.12 
+   $ nox -s docs-3.11 
+   $ nox -rs lint-3.9  (Use the 'r' flag to reuse existing session)
+   $ nox -s safety  (will run tests against all Python versions)
+   $ nox -s tests 
 
 Application Demo
 ----------------
