@@ -103,16 +103,16 @@ A live application demonstration hosted at ~~Heroku~~
 ### Screenshots
 
 ### Home
-![Home](https://github.com/kevinbowen777/django-start/blob/master/images/django-start_home.png)
+![Home](images/django-start_home.png)
 
 ### Login Page
-![Login Page](https://github.com/kevinbowen777/django-start/blob/master/images/django-start_login.png)
+![Login Page](images/django-start_login.png)
 
 ### Logged in user with dropdown
-![Dropdown detail](https://github.com/kevinbowen777/django-start/blob/master/images/django-start_logged_dropdown.png)
+![Dropdown detail](images/django-start_logged_dropdown.png)
 
 ### Profile Page
-![Profile Page](https://github.com/kevinbowen777/django-start/blob/master/images/django-start_profile-page.png)
+![Profile Page](images/django-start_profile-page.png)
 
 ---
 
