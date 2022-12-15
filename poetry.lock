@@ -1013,7 +1013,7 @@ pip = "*"
 
 [[package]]
 name = "pip-audit"
-version = "2.4.8"
+version = "2.4.9"
 description = "A tool for scanning Python environments for known vulnerabilities"
 category = "dev"
 optional = false
@@ -1023,9 +1023,9 @@ python-versions = ">=3.7"
 CacheControl = {version = ">=0.12.10", extras = ["filecache"]}
 cyclonedx-python-lib = ">=2.0.0,<2.5.0 || >2.5.0"
 html5lib = ">=1.1"
-packaging = ">=21.0.0,<22.0.0"
+packaging = ">=21.0.0"
 pip-api = ">=0.0.28"
-pip-requirements-parser = ">=31.2.0"
+pip-requirements-parser = ">=32.0.0"
 resolvelib = ">=0.8.0"
 rich = ">=12.4"
 toml = ">=0.10"
@@ -2358,8 +2358,8 @@ pip-api = [
     {file = "pip_api-0.0.30-py3-none-any.whl", hash = "sha256:2a0314bd31522eb9ffe8a99668b0d07fee34ebc537931e7b6483001dbedcbdc9"},
 ]
 pip-audit = [
-    {file = "pip_audit-2.4.8-py3-none-any.whl", hash = "sha256:40876d6ad6adf5ac64fba1ecef034db9804c35c2c18f7c22cb7b11b382c10df9"},
-    {file = "pip_audit-2.4.8.tar.gz", hash = "sha256:a45540ab0c5a9311315ca42c78fa8f72cf3598d5968a67d883d2d6194eda598c"},
+    {file = "pip_audit-2.4.9-py3-none-any.whl", hash = "sha256:a53096325813cf67cda7729ee0d1b1fa1442a09b874adf668f24b76f027320e3"},
+    {file = "pip_audit-2.4.9.tar.gz", hash = "sha256:aac7f1eabb723a18be9be4dbfe1b15ee4c3e48d09bf4bc2440ba7e0555dd4285"},
 ]
 pip-check = [
     {file = "pip-check-2.8.1.tar.gz", hash = "sha256:76d6abd49b1cd4b2db8752da685c2fae2eae39349efc2adeccf49cb148264d3b"},
