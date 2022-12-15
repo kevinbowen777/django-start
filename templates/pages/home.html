@@ -42,7 +42,11 @@
   </div>
   <!-- End carousel template -->
   </p>
-  <!-- Fake link to test BrokenLinkEmailMiddleware alerts -->
-  <a href="pages/fake.html">FAKE</a>
+  <ul class="container">
+      <li><a href="{% url 'sample' %}">Sample</a></li>
+      <li><a href="sample1.html">Sample Page 1</a></li>
+      <li><a href="sample1.html">Sample Page 2</a></li>
+      <li><a href="sample1.html">Sample Page 3</a></li>
+  </ul>
 </div>
 {% endblock content %}
