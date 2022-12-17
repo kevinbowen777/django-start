@@ -33,9 +33,9 @@ export SECRET_KEY=<secret_key>
 # ENGINE_DB=django.db.backends.sqlite3
 # DATABASE_URL=sqlite:///django-start.sqlite3
 # export POSTGRES_DB=django-start.sqlite3
-export POSTGRES_USER=dummy
+export POSTGRES_USER=django_admin
 export POSTGRES_PASSWORD=<postgres_password>
-export POSTGRES_DB=postgres
+export POSTGRES_DB=django-start
 export POSTGRES_HOST=db
 export POSTGRES_PORT=5432
 
