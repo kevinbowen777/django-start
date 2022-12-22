@@ -120,4 +120,11 @@ def tests(session):
         "pytest-cov",
         "pytest-django",
     )
-    session.run("pytest", *args)
+    # session.run("pytest", *args)
+    session.run(
+        "python",
+        "-Wonce::DeprecationWarning",
+        "-Im",
+        "pytest",
+        *args,
+    )
