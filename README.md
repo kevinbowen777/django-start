@@ -68,6 +68,8 @@
      - `python manage.py runserver`
  - Docker installation:
      - `docker compose up --build`
+     - `docker compose build --build-arg "ENV=DEV"` (include testing/dev dependencies)
+     - `docker compose build --build-arg "ENV=PROD"`
      - `docker compose exec web python manage.py migrate`
      - `docker compose exec web python manage.py createsuperuser`
      Additional commands:

@@ -1,0 +1,10 @@
+#/usr/bin/env bash
+
+set -e
+
+if [ ${ENV} = "DEV" ]; then
+    poetry install --no-interaction --no-ansi
+else
+    poetry install --without=dev --no-interaction --no-ansi
+    # poetry install --no-interaction --no-ansi --no-dev
+fi
