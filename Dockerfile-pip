@@ -1,0 +1,46 @@
+# `python-base` sets up all our shared environment variables
+FROM python:3.11-slim-bullseye AS python-base
+LABEL maintainer="Kevin Bowen <kevin.bowen@gmail.com>"
+
+WORKDIR /code
+
+ARG UID=1000
+ARG GID=1000
+
+FROM python-base as builder-base
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    curl \
+    libpq-dev \
+  && rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man \
+  && apt-get clean \
+  && groupadd -g "${GID}" django \
+  && useradd --create-home --no-log-init -u "${UID}" -g "${GID}" django \
+  && mkdir -p /public_collected public \
+  && chown django:django -R /public_collected /code
+
+user django
+
+COPY --chown=django:django requirements*.txt ./
+COPY --chown=django:django bin/ ./bin
+
+ARG ENV
+RUN chmod 0755 bin/* && bin/pip3-install
+
+# location of poetry installation
+ENV DEBUG="${DEBUG}" \
+    PYTHONUNBUFFERED=true \
+    PYTHONDONTWRITEBYTECODE=true \
+    PYTHONFAULTHANDLER=true \
+    PYTHONHASHSEED=random \
+    PIP_NO_CACHE_DIR=off \
+    PIP_DISABLE_PIP_VERSION_CHECK=on \
+    PIP_DEFAULT_TIMEOUT=100 \
+    PYTHONPATH="/code" \
+    PATH="${PATH}:/home/django/.local/bin:$PATH" \
+    USER="django"
+
+COPY --chown=django:django poetry.lock pyproject.toml ./ /code/
+COPY --chown=django:django . /code/
+
+WORKDIR /code
