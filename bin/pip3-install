@@ -2,8 +2,8 @@
 
 set -e
 
-if [ ${ENV} = "DEV" ]; then
-    pip3 install --no-warn-script-location --no-cache-dir --user -r requirements-dev.txt
-else
+if [ ${ENV} = "PROD" ]; then
     pip3 install --no-warn-script-location --no-cache-dir --user -r requirements.txt
+else
+    pip3 install --no-warn-script-location --no-cache-dir --user -r requirements-dev.txt
 fi
