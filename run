@@ -43,17 +43,17 @@ function cmd {
   _dc web "${@}"
 }
 
-function coverage:pytest {
+function cov:pytest {
   # Run pytest
   cmd coverage run -m pytest "${@}"
 }
 
-function coverage:report {
+function cov:report {
   # Generate coverage report to terminal
   cmd coverage report "${@}"
 }
 
-function coverage:html {
+function cov:html {
   # Output coverage report to ./htmlcov
   cmd coverage html "${@}"
 }
@@ -61,14 +61,6 @@ function coverage:html {
 function down {
   # Shut down container
   docker compose down
-}
-
-function help {
-  printf "%s <task> [args]\n\nTasks:\n" "${0}"
-
-  compgen -A function | grep -v "^_" | cat -n
-
-  printf "\nExtended help:\n  Each task has comments for general usage\n"
 }
 
 function manage {
@@ -116,12 +108,15 @@ function nox:all {
   cmd nox -s tests-3.11 "${@}"
 }
 
-function poetry:outdated {
+function poe:old {
   # List any installed packages that are outdated
-  cmd poetry show -ol
+  poetry show -ol
+  # The following command runs twice as fast; but, requires the container
+  # to be running:
+  # cmd poetry show -ol
 }
 
-function poetry:update {
+function poe:up {
   # Update any outdated packages
   poetry update
 }
@@ -155,6 +150,14 @@ function shell_plus {
 function up {
   # Start docker container
   docker compose up
+}
+
+function help {
+  printf "%s <task> [args]\n\nTasks:\n" "${0}"
+
+  compgen -A function | grep -v "^_" | cat -n
+
+  printf "\nExtended help:\n  Each task has comments for general usage\n"
 }
 
 # This idea is heavily inspired by: https://github.com/adriancooney/Taskfile
