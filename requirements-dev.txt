@@ -704,9 +704,9 @@ platformdirs==2.6.2 ; python_version >= "3.10" and python_version < "4.0" \
 pluggy==1.0.0 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:4224373bacce55f955a878bf9cfa763c1e360858e330072059e10bad68531159 \
     --hash=sha256:74134bbf457f031a36d68416e1509f34bd5ccc019f0bcc952c7b909d06b37bd3
-pre-commit==2.21.0 ; python_version >= "3.10" and python_version < "4.0" \
-    --hash=sha256:31ef31af7e474a8d8995027fefdfcf509b5c913ff31f2015b4ec4beb26a6f658 \
-    --hash=sha256:e2f91727039fc39a92f58a588a25b87f936de6567eed4f0e673e0507edc75bad
+pre-commit==3.0.1 ; python_version >= "3.10" and python_version < "4.0" \
+    --hash=sha256:3a3f9229e8c19a626a7f91be25b3c8c135e52de1a678da98eb015c0d0baea7a5 \
+    --hash=sha256:61ecb75e0e99939cc30c79181c0394545657855e9172c42ff98ebecb0e02fcb7
 prompt-toolkit==3.0.36 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:3e163f254bef5a03b146397d7c1963bd3e2812f0964bb9a24e6ec761fd28db63 \
     --hash=sha256:aa64ad242a462c5ff0363a7b9cfe696c20d55d9fc60c11fd8e632d064804d305
