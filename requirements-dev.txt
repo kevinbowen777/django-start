@@ -443,9 +443,9 @@ gunicorn==20.1.0 ; python_version >= "3.10" and python_version < "4.0" \
 html5lib==1.1 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:0d78f8fde1c230e99fe37986a60526d7049ed4bf8a9fadbad5f00e22e58e041d \
     --hash=sha256:b2e5b40261e20f354d198eae92afc10d750afb487ed5e50f9c4eaf07c184146f
-identify==2.5.15 ; python_version >= "3.10" and python_version < "4.0" \
-    --hash=sha256:1f4b36c5f50f3f950864b2a047308743f064eaa6f6645da5e5c780d1c7125487 \
-    --hash=sha256:c22aa206f47cc40486ecf585d27ad5f40adbfc494a3fa41dc3ed0499a23b123f
+identify==2.5.16 ; python_version >= "3.10" and python_version < "4.0" \
+    --hash=sha256:832832a58ecc1b8f33d5e8cb4f7d3db2f5c7fbe922dfee5f958b48fed691501a \
+    --hash=sha256:c47acedfe6495b1c603ed7e93469b26e839cab38db4155113f36f718f8b3dc47
 idna==3.4 ; python_version >= "3.10" and python_version < "4" \
     --hash=sha256:814f528e8dead7d329833b91c5faa87d60bf71824cd12a7530b5526063d02cb4 \
     --hash=sha256:90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2
@@ -704,9 +704,9 @@ platformdirs==2.6.2 ; python_version >= "3.10" and python_version < "4.0" \
 pluggy==1.0.0 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:4224373bacce55f955a878bf9cfa763c1e360858e330072059e10bad68531159 \
     --hash=sha256:74134bbf457f031a36d68416e1509f34bd5ccc019f0bcc952c7b909d06b37bd3
-pre-commit==3.0.1 ; python_version >= "3.10" and python_version < "4.0" \
-    --hash=sha256:3a3f9229e8c19a626a7f91be25b3c8c135e52de1a678da98eb015c0d0baea7a5 \
-    --hash=sha256:61ecb75e0e99939cc30c79181c0394545657855e9172c42ff98ebecb0e02fcb7
+pre-commit==3.0.2 ; python_version >= "3.10" and python_version < "4.0" \
+    --hash=sha256:aa97fa71e7ab48225538e1e91a6b26e483029e6de64824f04760c32557bc91d7 \
+    --hash=sha256:f448d5224c70e196a6c6f87961d2333dfdc49988ebbf660477f9efe991c03597
 prompt-toolkit==3.0.36 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:3e163f254bef5a03b146397d7c1963bd3e2812f0964bb9a24e6ec761fd28db63 \
     --hash=sha256:aa64ad242a462c5ff0363a7b9cfe696c20d55d9fc60c11fd8e632d064804d305
@@ -878,9 +878,9 @@ requests-oauthlib==1.3.1 ; python_version >= "3.10" and python_version < "4.0" \
 resolvelib==0.9.0 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:40ab05117c3281b1b160105e10075094c5ab118315003c922b77673a365290e1 \
     --hash=sha256:597adcbdf81d62d0cde55d90faa8e79187ec0f18e5012df30bd7a751b26343ae
-rich==13.3.0 ; python_version >= "3.10" and python_version < "4.0" \
-    --hash=sha256:98ce3ede653f23fbc02b0f8bd8a16a6b2bb4cfbdcfccf736eb28ba2810af241e \
-    --hash=sha256:dd62e48284e540ae03235258699c07d5b48dbc1fd1905c6091b5ce72d7c69195
+rich==13.3.1 ; python_version >= "3.10" and python_version < "4.0" \
+    --hash=sha256:125d96d20c92b946b983d0d392b84ff945461e5a06d3867e9f9e575f8697b67f \
+    --hash=sha256:8aa57747f3fc3e977684f0176a88e789be314a99f99b43b75d1e9cb5dc6db9e9
 ruamel-yaml==0.17.21 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:742b35d3d665023981bd6d16b3d24248ce5df75fdb4e2924e93a05c1f8b61ca7 \
     --hash=sha256:8b7ce697a2f212752a35c1ac414471dc16c424c9573be4926b56ff3f5d23b7af
@@ -921,9 +921,9 @@ ruamel-yaml-clib==0.2.7 ; platform_python_implementation == "CPython" and python
 safety==2.3.5 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:2227fcac1b22b53c1615af78872b48348661691450aa25d6704a5504dbd1f7e2 \
     --hash=sha256:a60c11f8952f412cbb165d70cb1f673a3b43a2ba9a93ce11f97e6a4de834aa3a
-setuptools==66.1.1 ; python_version >= "3.10" and python_version < "4.0" \
-    --hash=sha256:6f590d76b713d5de4e49fe4fbca24474469f53c83632d5d0fd056f7ff7e8112b \
-    --hash=sha256:ac4008d396bc9cd983ea483cb7139c0240a07bbc74ffb6232fceffedc6cf03a8
+setuptools==67.0.0 ; python_version >= "3.10" and python_version < "4.0" \
+    --hash=sha256:883131c5b6efa70b9101c7ef30b2b7b780a4283d5fc1616383cdf22c83cbefe6 \
+    --hash=sha256:9d790961ba6219e9ff7d9557622d2fe136816a264dd01d5997cfc057d804853d
 six==1.16.0 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926 \
     --hash=sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254

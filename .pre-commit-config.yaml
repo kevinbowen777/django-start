@@ -33,7 +33,6 @@ repos:
       language: system
       types: [python]
       exclude: ^.*\b(migrations)\b.*$
-
     - id: flake8
       name: flake8
       entry: poetry run flake8
@@ -41,7 +40,7 @@ repos:
       types: [python]
   
   - repo: https://github.com/python-poetry/poetry
-    rev: '1.3'
+    rev: '1.3.0'
     hooks:
       - id: poetry-check
       - id: poetry-lock
