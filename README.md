@@ -42,6 +42,7 @@
      - [Debug-toolbar](https://pypi.org/project/django-debug-toolbar/) available. See notes in `config/settings.py` for enabling.
      - Examples of using [Factories](https://pypi.org/project/factory-boy/) & [pytest](https://pypi.org/project/pytest/) fixtures in account app testing
      - [shell_plus](https://django-extensions.readthedocs.io/en/latest/shell_plus.html) with [IPython](https://pypi.org/project/ipython/) via [django-extensions](https://pypi.python.org/pypi/django-extensions/) package
+     - [Pre-commit](https://github.com/pre-commit/pre-commit)
      - [Nox](https://pypi.org/project/nox/) testing sessions for latest Python 3.9, 3.10, 3.11, and 3.12 
          - [black](https://pypi.org/project/black/) (`nox -s black`)
          - [Sphinx](https://pypi.org/project/Sphinx/) documentaion generation (`nox -s lint`)
@@ -87,6 +88,9 @@ able to run `run` instead of `./run`.*
        - `docker run -it django-start-web bash`
          (CLI access to container)
  - Browse to http://127.0.0.1:8000 or http://127.0.0.1:8000/resources/
+ - Pre-commit:
+     - To add the hook, run the following command in the poetry shell:
+         - `pre-commit install`
 
 ---
 
