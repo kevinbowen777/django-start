@@ -56,7 +56,7 @@ python = "^3.10"
 Django = "4.1.7"
 environs = {extras = ["django"], version = "^9.5.0"}
 psycopg2-binary = "^2.9.5"
-django-crispy-forms = "^1.14.0"
+django-crispy-forms = "^2.0"
 django-extensions = "^3.2"
 pytest-sugar = "^0.9.4"
 django-allauth = "^0.52.0"
@@ -64,6 +64,7 @@ Pillow = "^9.1.1"
 django-countries = "^7.3.2"
 whitenoise = "^6.0.0"
 gunicorn = "~=20.1.0"
+crispy-bootstrap4 = "^2022.1"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.0.0"
