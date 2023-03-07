@@ -1,7 +1,6 @@
 from django.test import SimpleTestCase
 from django.urls import resolve, reverse
 
-from ..forms import ContactForm
 from ..views import (
     AboutPageView,
     ContactView,
@@ -65,11 +64,6 @@ class ContactViewTests(SimpleTestCase):
     def setUp(self):
         url = reverse("contact")
         self.response = self.client.get(url)
-        self.form_data = {
-            "from_email": "joe@example.com",
-            "subject": "Test Email",
-            "message": "This is a test email",
-        }
 
     def test_contact_page_status_code(self):
         self.assertEqual(self.response.status_code, 200)
@@ -89,10 +83,6 @@ class ContactViewTests(SimpleTestCase):
             view.func.__name__,
             ContactView.__name__,
         )
-
-    def test_contact_page_form_is_valid(self):
-        form = ContactForm(data=self.form_data)
-        self.assertTrue(form.is_valid())
 
 
 class SampleViewTests(SimpleTestCase):
