@@ -398,8 +398,9 @@ exceptiongroup==1.1.1 ; python_version >= "3.10" and python_version < "3.11" \
 executing==1.2.0 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:0314a69e37426e3608aada02473b4161d4caf5a4b244d1d0c48072b8fee7bacc \
     --hash=sha256:19da64c18d2d851112f09c287f8d3dbbdf725ab0e569077efb6cdcbd3497c107
-factory-boy==3.0.1 ; python_version >= "3.10" and python_version < "4.0" \
-    --hash=sha256:2ce2f665045d9f15145a6310565fcb8255d52fc6fd867f3b783b3ac3de6cf10e
+factory-boy==3.2.1 ; python_version >= "3.10" and python_version < "4.0" \
+    --hash=sha256:a98d277b0c047c75eb6e4ab8508a7f81fb03d2cb21986f627913546ef7a2a55e \
+    --hash=sha256:eb02a7dd1b577ef606b75a253b9818e6f9eaf996d94449c9d5ebb124f90dc795
 faker==18.3.2 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:a000bba893ea502cea66d06acf14e01655a2289e4904de80faf9dbe880fa1a39 \
     --hash=sha256:f3299679a6b23409cfe69774bbd1148324a05bd38bda041da6c302e618d7d4a0
