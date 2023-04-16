@@ -16,7 +16,7 @@ Django Start
 The template repository for the collection of
 `Web Framework Projects <https://github.com/kevinbowen777/web-project-index>`_
 assembled by Kevin Bowen.
-This repository runs a Django 4.1.x application demonstrating some of basic
+This repository runs a Django 4.2.x application demonstrating some of basic
 basic functionality also available applications linked above.
 
 Features

@@ -14,7 +14,7 @@
  - A reference template of "best practices" & standards used in my collection
    of [Web Framework
    Projects](https://github.com/kevinbowen777/web-project-index). This
-   repository runs a Django 4.1.x web application demonstrating some of this
+   repository runs a Django 4.2.x web application demonstrating some of this
    functionality.
 
 ##### Table of Contents
