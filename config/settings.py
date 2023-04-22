@@ -89,10 +89,10 @@ DATABASES = {
             "DATABASE_URL", default="postgres://postgres@db/postgres"
         ),
         "NAME": env.str("POSTGRES_DB", "postgres"),
-        "USER": env.str("POSTGRES_USER", "fakeuser"),
-        "PASSWORD": env.str("POSTGRES_PASSWORD", "password"),
-        "HOST": env.str("POSTGRES_HOST", "db"),
-        "PORT": env.int("POSTGRES_PORT", "5432"),
+        "POSTGRES_USER": env.str("POSTGRES_USER", default="fakeuser"),
+        "POSTGRES_PASSWORD": env.str("POSTGRES_PASSWORD", "password"),
+        "POSTGRES_HOST": env.str("POSTGRES_HOST", "db"),
+        "POSTGRES_PORT": env.int("POSTGRES_PORT", "5432"),
     }
 }
 
