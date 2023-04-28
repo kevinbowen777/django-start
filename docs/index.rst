@@ -100,6 +100,9 @@ Docker installation
 Pre-commit installation
 -----------------------
    To add the hook, run the following command in the poetry shell:
+
+.. code-block:: console
+
    $ pre-commit install
 
 
