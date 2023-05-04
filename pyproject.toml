@@ -91,7 +91,7 @@ flake8-import-order = "^0.18.1"
 safety = "2.4.0b1"
 pip-check = "^2.7"
 Sphinx = "^7.0.0"
-pip-audit = "^2.4.0"
+pip-audit = "^2.5.0"
 ruff = "^0.0.264"
 
 [tool.pytest.ini_options]
