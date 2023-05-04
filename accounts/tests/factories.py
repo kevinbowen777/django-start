@@ -1,5 +1,4 @@
 from django.contrib.auth import get_user_model
-
 from factory import Faker, PostGenerationMethodCall
 from factory.django import DjangoModelFactory
 
