@@ -63,14 +63,9 @@ def lint(session):
     args = session.posargs or locations
     install_with_constraints(
         session,
-        "flake8",
-        "flake8-bandit",
-        "flake8-black",
-        "flake8-bugbear",
-        # "flake8-docstrings",
-        "flake8-import-order",
+        "ruff",
     )
-    session.run("flake8", *args)
+    session.run("ruff", "check", *args)
 
 
 @nox.session(python=["3.12", "3.11", "3.10", "3.9"])
