@@ -1,5 +1,5 @@
 [tool.black]
-line-length = 79
+line-length = 88
 # include =
 exclude = '''
 /(
@@ -11,6 +11,7 @@ exclude = '''
   | staticfiles
   | build
   | dist
+  | ^.*\b(migrations)\b.*$
 )/
 '''
 
@@ -21,18 +22,15 @@ source = ["accounts", "config", "pages"]
 branch = true
 source = ["config"]
 omit = [
-    "*/__init__.py",
+    "*conftest.py",
     "*manage.py",
     "*settings*.py",
-    "*urls.py",
-    "*admin.py",
-    "*migrations/*",
-    "*tests/*",
-    "*test_*.py",
-    "*tests.py",
+    "*test.py",
     "*wsgi.py",
-    "*conftest.py",
-    "*/extra*",
+    "*/__init__.py",
+    "*/migrations/*",
+    "*/factories.py",
+    "*/tests/*",
 ]
 plugins = [
     "django_coverage_plugin",
@@ -48,50 +46,79 @@ show_missing = true
 name = "django-start"
 version = "0.1.0"
 description = "Basic Django project template"
-authors = ["Kevin Bowen <kevin.bowen@gmail.com>"]
+authors = [
+    "Kevin Bowen <kevin.bowen@gmail.com>",
+]
+maintainers = [
+]
 license = "MIT"
+
+readme = "README.md"
+
+homepage = ""
+repository = "https://github.com/kevinbowen777/news.git"
+documentation = ""
+
+keywords = ["django", "web-application", "news"]
+
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP",
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 Django = "4.2.0"
-environs = {extras = ["django"], version = "^9.5.0"}
-psycopg2-binary = "^2.9.5"
+
 django-crispy-forms = "^2.0"
-django-extensions = "^3.2"
-pytest-sugar = "^0.9.4"
 django-allauth = "^0.54.0"
-Pillow = "^9.1.1"
+environs = { version = "^9.5.0", extras = ["django"] }
+django-extensions = "^3.2"
+whitenoise = "^6.1.0"
+psycopg2-binary = "^2.9.5"
+Pillow = "^9.3.0"
 django-countries = "^7.3.2"
-whitenoise = "^6.0.0"
 gunicorn = "~=20.1.0"
 crispy-bootstrap4 = "^2022.1"
 
 [tool.poetry.group.dev.dependencies]
+django-debug-toolbar = "^4.0.0"
 pre-commit = "^3.0.0"
 black = "^23.0.0"
 flake8 = "^6.0.0"
-django-debug-toolbar = "^4.0.0"
-pytest = "^7.1.2"
-pytest-django = "^4.5.2"
-coverage = {extras = ["toml"], version = "^7.0.0"}
-pytest-cov = "^4.0.0"
 django-test-plus = "^2.2.0"
+pytest = "^7.2.0"
 pytest-sugar = "^0.9.4"
 ipython = "^8.4.0"
 friendly = "^0.7.0"
 colorama = "^0.4.4"
 django-coverage-plugin = "^3.0.0"
-django-pytest = "^0.2.0"
-factory-boy = "^3.2.0"
 nox = "2023.4.22"
+safety = "2.4.0b1"
+factory-boy = "^3.2.0"
+pip-check = "^2.7"
+pip-audit = "^2.5.0"
+Sphinx = "^7.0.0"
+coverage = {extras = ["toml"], version = "^7.0.0"}
+pytest-cov = "^4.0.0"
+pytest-django = "^4.5.2"
+django-pytest = "^0.2.0"
 flake8-bandit = "^4.0.0"
 flake8-black = "^0.3.3"
 flake8-bugbear = "^23.0.0"
 flake8-import-order = "^0.18.1"
-safety = "2.4.0b1"
-pip-check = "^2.7"
-Sphinx = "^7.0.0"
-pip-audit = "^2.5.0"
 ruff = "^0.0.264"
 
 [tool.pytest.ini_options]
@@ -157,14 +184,10 @@ dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
 target-version = "py311"
 
 [tool.ruff.per-file-ignores]
-"accounts/tests.py" = ["S101", "S106"]
 # "accounts/tests/factories.py" = ["BLK100"] (Not supported)
 # "accounts/tests/*" = ["BLK100"] (Not supported)
 "accounts/tests/*" = ["S101", "S106"]
-"articles/tests.py" = ["S101", "S106"]
-"articles/tests/*" = ["S101", "S106"]
 "config/test.py" = ["S101", "S106"]
-"pages/tests.py" = ["S101", "S106"]
 "pages/tests/*" = ["S101", "S106"]
 
 [tool.ruff.mccabe]
