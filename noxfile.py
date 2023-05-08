@@ -59,13 +59,13 @@ def docs(session):
 
 @nox.session(python=["3.12", "3.11", "3.10", "3.9"])
 def lint(session):
-    """Lint using flake8."""
+    """Lint using ruff."""
     args = session.posargs or locations
     install_with_constraints(
         session,
         "ruff",
     )
-    session.run("ruff", "check", *args)
+    session.run("ruff", "check", ".", *args)
 
 
 @nox.session(python=["3.12", "3.11", "3.10", "3.9"])
