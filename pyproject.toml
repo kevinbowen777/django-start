@@ -7,7 +7,6 @@ exclude = '''
   | __pycache__
   | .pytest_cache
   | .venv
-  | alembic
   | staticfiles
   | build
   | dist
