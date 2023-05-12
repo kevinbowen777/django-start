@@ -55,15 +55,16 @@ license = "MIT"
 readme = "README.md"
 
 homepage = ""
-repository = "https://github.com/kevinbowen777/news.git"
-documentation = ""
+repository = "https://github.com/kevinbowen777/django-start.git"
+documentation = "file: README.rst"
 
-keywords = ["django", "web-application", "news"]
+keywords = ["django", "web-application", "template"]
 
 classifiers = [
     "Development Status :: 2 - Pre-Alpha",
     "Environment :: Web Environment",
     "Framework :: Django",
+    "Framework :: Django :: 4.2",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
