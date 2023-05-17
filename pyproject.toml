@@ -1,6 +1,7 @@
 [tool.black]
 line-length = 88
-# include =
+# include = [
+#]
 exclude = '''
 /(
     \.git
@@ -109,12 +110,13 @@ safety = "2.4.0b1"
 factory-boy = "^3.2.0"
 pip-check = "^2.7"
 pip-audit = "^2.5"
-Sphinx = "^7.0.0"
-coverage = {extras = ["toml"], version = "^7.0.0"}
+Sphinx = "6.2.1"
+coverage = { version = "^7.0.0", extras = ["toml"] }
 pytest-cov = "^4.0.0"
 pytest-django = "^4.5.2"
 django-pytest = "^0.2.0"
 ruff = "^0.0.267"
+sphinx-rtd-theme = "^1.2.0"
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "config.settings"
