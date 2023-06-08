@@ -1,10 +1,6 @@
+*************
 Package Index
-=============
-
-.. contents:: Table of Contents
-   :local:
-   :backlinks: top
-   :depth: 1
+*************
 
 The following is a list some of the major Python packages being used for
 this `repository <https://github.com/kevinbowen777/django-start/>`__.
