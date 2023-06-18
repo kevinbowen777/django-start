@@ -115,6 +115,7 @@ pytest-django = "^4.5.2"
 django-pytest = "^0.2.0"
 ruff = "^0.0.272"
 sphinx-rtd-theme = "^1.2.0"
+djlint = "^1.31.0"
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "config.settings"
