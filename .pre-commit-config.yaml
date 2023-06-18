@@ -39,6 +39,12 @@ repos:
       name: black
       exclude: ^.*\b(migrations)\b.*$
 
+  - repo: https://github.com/Riverside-Healthcare/djLint
+    rev: v1.31.0
+    hooks:
+    - id: djlint-reformat-django
+    - id: djlint-django
+
   - repo: https://github.com/python-poetry/poetry
     rev: 1.5.0
     hooks:
