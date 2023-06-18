@@ -42,6 +42,11 @@ template_extensions = "html, txt, tex, email"
 [tool.coverage.report]
 show_missing = true
 
+[tool.djlint]
+files=["templates/"]
+indent=2
+preserve_blank_lines=true
+
 [tool.poetry]
 name = "django-start"
 version = "0.2.0"
@@ -115,6 +120,7 @@ pytest-django = "^4.5.2"
 django-pytest = "^0.2.0"
 ruff = "^0.0.272"
 sphinx-rtd-theme = "^1.2.0"
+djlint = "^1.31.0"
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "config.settings"

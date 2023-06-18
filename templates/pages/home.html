@@ -2,48 +2,61 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}Welcome Home{% endblock title %}
+{% block title %}
+  Welcome Home
+{% endblock title %}
 
 {% block content %}
-<div class="container">
-  <p>
-    <h2>Homepage</h2>
-    <!-- Begin carousel template -->
-    <div id="demo" class="carousel slide" data-ride="carousel">
+  <div class="container">
+    <p>
+      <h2>Homepage</h2>
+      <!-- Begin carousel template -->
+      <div id="demo" class="carousel slide" data-ride="carousel">
 
-    <!-- Indicators -->
-    <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'images/babel_lib1.jpg' %}"
+                 alt="Los Angeles"
+                 width="900"
+                 height="600">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/babel_lib2.jpg' %}"
+                 alt="Chicago"
+                 width="900"
+                 height="600">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/babel_lib3.jpg' %}"
+                 alt="New York"
+                 width="900"
+                 height="600">
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+
+      </div>
+      <!-- End carousel template -->
+    </p>
+    <ul class="container">
+      <li>
+        <a href="{% url 'sample' %}">Sample Page</a>
+      </li>
     </ul>
-
-    <!-- The slideshow -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img alt="Los Angeles" src="{% static 'images/babel_lib1.jpg' %}">
-      </div>
-      <div class="carousel-item">
-        <img alt="Chicago" src="{% static 'images/babel_lib2.jpg' %}">
-      </div>
-      <div class="carousel-item">
-        <img alt="New York" src="{% static 'images/babel_lib3.jpg' %}">
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </a>
-
   </div>
-  <!-- End carousel template -->
-  </p>
-  <ul class="container">
-      <li><a href="{% url 'sample' %}">Sample Page</a></li>
-  </ul>
-</div>
 {% endblock content %}
