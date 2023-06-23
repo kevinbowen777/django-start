@@ -118,7 +118,7 @@ coverage = { version = "^7.0.0", extras = ["toml"] }
 pytest-cov = "^4.0.0"
 pytest-django = "^4.5.2"
 django-pytest = "^0.2.0"
-ruff = "^0.0.272"
+ruff = "^0.0.275"
 sphinx-rtd-theme = "^1.2.0"
 djlint = "^1.31.0"
 
