@@ -1,13 +1,13 @@
 ## django-start - project package links
 
-The following  is a list jsomeof the major Python packages being used for this [repository](https://github.com/kevinbowen777/django-start/). For a complete list of packags explicitly added to the project, view the `pyproject.toml` file. For a list of _all_ of the package, see the `requirements.txt` file.
+The following  is a list of some of the major Python packages being used for this [repository](https://github.com/kevinbowen777/django-start/). For a complete list of packages explicitly added to the project, view the `pyproject.toml` file. For a list of _all_ of the package, see the `requirements.txt` file.
 
 ### django-allauth
 
-  - Documentation: [https://django-allauth.readthedocs.io/en/latest/](https://django-allauth.readthedocs.io/en/latest/)
-  - Tutorial:
-  - Repository: [https://github.com/pennersr/django-allauth](https://github.com/pennersr/django-allauth)
-  - PyPI package: [https://pypi.org/project/django-allauth/](https://pypi.org/project/django-allauth/)
+  - [Documentation](https://django-allauth.readthedocs.io/en/latest/)
+  - Tutorial
+  - [Repository](https://github.com/pennersr/django-allauth)
+  - [PyPI package](https://pypi.org/project/django-allauth/)
   - Notes:
 
 ### django-bootstrap4
@@ -126,34 +126,12 @@ Use of Poetry for dependency management
   - PyPI package: [https://pypi.org/project/nox/](https://pypi.org/project/nox/)
   - Notes:
 
-### flake8
-  - Documentation: [https://flake8.pycqa.org/en/latest/](https://flake8.pycqa.org/en/latest/)
-  - Tutorial:
-  - Repository: [https://github.com/pycqa/flake8](https://github.com/pycqa/flake8)
-  - PyPI package: [https://pypi.org/project/flake8/](https://pypi.org/project/flake8/)
+### ruff
+  - Documentation: [https://beta.ruff.rs/docs/](https://beta.ruff.rs/docs/)
+  - Tutorial: [https://beta.ruff.rs/docs/tutorial/](https://beta.ruff.rs/docs/tutorial/)
+  - Repository: [https://github.com/astral-sh/ruff](https://github.com/astral-sh/ruff)
+  - PyPI package: [https://pypi.org/project/ruff/](https://pypi.org/project/ruff/)
   - Notes:
-
-### flake8-bandit
-  - Documentation:
-  - Tutorial:
-  - Repository: [https://github.com/tylerwince/flake8-bandit](https://github.com/tylerwince/flake8-bandit)
-  - PyPI package: [https://pypi.org/project/flake8-bandit/](https://pypi.org/project/flake8-bandit/)
-  - Notes:
-
-### flake8-bugbear
-  - Documentation:
-  - Tutorial:
-  - Repository: [https://github.com/PyCQA/flake8-bugbear](https://github.com/PyCQA/flake8-bugbear)
-  - PyPI package: [https://pypi.org/project/flake8-bugbear/](https://pypi.org/project/flake8-bugbear/)
-  - Notes:
-
-### flake8-import-order
-  - Documentation:
-  - Tutorial:
-  - Repository: [https://github.com/PyCQA/flake8-import-order](https://github.com/PyCQA/flake8-import-order)
-  - PyPI package: [https://pypi.org/project/flake8-import-order/](https://pypi.org/project/flake8-import-order/)
-  - News/gossip: [https://github.com/PyCQA/flake8-import-order/issues/163](https://github.com/PyCQA/flake8-import-order/issues/163)
-  - Notes: currently in maintenance mode/not being developed
 
 ### safety
   - Documentation: [https://docs.pyup.io/docs/getting-started-with-safety-cli](https://docs.pyup.io/docs/getting-started-with-safety-cli)

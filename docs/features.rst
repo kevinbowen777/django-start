@@ -41,15 +41,14 @@ Features
  .. _pytest: https://pypi.org/project/pytest/
  .. _shell_plus: https://django-extensions.readthedocs.io/en/latest/shell_plus.html
  .. _IPython: https://pypi.org/project/ipython/
- .. _django_extensions: https://pypi.python.org/pypi/django-extensions/
+ .. _django-extensions: https://pypi.python.org/pypi/django-extensions/
  .. _pre-commit: https://github.com/pre-commit/pre-commit
  .. _nox: https://pypi.org/project/nox/
  .. _black: https://pypi.org/project/black/
  .. _Sphinx: https://pypi.org/project/Sphinx/
  .. _ruff:
  .. _safety: https://pypi.org/project/safety/
- .. _pytest: https://docs.pytest.org/en/latest/
  .. _pytest-cov: https://pypi.org/project/pytest-cov/
- .. _pytest_django: https://pypi.org/project/pytest-django/
+ .. _pytest-django: https://pypi.org/project/pytest-django/
 
 
