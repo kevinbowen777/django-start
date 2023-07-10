@@ -43,9 +43,9 @@ Development
    :hidden:
 
    features
-   package_index
-   installing
    configuring
+   installing
+   package_index
    create_new_users
    testing
 

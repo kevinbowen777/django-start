@@ -4,12 +4,11 @@
 
   [![Status](https://img.shields.io/badge/status-active-success.svg)]()
   [![GitHub Issues](https://img.shields.io/github/issues/kevinbowen777/django-start.svg)](https://github.com/kevinbowen777/django-start/issues)
-  [![Coverage Status](https://coveralls.io/repos/github/kevinbowen777/django-start/badge.svg?branch=master)](https://coveralls.io/github/kevinbowen777/django-start?branch=master)
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
 
-- django_start - A Django framework reference repository
+- django-start - A Django framework reference repository
 
  - A reference template of "best practices" & standards used in my collection
    of [Web Framework
@@ -23,6 +22,7 @@
  - [Testing](#testing)
  - [Application Demo](#application-demo)
  - [Screenshots](#screenshots)
+ - [Contributions](#contributions)
  - [Reporting Bugs](#reporting-bugs)
 
 ---
@@ -45,19 +45,19 @@
      - [Pre-commit](https://github.com/pre-commit/pre-commit)
      - [Nox](https://pypi.org/project/nox/) testing sessions for latest Python 3.9, 3.10, 3.11, and 3.12 
          - [black](https://pypi.org/project/black/) (`nox -s black`)
-         - [Sphinx](https://pypi.org/project/Sphinx/) documentaion generation (`nox -s lint`)
-         - linting
-             - [flake8](https://pypi.org/project/flake8/)
-             - [flake8-bandit](https://pypi.org/project/flake8-bandit/)
-             - [flake8-bugbear](https://pypi.org/project/flake8-bugbear/)
-             - [flake8-import-order](https://pypi.org/project/flake8-import-order/)
+         - [Sphinx](https://pypi.org/project/Sphinx/) documentation generation (`nox -s docs`)
+         - linting (`nox -s lint`)
+             - [ruff](https://pypi.org/project/ruff/)
+             - [djlint](https://pypi.org/project/djlint/)
          - [safety](https://pypi.org/project/safety/)(python package vulnerability testing) (`nox -s safety`)
          - [pytest](https://docs.pytest.org/en/latest/) sessions with
            [pytest-cov](https://pypi.org/project/pytest-cov/) &
            [pytest-django](https://pypi.org/project/pytest-django/) (`coverage run -m pytest`) 
   - `run` command menu
       
-    (adapted from Nick Janetakis' helpful [docker-django-example](https://github.com/nickjj/docker-django-example))
+    A collection of command shortcuts/aliases for frequently used Docker,
+    Django, and Nox commands.
+    (adapted from Nick Janetakis' helpful [docker-django-example](https://github.com/nickjj/docker-django-example)) repository.
       
     You can run `./run` to get a list of commands and each command has documentation in the run file itself. This comes in handy to run various Docker commands because sometimes these commands can be a bit long to type. 
       
@@ -128,6 +128,13 @@ A live application demonstration hosted at ~~Heroku~~
 
 ### Profile Page
 ![Profile Page](images/django-start_profile-page.png)
+
+---
+
+### Contributions
+
+At this time, this project is not accepting pull-requests. You are free to fork
+this repository and modify as you see fit.
 
 ---
 
