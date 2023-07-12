@@ -115,9 +115,10 @@ function nox:all {
   # cmd nox -s lint-3.11 "${@}"
   # cmd nox -s safety-3.11 "${@}"
   # cmd nox -s tests-3.11 "${@}"
-  nox -s lint-3.11 "${@}"
-  nox -s safety-3.11 "${@}"
-  nox -s tests-3.11 "${@}"
+  # nox -s lint-3.11 "${@}"
+  # nox -s safety-3.11 "${@}"
+  # nox -s tests-3.11 "${@}"
+  nox
 }
 
 function poe:old {
