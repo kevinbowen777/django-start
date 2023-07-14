@@ -1,3 +1,4 @@
+from django.core.mail import BadHeaderError
 from django.test import SimpleTestCase
 from django.urls import resolve, reverse
 
@@ -83,6 +84,22 @@ class ContactViewTests(SimpleTestCase):
             view.func.__name__,
             ContactView.__name__,
         )
+
+    def test_header_injection(self):
+        error_occured = True
+        try:
+            self.client.post(
+                "/contact/",
+                data={
+                    "from_email": "joe@example.com",
+                    "subject": "Subject\nInjectionTest",
+                    "message": "This is a test of a BadHeaderError",
+                },
+            )
+            error_occured = False
+        except BadHeaderError:
+            error_occured = True
+        self.assertFalse(error_occured)
 
 
 class SampleViewTests(SimpleTestCase):
