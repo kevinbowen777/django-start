@@ -16,7 +16,6 @@ DEBUG = env.bool("DJANGO_DEBUG", default=False)
 
 ALLOWED_HOSTS = ["django-start.cool", "localhost", "127.0.0.1"]
 
-
 # Application definition
 
 INSTALLED_APPS = [

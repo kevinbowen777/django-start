@@ -2,6 +2,7 @@ from django.core.mail import BadHeaderError
 from django.test import SimpleTestCase
 from django.urls import resolve, reverse
 
+from ..forms import ContactForm
 from ..views import (
     AboutPageView,
     ContactView,
@@ -100,6 +101,10 @@ class ContactViewTests(SimpleTestCase):
         except BadHeaderError:
             error_occured = True
         self.assertFalse(error_occured)
+
+    def test_contact_page_form_is_valid(self):
+        form = ContactForm(data=self.form_data)
+        self.assertTrue(form.is_valid())
 
 
 class SampleViewTests(SimpleTestCase):
