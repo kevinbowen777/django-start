@@ -17,16 +17,16 @@ class HomePageTests(SimpleTestCase):
         url = reverse("home")
         self.response = self.client.get(url)
 
-    def test_home_page_status_code(self):
+    def test_homepage_status_code(self):
         self.assertEqual(self.response.status_code, 200)
 
-    def test_home_page_template(self):
+    def test_homepage_template(self):
         self.assertTemplateUsed(self.response, "pages/home.html")
 
-    def test_home_page_contains_correct_html(self):
+    def test_homepage_contains_correct_html(self):
         self.assertContains(self.response, "Homepage")
 
-    def test_home_page_does_not_contain_incorrect_html(self):
+    def test_homepage_does_not_contain_incorrect_html(self):
         self.assertNotContains(self.response, "Not the Homepage")
 
     def test_homepage_url_resolves_homepageview(self):
@@ -49,12 +49,12 @@ class AboutPageTests(SimpleTestCase):
         self.assertTemplateUsed(self.response, "pages/about.html")
 
     def test_about_page_contains_correct_html(self):
-        self.assertContains(self.response, "About page")
+        self.assertContains(self.response, "About Page")
 
     def test_about_page_does_not_contain_incorrect_html(self):
         self.assertNotContains(self.response, "Not the About page")
 
-    def test_aboutpage_url_resolves_aboutpageview(self):
+    def test_about_page_url_resolves_about_pageview(self):
         view = resolve("/about/")
         self.assertEqual(
             view.func.__name__,
@@ -66,6 +66,11 @@ class ContactViewTests(SimpleTestCase):
     def setUp(self):
         url = reverse("contact")
         self.response = self.client.get(url)
+        self.form_data = {
+            "from_email": "joe@example.com",
+            "subject": "Test Email",
+            "message": "This is a test email",
+        }
 
     def test_contact_page_status_code(self):
         self.assertEqual(self.response.status_code, 200)
@@ -124,7 +129,7 @@ class SampleViewTests(SimpleTestCase):
     def test_sample_page_does_not_contain_incorrect_html(self):
         self.assertNotContains(self.response, "Please Go Away")
 
-    def test_sample_page_url_resolves_sample_pageview(self):
+    def test_sample_page_url_resolves_sample_page_view(self):
         view = resolve("/sample/")
         self.assertEqual(
             view.func.__name__,
@@ -152,7 +157,7 @@ class SuccessViewTests(SimpleTestCase):
     def test_success_page_does_not_contain_incorrect_html(self):
         self.assertNotContains(self.response, "Please Go Away")
 
-    def test_success_page_url_resolves_contactpageview(self):
+    def test_success_page_url_resolves_success_page_view(self):
         view = resolve("/success/")
         self.assertEqual(
             view.func.__name__,
