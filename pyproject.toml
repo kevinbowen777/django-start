@@ -49,6 +49,7 @@ Pillow = "^10.0"
 django-countries = "^7.3.2"
 gunicorn = "~=20.1.0"
 crispy-bootstrap4 = "^2022.1"
+django-types = "^0.17.0"
 
 [tool.poetry.group.dev.dependencies]
 django-debug-toolbar = "^4.0.0"
@@ -124,6 +125,37 @@ exclude="htmlcov"
 files=["templates/"]
 indent=2
 preserve_blank_lines=true
+
+[tool.pyright]
+include = ["config", "accounts", "pages",]
+exclude = ["**/tests",
+    "**/__pycache__",
+    "**/migrations",
+]
+ignore = ["docs/_build"]
+defineConstant = { DEBUG = true }
+stubPath = ""
+venv = "django-start-l9hOYV8r-py3.11"
+venvPath = "../../../venvs"
+
+typeCheckingMode = "basic"
+useLibraryCodeForTypes = true
+strictListInference = true
+strictDictionaryInference = true
+reportConstantRedefinition = "error"
+reportOptionalCall = "error"
+reportOptionalContextManager = "error"
+reportOptionalIterable = "error"
+reportOptionalMemberAccess = "error"
+reportMissingImports = true
+reportOptionalOperand = "error"
+reportOptionalSubscript = "error"
+reportUnnecessaryCast = "warning"
+reportUnnecessaryComparison = "error"
+reportUnnecessaryTypeIgnoreComment = "warning"
+
+pythonVersion = "3.11"
+pythonPlatform = "Linux"
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "config.settings"
