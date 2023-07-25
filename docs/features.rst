@@ -16,7 +16,7 @@ Features
    * coverage_ reports are available in the `htmlcov` directory
    * django-debug-toolbar_ available. See notes in `config/settings.py` for enabling.
    * Examples of using factories_ & pytest_ fixtures in account app testing
-   * shell_plus_ with IPython_ via django-extensions_ package
+   * shell_plus_ with IPython_ via the django-extensions_ package
    * pre-commit_
    * nox_ testing sessions for latest Python 3.9, 3.10, and 3.11, 3.12
 
@@ -27,7 +27,13 @@ Features
        * ruff_
      * safety_(python package vulnerability testing>_
      * pytest_ sessions with pytest-cov_ & pytest-django_
- * `run` command menu
+ * ``run`` command menu
+
+The ``run`` file was adapted from Nick Janetakis\' helpful docker-django-example_ repository.
+
+You can run ``./run`` to get a list of commands and each command has documentation within the run file itself. This comes in handy to run various Docker commands because sometimes these commands can be a bit long to type.
+
+If you get tired of typing ``./run`` you can always create a shell alias with ``alias run=./run`` in your ``~/.bash_aliases`` or equivalent file. Then you'll be able to run ``run`` instead of ``./run``.
 
  .. _django-allauth: https://pypi.org/project/django-allauth/
  .. _Bootstrap4: https://pypi.org/project/django-bootstrap4/
@@ -46,9 +52,10 @@ Features
  .. _nox: https://pypi.org/project/nox/
  .. _black: https://pypi.org/project/black/
  .. _Sphinx: https://pypi.org/project/Sphinx/
- .. _ruff:
+ .. _ruff: https://beta.ruff.rs/docs/ 
  .. _safety: https://pypi.org/project/safety/
  .. _pytest-cov: https://pypi.org/project/pytest-cov/
  .. _pytest-django: https://pypi.org/project/pytest-django/
+ .. _docker-django-example: https://github.com/nickjj/docker-django-example/
 
 
