@@ -16,8 +16,8 @@ Using this Project
     Project configuration and customization options.
 
 :doc:`installing`
-    How to install the project directly on your local machine as well as in a
-    Docker container.
+    How to install the project directly on your local machine, or in a Docker
+    container.
 
 Development
 -----------
@@ -30,7 +30,7 @@ Development
     feature requests.
 
 :doc:`license`
-    Terms and conditions for use of this project
+    Terms and conditions for use of this project.
 
 :doc:`testing`
     Instructions for running tests against the project
@@ -43,13 +43,20 @@ Development
    :hidden:
 
    features
-   configuring
    installing
+   configuring
    package_index
-   create_new_users
-   testing
 
 .. toctree::
+   :caption: Testing
+   :maxdepth: 1
+   :hidden:
+
+   testing
+   create_new_users
+
+.. toctree::
+   :caption: Reference
    :maxdepth: 1
    :hidden:
 

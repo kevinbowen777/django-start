@@ -4,13 +4,15 @@ Installation
 How to install and use the project
 ----------------------------------
 
-To install the django-start project,
-run this command in your terminal:
+To install the django-start project, run this command in your terminal:
 
 .. code-block:: console
 
    $ git clone https://github.com/kevinbowen777/django-start.git
    $ cd django-start
+
+After the repository has been successfully cloned, see the :doc:`configuring` section for
+instructions on setting up your environment and starting the local server.
 
 Local installation
 ------------------
@@ -43,3 +45,4 @@ Pre-commit installation
 .. code-block:: console
 
    $ pre-commit install
+   $ pre-commit autoupdate
