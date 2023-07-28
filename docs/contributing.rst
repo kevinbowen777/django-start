@@ -8,30 +8,6 @@ this repository and modify as you see fit.
 Reporting Bugs
 ==============
 
-Visit the django-start issues_ on GitHub a bug, error, or typo.
+Visit the django-start issues_ page on GitHub to report a bug, error, or typo.
 
 .. _issues: https://github.com/kevinbowen777/django-start/issues
-
-Modifying the project
----------------------
-
-Set up your environment
-=======================
-
-Making changes
-==============
-
-Dockerized development
-======================
-
-Testing
-=======
-
-Translations
-============
-
-Versioning
-==========
-
-Releasing the project
-=====================

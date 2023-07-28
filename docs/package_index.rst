@@ -1,7 +1,7 @@
 Package Index
 =============
 
-The following is a list some of the major Python packages being used for
+The following is a list of the primary Python packages being used for
 the django-start_ application.
 For a complete list of packages explicitly added to the project, view the
 pyproject.toml_ file. For a list of *all* of the package, see the requirements.txt_ file.
@@ -218,6 +218,6 @@ friendly
 
 TODO: Add link to local coverage reports
 
- .. _django-blog: https://github.com/kevinbowen777/django-blog/
+ .. _django-start: https://github.com/kevinbowen777/django-start/
  .. _pyproject.toml: https://github.com/kevinbowen777/django-start/blob/master/pyproject.toml  
  .. _requirements.txt: https://github.com/kevinbowen777/django-start/blob/master/requirements.txt

@@ -1,13 +1,13 @@
 Django Start
 ============
 
-The django-start_ project was created to provide a template repository for the collection of `Web Framework Projects`_ assembled by Kevin Bowen. This repository runs a Django 4.2.x application demonstrating some of the basic functionality also available applications listed in the Web Frameworks repository.
+The purpose of the django-start_ project is to provide a template repository for the collection of `Web Framework Projects`_ . This repository runs a Django 4.2.x application demonstrating some of the basic functionality also available in the applications listed in the Web Frameworks repository.
 
 .. _django-start: https://github.com/kevinbowen777/django-start
 .. _Web Framework Projects: https://github.com/kevinbowen777/web-project-index
 
-Using this Project
-------------------
+Getting Started
+---------------
 
 :doc:`features`
     Outline of the project's basic functionality.
@@ -19,11 +19,11 @@ Using this Project
     How to install the project directly on your local machine, or in a Docker
     container.
 
-Development
------------
+Project Information
+-------------------
 
 :doc:`changelog`
-    The project development changelog
+    The project development changelog.
 
 :doc:`contributing`
     How to contribute to improving the project, reporting bugs, and submitting
@@ -33,7 +33,7 @@ Development
     Terms and conditions for use of this project.
 
 :doc:`testing`
-    Instructions for running tests against the project
+    Instructions for running tests against the project.
 
 .. Hidden TOCs
 
