@@ -10,12 +10,13 @@ Running tests against this project can be done in several ways:
 A number of the tests can be executed via the ``run`` file. See the contents of
 this file for how these tests can be run.
 
-If you would like to create "test" or "dummy" users and posts, see the :doc:`create_new_users` and the :doc:`create_new_posts` sections for examples.
+If you would like to create "test" or "dummy" users, see the :doc:`create_new_users` sections for examples.
 
 Running the Tests
 -----------------
 
 Using ``coverage``
+^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 
@@ -24,6 +25,7 @@ Using ``coverage``
    $ coverage html (this will generate html reports available in the ``htmlcov`` directory)
 
 Using the ``nox`` test suite
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The following sessions are available to run via ``nox``:
 
@@ -51,7 +53,7 @@ The following sessions are available to run via ``nox``:
       
     sessions marked with * are selected, sessions marked with - are skipped.
 
-The ``lint``, ``safety``, and ``tests`` are enabled to be run with ``nox -s tests``. Running ``black`` and generating documentation need to be run explicitly.
+The ``lint``, ``safety``, and ``tests`` are enabled to be run with ``nox -s tests``. Running ``black`` and generating documentation, (e.g. ``nox -s docs-3.11``) need to be run explicitly.
 
 Below are some example of ``nox`` commands run locally:
 
