@@ -5,6 +5,9 @@ Create new users
 Instructions
 ------------
 
+This page used to set up a small collection of users in the database to use for
+testing purposes. Feel free to add, remove, or change the list to suit your
+needs/preferences.
 In the application directory, run the following command:
 
 .. code-block:: console
@@ -12,7 +15,7 @@ In the application directory, run the following command:
     $ python manage.py shell_plus
 
 Sample user list
-----------------
+^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 

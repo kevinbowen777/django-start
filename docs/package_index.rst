@@ -76,7 +76,7 @@ pyenv
 -----
 
   * Documentation: https://github.com/pyenv/pyenv
-  * Tutorial:: https://realpython.com/intro-to-pyenv/
+  * Tutorial: https://realpython.com/intro-to-pyenv/
   * Repository: https://github.com/pyenv/pyenv
   * PyPI package: https://pypi.org/project/pyenv/ (placeholder only)
   * Notes:
@@ -130,7 +130,7 @@ pytest-django
 -------------
 
   * Documentation: https://pytest-django.readthedocs.io/
-  * Tutorial:: https://pytest-django.readthedocs.io/en/latest/tutorial.html
+  * Tutorial: https://pytest-django.readthedocs.io/en/latest/tutorial.html
   * Repository: https://github.com/pytest-dev/pytest-django
   * PyPI package: https://pypi.org/project/pytest-django/
   * Notes:
@@ -166,7 +166,7 @@ Sphinx
 ------
 
   * Documentation: https://www.sphinx-doc.org/en/master/index.html
-  * Tutorial:: https://www.sphinx-doc.org/en/master/tutorial/index.html
+  * Tutorial: https://www.sphinx-doc.org/en/master/tutorial/index.html
   * Repository: https://github.com/sphinx-doc/sphinx
   * PyPI package: https://pypi.org/project/Sphinx/
   * Notes:
@@ -175,7 +175,7 @@ nox
 ---
 
   * Documentation: https://nox.thea.codes/en/stable/index.html
-  * Tutorial:: https://nox.thea.codes/en/stable/tutorial.html
+  * Tutorial: https://nox.thea.codes/en/stable/tutorial.html
   * Repository: https://github.com/wntrblm/nox
   * PyPI package: https://pypi.org/project/nox/
   * Notes:

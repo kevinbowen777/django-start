@@ -13,19 +13,19 @@ Features
    * For links to additional packages used in this repository, see the :doc:`Package Index <package_index>`
  * Dev/testing
 
-   * coverage_ reports are available in the `htmlcov` directory
+   * coverage_ reports are available in the `htmlcov` directory.
    * django-debug-toolbar_ available. See notes in `config/settings.py` for enabling.
-   * Examples of using factories_ & pytest_ fixtures in account app testing
-   * shell_plus_ with IPython_ via the django-extensions_ package
+   * Examples of using factories_ & pytest_ fixtures in account app testing.
+   * shell_plus_ with IPython_ via the django-extensions_ package.
    * pre-commit_
-   * nox_ testing sessions for latest Python 3.9, 3.10, and 3.11, 3.12
+   * nox_ testing sessions for latest Python 3.9, 3.10, and 3.11, 3.12.
 
      * black_
      * Sphinx_ documentation generation
      * linting
 
        * ruff_
-     * safety_(python package vulnerability testing>_
+     * safety_ (python package vulnerability testing)
      * pytest_ sessions with pytest-cov_ & pytest-django_
  * ``run`` command menu
 
@@ -57,5 +57,3 @@ If you get tired of typing ``./run`` you can always create a shell alias with ``
  .. _pytest-cov: https://pypi.org/project/pytest-cov/
  .. _pytest-django: https://pypi.org/project/pytest-django/
  .. _docker-django-example: https://github.com/nickjj/docker-django-example/
-
-
