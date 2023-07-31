@@ -6,8 +6,11 @@ the django-start_ application.
 For a complete list of packages explicitly added to the project, view the
 pyproject.toml_ file. For a list of *all* of the package, see the requirements.txt_ file.
 
+Production Packages
+-------------------
+
 django-allauth
---------------
+^^^^^^^^^^^^^^
 
   * Documentation: https://django-allauth.readthedocs.io/en/latest/
   * Tutorial:
@@ -16,7 +19,7 @@ django-allauth
   * Notes:
 
 django-bootstrap4
------------------
+^^^^^^^^^^^^^^^^^
 
   * Documentation: https://django-bootstrap4.readthedocs.io/
   * Tutorial:
@@ -25,8 +28,17 @@ django-bootstrap4
   * Notes: This package is not currently being used. Bootstrap is loaded from
     templates/base.html
 
+django-countries
+^^^^^^^^^^^^^^^^
+
+  * Documentation:
+  * Tutorial:
+  * Repository: https://github.com/SmileyChris/django-countries
+  * PyPI package: https://pypi.python.org/pypi/django-countries
+  * Notes: Used in user profiles
+
 django-crispy-forms
--------------------
+^^^^^^^^^^^^^^^^^^^
 
   * Documentation: https://django-crispy-forms.readthedocs.io/en/latest/
   * Tutorial:
@@ -35,7 +47,7 @@ django-crispy-forms
   * Notes:
 
 django-extensions
------------------
+^^^^^^^^^^^^^^^^^
 
   * Documentation: https://django-extensions.readthedocs.io/
   * Tutorial:
@@ -43,17 +55,8 @@ django-extensions
   * PyPI package: https://pypi.python.org/pypi/django-extensions/
   * Notes:
 
-django-countries
-----------------
-
-  * Documentation:
-  * Tutorial:
-  * Repository: https://github.com/SmileyChris/django-countries
-  * PyPI package: https://pypi.python.org/pypi/django-countries
-  * Notes: Used in user profiles
-
 environs - environs[django]
----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
   * Documentation:
   * Tutorial:
@@ -61,28 +64,38 @@ environs - environs[django]
   * PyPI package: https://pypi.org/project/environs/
   * Notes: Allows for local management of environment variables
 
-Use of Poetry for dependency management
+Development Packages
+--------------------
 
 Poetry
-------
+^^^^^^
 
   * Documentation: https://python-poetry.org/
   * Tutorial:
   * Repository: https://github.com/python-poetry/poetry
   * PyPI package:
-  * Notes:
+  * Notes: Installed system-wide for project dependency management.
 
 pyenv
------
+^^^^^
 
   * Documentation: https://github.com/pyenv/pyenv
   * Tutorial: https://realpython.com/intro-to-pyenv/
   * Repository: https://github.com/pyenv/pyenv
   * PyPI package: https://pypi.org/project/pyenv/ (placeholder only)
+  * Notes: Installed system-wide for multiple Python versions.
+
+black
+^^^^^
+
+  * Documentation: https://black.readthedocs.io/en/stable
+  * Tutorial:
+  * Repository: https://github.com/psf/black
+  * PyPI package: https://pypi.org/project/black/
   * Notes:
 
 coverage
---------
+^^^^^^^^
 
   * Documentation: https://coverage.readthedocs.io/
   * Tutorial:
@@ -91,7 +104,7 @@ coverage
   * Notes:
 
 djlint
-------
+^^^^^^
 
   * Documentation: https://www.djlint.com/
   * Tutorial:
@@ -100,16 +113,43 @@ djlint
   * Notes:
 
 django-debug-toolbar
---------------------
+^^^^^^^^^^^^^^^^^^^^
 
   * Documentation: https://django-debug-toolbar.readthedocs.io/
   * Tutorial:
   * Repository: https://github.com/jazzband/django-debug-toolbar
   * PyPI package: https://pypi.org/project/django-debug-toolbar/
-  * Notes: See config/setting.py for instructions to enable
+  * Notes: See config/settings.py for instructions to enable
+
+django-types
+^^^^^^^^^^^^
+
+  * Documentation: https://github.com/sbdchd/django-types#readme
+  * Tutorial:
+  * Repository: https://github.com/sbdchd/django-types
+  * PyPI package: https://pypi.org/project/django-types
+  * Notes: Type stubs for Django
+
+factory-boy
+^^^^^^^^^^^
+
+  * Documentation: https://factoryboy.readthedocs.io/
+  * Tutorial:
+  * Repository: https://github.com/FactoryBoy/factory_boy
+  * PyPI package: https://pypi.org/project/factory-boy/
+  * Notes:
+
+nox
+^^^
+
+  * Documentation: https://nox.thea.codes/en/stable/index.html
+  * Tutorial: https://nox.thea.codes/en/stable/tutorial.html
+  * Repository: https://github.com/wntrblm/nox
+  * PyPI package: https://pypi.org/project/nox/
+  * Notes:
 
 pytest
-------
+^^^^^^
 
   * Documentation: https://docs.pytest.org/en/latest/
   * Tutorial:
@@ -118,7 +158,7 @@ pytest
   * Notes:
 
 pytest-cov
-----------
+^^^^^^^^^^
 
   * Documentation: https://pytest-cov.readthedocs.io/
   * Tutorial:
@@ -127,7 +167,7 @@ pytest-cov
   * Notes:
 
 pytest-django
--------------
+^^^^^^^^^^^^^
 
   * Documentation: https://pytest-django.readthedocs.io/
   * Tutorial: https://pytest-django.readthedocs.io/en/latest/tutorial.html
@@ -135,26 +175,8 @@ pytest-django
   * PyPI package: https://pypi.org/project/pytest-django/
   * Notes:
 
-factory-boy
------------
-
-  * Documentation: https://factoryboy.readthedocs.io/
-  * Tutorial:
-  * Repository: https://github.com/FactoryBoy/factory_boy
-  * PyPI package: https://pypi.org/project/factory-boy/
-  * Notes:
-
-black
------
-
-  * Documentation: https://black.readthedocs.io/en/stable
-  * Tutorial:
-  * Repository: https://github.com/psf/black
-  * PyPI package: https://pypi.org/project/black/
-  * Notes:
-
 ruff
-----
+^^^^
 
   * Documentation: https://beta.ruff.rs/docs/
   * Tutorial:: https://beta.ruff.rs/docs/tutorial/
@@ -163,7 +185,7 @@ ruff
   * Notes:
 
 Sphinx
-------
+^^^^^^
 
   * Documentation: https://www.sphinx-doc.org/en/master/index.html
   * Tutorial: https://www.sphinx-doc.org/en/master/tutorial/index.html
@@ -171,17 +193,8 @@ Sphinx
   * PyPI package: https://pypi.org/project/Sphinx/
   * Notes:
 
-nox
----
-
-  * Documentation: https://nox.thea.codes/en/stable/index.html
-  * Tutorial: https://nox.thea.codes/en/stable/tutorial.html
-  * Repository: https://github.com/wntrblm/nox
-  * PyPI package: https://pypi.org/project/nox/
-  * Notes:
-
 safety
-------
+^^^^^^
 
   * Documentation: https://docs.pyup.io/docs/getting-started-with-safety-cli
   * Tutorial:
@@ -190,31 +203,31 @@ safety
   * Notes:
 
 ipython
--------
+^^^^^^^
 
   * Documentation: https://ipython.readthedocs.io/
   * Tutorial:
   * Repository: https://github.com/ipython/ipython
   * PyPI package: https://pypi.org/project/ipython/
-  * Notes:
+  * Notes: for use with django-extensions shell_plus
 
 rich
-----
+^^^^
 
   * Documentation: https://rich.readthedocs.io/en/latest/
   * Tutorial:
   * Repository: https://github.com/willmcgugan/rich
   * PyPI package: https://pypi.org/project/rich/
-  * Notes: for local dev shell_plus
+  * Notes: for use with django-extensions shell_plus
 
 friendly
---------
+^^^^^^^^
 
   * Documentation: https://friendly-traceback.github.io/docs/index.html
   * Tutorial:
   * Repository: https://github.com/friendly-traceback/friendly
   * PyPI package: https://pypi.org/project/friendly/
-  * Notes: for local dev shell_plus
+  * Notes: for use with django-extensions shell_plus
 
 TODO: Add link to local coverage reports
 
