@@ -29,7 +29,6 @@ PASSWORD_HASHERS = ["django.contrib.auth.hashers.MD5PasswordHasher"]
 
 # TEMPLATES
 # ------------------------------------------------------------------------------
-# TODO: Investigate why tests fail when section enabled - 20220621
 # APP_DIRS needs to be set to 'False' in config/settings.py to
 # use this section - 20230729
 TEMPLATES[-1]["OPTIONS"]["loaders"] = [  # type: ignore # noqa: F405
@@ -41,7 +40,7 @@ TEMPLATES[-1]["OPTIONS"]["loaders"] = [  # type: ignore # noqa: F405
         ],
     )
 ]
-# The following is being used in updated django-cookiecutter
+# The following is being used in updated django-cookiecutter - 20230801
 # TEMPLATES[0]["OPTIONS"]["debug"] = True  # noqa: F405
 
 # EMAIL
