@@ -119,6 +119,11 @@ template_extensions = "html, txt, tex, email"
 
 [tool.coverage.report]
 show_missing = true
+precision = 2
+
+[tool.coverage.html]
+show_contexts = true
+title = "django-start coverage report"
 
 [tool.djlint]
 exclude="htmlcov"
