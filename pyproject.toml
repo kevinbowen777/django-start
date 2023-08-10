@@ -164,6 +164,10 @@ pythonPlatform = "Linux"
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "config.settings"
+# After changes to the db model, run the tests without --reuse-db flag
+# Otherwise, tests will generate an error:...exceptions.ImproperlyConfigured...
+# addopts = "--ds=config.test -p no:warnings"
+addopts = "--ds=config.test --reuse-db -p no:warnings"
 python_files = ["tests.py", "test_*.py", "*_tests.py"]
 filterwarnings = [
     "ignore::django.utils.deprecation.RemovedInDjango50Warning",
