@@ -167,6 +167,10 @@ reportUnnecessaryTypeIgnoreComment = "warning"
 pythonVersion = "3.11"
 pythonPlatform = "Linux"
 
+executionEnvironments = [
+  { root = ".", pythonVersion = "3.11", extraPaths = [ "accounts", "config", "pages" ] },
+]
+
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "config.test"
 # After changes to the db model, run the tests without --reuse-db flag
