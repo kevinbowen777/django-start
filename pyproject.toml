@@ -64,11 +64,9 @@ django-coverage-plugin = "^3.0.0"
 nox = "2023.4.22"
 safety = "2.4.0b1"
 factory-boy = "^3.2.0"
-Sphinx = "^7.0"
 coverage = { version = "^7.0.0", extras = ["toml"] }
 pytest-cov = "^4.0.0"
 pytest-django = "^4.5.2"
-django-pytest = "^0.2.0"
 ruff = ">= 0.0.275, < 0.0.299"
 djlint = "^1.31.0"
 werkzeug = "^2.3.6"
@@ -114,7 +112,7 @@ plugins = [
 ]
 
 [tool.coverage.django_coverage_plugin]
-template_extensions = "html, txt, tex, email"
+template_extensions = "html"
 
 [tool.coverage.report]
 show_missing = true
@@ -128,6 +126,7 @@ title = "django-start coverage report"
 exclude="htmlcov"
 files=["templates/"]
 indent=2
+max_line_length=120
 preserve_blank_lines=true
 
 [tool.pyright]
@@ -176,7 +175,7 @@ DJANGO_SETTINGS_MODULE = "config.test"
 # Otherwise, tests will generate an error:...exceptions.ImproperlyConfigured...
 # addopts = "-p no:warnings"
 addopts = "--reuse-db -p no:warnings"
-python_files = ["tests.py", "test_*.py", "*_tests.py"]
+python_files = ["test_*.py"]
 filterwarnings = [
     "ignore::django.utils.deprecation.RemovedInDjango50Warning",
     "ignore::django.utils.deprecation.RemovedInDjango51Warning",
