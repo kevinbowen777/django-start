@@ -64,7 +64,8 @@ function cov:report {
 function cov:html {
   # Output coverage report to ./htmlcov
   # cmd coverage html "${@}"
-  cmd coverage html "${@}"
+  # cmd coverage html "${@}"
+  coverage html "${@}"
 }
 
 function down {
