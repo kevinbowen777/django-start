@@ -22,7 +22,7 @@
           integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
           crossorigin="anonymous">
     <!-- CSS -->
-    <link rel='stylesheet' href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
   </head>
   <body>
     <header>
@@ -32,7 +32,7 @@
         {% if user.is_authenticated %}
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="btn btn-outline-light text-light" href="{% url 'home' %}">New Blog Post</a>
+              <a class="btn btn-outline-light text-light" href="{% url 'home' %}">New Placeholder</a>
             </li>
           </ul>
         {% endif %}
@@ -49,11 +49,13 @@
           {% if user.is_authenticated %}
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="btn btn-outline-light" dropdown-toggle" href="#"
-                  id="navbarDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  {{ user.username }}
-                </a>
+                <a class="btn btn-outline-light dropdown-toggle"
+                   href="#"
+                   id="navbarDropdown"
+                   role="button"
+                   data-toggle="dropdown"
+                   aria-haspopup="true"
+                   aria-expanded="false">{{ user.username }}</a>
                 <div class="dropdown-menu dropdown-menu-lg-right"
                      aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="{% url 'user_detail' user.username %}">My Profile</a>
