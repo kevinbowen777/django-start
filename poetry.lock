@@ -589,13 +589,13 @@ files = [
 
 [[package]]
 name = "django"
-version = "4.2.5"
+version = "4.2.6"
 description = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "Django-4.2.5-py3-none-any.whl", hash = "sha256:b6b2b5cae821077f137dc4dade696a1c2aa292f892eca28fa8d7bfdf2608ddd4"},
-    {file = "Django-4.2.5.tar.gz", hash = "sha256:5e5c1c9548ffb7796b4a8a4782e9a2e5a3df3615259fc1bfd3ebc73b646146c1"},
+    {file = "Django-4.2.6-py3-none-any.whl", hash = "sha256:a64d2487cdb00ad7461434320ccc38e60af9c404773a2f95ab0093b4453a3215"},
+    {file = "Django-4.2.6.tar.gz", hash = "sha256:08f41f468b63335aea0d904c5729e0250300f6a1907bf293a65499496cdbc68f"},
 ]
 
 [package.dependencies]
@@ -2047,17 +2047,17 @@ jupyter = ["ipywidgets (>=7.5.1,<9)"]
 
 [[package]]
 name = "ruamel-yaml"
-version = "0.17.33"
+version = "0.17.35"
 description = "ruamel.yaml is a YAML parser/emitter that supports roundtrip preservation of comments, seq/map flow style, and map key order"
 optional = false
 python-versions = ">=3"
 files = [
-    {file = "ruamel.yaml-0.17.33-py3-none-any.whl", hash = "sha256:2080c7a02b8a30fb3c06727cdf3e254a64055eedf3aa2d17c2b669639c04971b"},
-    {file = "ruamel.yaml-0.17.33.tar.gz", hash = "sha256:5c56aa0bff2afceaa93bffbfc78b450b7dc1e01d5edb80b3a570695286ae62b1"},
+    {file = "ruamel.yaml-0.17.35-py3-none-any.whl", hash = "sha256:b105e3e6fc15b41fdb201ba1b95162ae566a4ef792b9f884c46b4ccc5513a87a"},
+    {file = "ruamel.yaml-0.17.35.tar.gz", hash = "sha256:801046a9caacb1b43acc118969b49b96b65e8847f29029563b29ac61d02db61b"},
 ]
 
 [package.dependencies]
-"ruamel.yaml.clib" = {version = ">=0.2.7", markers = "platform_python_implementation == \"CPython\" and python_version < \"3.12\""}
+"ruamel.yaml.clib" = {version = ">=0.2.7", markers = "platform_python_implementation == \"CPython\" and python_version < \"3.13\""}
 
 [package.extras]
 docs = ["ryd"]
@@ -2557,4 +2557,4 @@ brotli = ["Brotli"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "242b99f8d8f5a48632977a2730e33d84446059e88f83ec2291b17fd9e8e5f70f"
+content-hash = "38d26ea74e8ce643f59e1aef854c47d53b0ca8569766d7eb5cec9e63ee8752a0"
