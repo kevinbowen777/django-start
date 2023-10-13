@@ -59,7 +59,6 @@ def docs(session):
 
 
 @nox.session(python=PYTHON_VERSIONS)
-# @nox.session(python=["3.12", "3.11", "3.10", "3.9"])
 def lint(session):
     """Lint using ruff."""
     args = session.posargs or locations
@@ -72,7 +71,7 @@ def lint(session):
 
 @nox.session(python=PYTHON_VERSIONS)
 def pyright(session):
-    """Run black code formatter."""
+    """Run pyright type checker."""
     session.run("pyright", external=True)
 
 
