@@ -715,14 +715,17 @@ Django = ">=3.2"
 
 [[package]]
 name = "django-types"
-version = "0.18.0"
+version = "0.19.1"
 description = "Type stubs for Django"
 optional = false
 python-versions = ">=3.7,<4.0"
 files = [
-    {file = "django-types-0.18.0.tar.gz", hash = "sha256:b8e2334c810864d7abf11cd3cdb1da3b2015b67e7f1270007e33777ff1bd8654"},
-    {file = "django_types-0.18.0-py3-none-any.whl", hash = "sha256:7c28fefecfddec1fae7a3b7fec74a12862cf45b76fc891b220fbd42ccbc44808"},
+    {file = "django_types-0.19.1-py3-none-any.whl", hash = "sha256:b3f529de17f6374d41ca67232aa01330c531bbbaa3ac4097896f31ac33c96c30"},
+    {file = "django_types-0.19.1.tar.gz", hash = "sha256:5ae7988612cf6fbc357b018bbc3b3a878b65e04275cc46e0d35d66a708daff12"},
 ]
+
+[package.dependencies]
+types-psycopg2 = ">=2.9.21.13"
 
 [[package]]
 name = "djlint"
@@ -862,13 +865,13 @@ doc = ["Sphinx", "sphinx-rtd-theme", "sphinxcontrib-spelling"]
 
 [[package]]
 name = "faker"
-version = "19.10.0"
+version = "19.11.0"
 description = "Faker is a Python package that generates fake data for you."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "Faker-19.10.0-py3-none-any.whl", hash = "sha256:f321e657ed61616fbfe14dbb9ccc6b2e8282652bbcfcb503c1bd0231ff834df6"},
-    {file = "Faker-19.10.0.tar.gz", hash = "sha256:63da90512d0cb3acdb71bd833bb3071cb8a196020d08b8567a01d232954f1820"},
+    {file = "Faker-19.11.0-py3-none-any.whl", hash = "sha256:e28090068293c5a83e7f4d636417d45fae1031ca8a8136cc2415549ebc2111e2"},
+    {file = "Faker-19.11.0.tar.gz", hash = "sha256:a62a3fd3bfa3122d4f57dfa26a1cc37d76751a76c8ddd63cf9d24078c57913a4"},
 ]
 
 [package.dependencies]
@@ -2450,6 +2453,17 @@ docs = ["myst-parser", "pydata-sphinx-theme", "sphinx"]
 test = ["argcomplete (>=3.0.3)", "mypy (>=1.5.1)", "pre-commit", "pytest (>=7.0,<7.5)", "pytest-mock", "pytest-mypy-testing"]
 
 [[package]]
+name = "types-psycopg2"
+version = "2.9.21.14"
+description = "Typing stubs for psycopg2"
+optional = false
+python-versions = "*"
+files = [
+    {file = "types-psycopg2-2.9.21.14.tar.gz", hash = "sha256:bf73a0ac4da4e278c89bf1b01fc596d5a5ac7a356cfe6ac0249f47b9e259f868"},
+    {file = "types_psycopg2-2.9.21.14-py3-none-any.whl", hash = "sha256:cd9c5350631f3bc6184ec8d48f2ed31d4ea660f89d0fffe78239450782f383c5"},
+]
+
+[[package]]
 name = "typing-extensions"
 version = "4.8.0"
 description = "Backported and Experimental Type Hints for Python 3.8+"
@@ -2553,4 +2567,4 @@ brotli = ["Brotli"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "dc50e8ec1f38affc18f68f74dc5c3c8b95f10c9482edf8c69f14e0befeb8c9e2"
+content-hash = "ea703cebd447ee9c41ae74a207ed4d7e8500ae87aca21e18727ec7b2dc4327eb"
