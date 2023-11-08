@@ -11,9 +11,9 @@ license = "MIT"
 
 readme = "README.md"
 
-homepage = ""
+homepage = "https://github.com/kevinbowen777/django-start.git"
 repository = "https://github.com/kevinbowen777/django-start.git"
-documentation = "file: README.rst"
+documentation = "file:///docs/index.rst"
 
 keywords = ["django", "web-application", "template"]
 
