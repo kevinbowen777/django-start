@@ -32,7 +32,8 @@ WORKDIR /code
 
 RUN curl -sSL https://install.python-poetry.org | python3 - --version 1.7.0 \
     && poetry config virtualenvs.create false \
-    && /code/poetry-install
+    && /code/poetry-install \
+    && poetry self add poetry-plugin-export
     # && poetry install --no-interaction --no-ansi
 
 COPY . /code/
