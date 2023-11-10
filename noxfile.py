@@ -3,7 +3,7 @@ import tempfile
 
 import nox
 
-PYTHON_VERSIONS = ["3.12", "3.11", "3.10", "3.9"]
+PYTHON_VERSIONS = ["3.12", "3.11", "3.10"]
 nox.options.sessions = "lint", "safety", "tests"
 locations = (
     "accounts",
@@ -98,9 +98,7 @@ def safety(session):
         )
 
 
-@nox.session(python=["3.12", "3.11", "3.10"])
-# Issue with running tests against Python version 3.9.
-# See https://github.com/kevinbowen777/django-start/issues/101 for details.
+@nox.session(python=PYTHON_VERSIONS)
 def tests(session):
     """Run the test suite."""
     args = session.posargs or ["--cov"]
