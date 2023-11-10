@@ -43,7 +43,7 @@
      - Examples of using [Factories](https://pypi.org/project/factory-boy/) & [pytest](https://pypi.org/project/pytest/) fixtures in account app testing
      - [shell_plus](https://django-extensions.readthedocs.io/en/latest/shell_plus.html) with [IPython](https://pypi.org/project/ipython/) via [django-extensions](https://pypi.python.org/pypi/django-extensions/) package
      - [Pre-commit](https://github.com/pre-commit/pre-commit)
-     - [Nox](https://pypi.org/project/nox/) testing sessions for latest Python 3.9, 3.10, 3.11, and 3.12 
+     - [Nox](https://pypi.org/project/nox/) testing sessions for latest Python 3.10, 3.11, and 3.12
          - [black](https://pypi.org/project/black/) (`nox -s black`)
          - [Sphinx](https://pypi.org/project/Sphinx/) documentation generation (`nox -s docs`)
          - linting (`nox -s lint`)
@@ -98,19 +98,19 @@ able to run `run` instead of `./run`.*
  - `docker compose exec web python manage.py test`
  - `coverage run -m pytest`
  - Nox (includes sessions for black, lint, safety, tests)
-     - testing supported for Python 3.9, 3.10, 3.11, 3.12
+     - testing supported for Python 3.10, 3.11, 3.12
      - e.g. `nox`, `nox -rs lint-3.11`, `nox -s tests`
        - `nox`
        - `nox -s black-3.12`
        - `nox -s docs-3.11`
-       - `nox -rs lint-3.9` (Use the 'r' flag to reuse existing session)
+       - `nox -rs lint-3.10` (Use the 'r' flag to reuse existing session)
        - `nox -s safety` (will run tests against all Python versions)
        - `nox -s tests`
 
 ---
 
 ### Application Demo
-A live application demonstration hosted at ~~Heroku~~
+
  - TBD
 
 ---
