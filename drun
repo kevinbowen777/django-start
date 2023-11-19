@@ -155,16 +155,20 @@ function poe:up {
 
 function reqs:dev {
   # Export all package requirements
+  # poetry export -f requirements.txt --with=dev --without-hashes -o requirements-dev.txt
   poetry export --with=dev --output requirements-dev.txt
 }
 
 function reqs:prod {
   # Export production package requirements
+  # poetry export -f requirements.txt --without-hashes -o requirements.txt
   poetry export --output requirements.txt
 }
 
 function reqs:all {
   # Export production package requirements
+  # poetry export -f requirements.txt --with=dev --without-hashes -o requirements-dev.txt
+  # poetry export -f requirements.txt --without-hashes -o requirements.txt
   poetry export --output requirements.txt
   poetry export --with=dev --output requirements-dev.txt
 }
