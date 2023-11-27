@@ -167,10 +167,8 @@ SOCIALACCOUNT_PROVIDERS = {
         # credentials, or list them here:
         # "VERIFIED_EMAIL": True
         "APP": {
-            "client_id": env.str("SOCIALACCOUNT_APP_CLIENT_ID"),
-            "secret": env.str("SOCIALACCOUNT_APP_SECRET"),
-            # "client_id": env.str("GITHUB_SOCIALACCOUNT_APP_CLIENT_ID"),
-            # "secret": env.str("GITHUB_SOCIALACCOUNT_APP_SECRET"),
+            "client_id": env.str("GITHUB_SOCIALACCOUNT_APP_CLIENT_ID"),
+            "secret": env.str("GITHUB_SOCIALACCOUNT_APP_SECRET"),
             "key": "",
         },
     }
