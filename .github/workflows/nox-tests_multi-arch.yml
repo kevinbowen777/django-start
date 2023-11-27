@@ -1,4 +1,4 @@
-name: nox-safety_multi-arch
+name: nox-tests_multi-arch
 on: push
 jobs:
   tests:
