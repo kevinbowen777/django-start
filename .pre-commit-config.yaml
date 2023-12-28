@@ -1,4 +1,4 @@
-exclude: 'docs|node_modules|migrations|.git'
+exclude: 'node_modules|migrations|.git'
 fail_fast: true
 
 repos:
