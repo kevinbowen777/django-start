@@ -1,9 +1,8 @@
-name: nox-coverage_multi-arch
+name: nox-coveragea
 on: push
 jobs:
   coverage:
     name: Coverage
-    needs: tests
     runs-on: ubuntu-latest
     strategy:
       matrix:
