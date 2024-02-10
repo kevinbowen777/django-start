@@ -1,4 +1,5 @@
 """Nox sessions - default template - django-start"""
+
 import tempfile
 
 import nox
@@ -49,6 +50,17 @@ def black(session):
     args = session.posargs or locations
     install_with_constraints(session, "black")
     session.run("black", *args)
+
+
+# @nox.session(python=["3.12"])
+@nox.session(python=PYTHON_VERSIONS)
+def coverage(session):
+    """Build JSON coverage report."""
+    install_with_constraints(session, "coverage")
+    session.run("coverage", "run", "-p", "-m", "pytest")
+    session.run("coverage", "combine")
+    session.run("coverage", "report", "-m", "--skip-covered")
+    session.run("coverage", "json", "-o", "htmlcov/coverage.json")
 
 
 @nox.session(python=PYTHON_VERSIONS)
