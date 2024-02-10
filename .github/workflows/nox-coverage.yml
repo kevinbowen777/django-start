@@ -24,6 +24,38 @@ jobs:
           export SOCIALACCOUNT_APP_CLIENT_ID=${{ secrets.SOCIALACCOUNT_APP_CLIENT_ID }}
           export SOCIALACCOUNT_APP_SECRET=${{ secrets.SOCIALACCOUNT_APP_SECRET }}
           nox -s lint-${{ matrix.python-version }}
+
+      - name: "Upload coverage data"
+        uses: actions/upload-artifact@v3
+        with:
+          name: covdata
+          path: .coverage.*
+  
+  coverage:
+    name: Coverage
+    needs: tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Check out the repo"
+        uses: actions/checkout@v3
+
+      - name: "Set up Python"
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      - name: "Install dependencies"
+        run: |
+          python -m pip install nox==2023.4.22 poetry==1.7.1
+
+      - name: "Download coverage data"
+        uses: actions/download-artifact@v3
+        with:
+          name: covdata
+
+      - name: "Combine"
+        run: |
+          python -m nox -s coverage-3.12
           export TOTAL=$(python -c "import json;print(json.load(open('htmlcov/coverage.json'))['totals']['percent_covered_display'])")
           echo "total=$TOTAL" >> $GITHUB_ENV
           echo "### Total coverage: ${TOTAL}%" >> $GITHUB_STEP_SUMMARY
