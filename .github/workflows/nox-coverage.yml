@@ -1,38 +1,6 @@
 name: nox-coverage_multi-arch
 on: push
 jobs:
-  tests:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ["3.10", "3.11", "3.12"]
-    name: Python ${{ matrix.python-version }} django-start
-    steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v4
-        with:
-          python-version: ${{ matrix.python-version }}
-          allow-prereleases: true
-          architecture: x64
-      - run: pip install nox==2023.4.22
-      - run: pip install poetry==1.7.1
-      - run: |
-          export SECRET_KEY=${{ secrets.SECRET_KEY }}
-          export EMAIL_HOST_PASSWORD=${{ secrets.EMAIL_HOST_PASSWORD }}
-          export DATABASE_URL=${{ secrets.DATABASE_URL }}
-          export SOCIALACCOUNT_APP_CLIENT_ID=${{ secrets.SOCIALACCOUNT_APP_CLIENT_ID }}
-          export SOCIALACCOUNT_APP_SECRET=${{ secrets.SOCIALACCOUNT_APP_SECRET }}
-
-          nox -s coverage-${{ matrix.python-version }}
-
-      - name: "Upload coverage data"
-        uses: actions/upload-artifact@v4
-        with:
-          name: coverage-data-${{ matrix.python-version }}
-          path: htmlcov/*
-          if-no-files-found: ignore
-  
   coverage:
     name: Coverage
     needs: tests
@@ -40,6 +8,7 @@ jobs:
     strategy:
       matrix:
         python-version: ["3.12"]
+    name: django-start ${{ matrix.python-version }} coverage
     steps:
       - name: "Check out the repo"
         uses: actions/checkout@v3
@@ -47,7 +16,10 @@ jobs:
       - name: "Set up Python"
         uses: actions/setup-python@v4
         with:
-          python-version: "3.12"
+        with:
+          python-version: ${{ matrix.python-version }}
+          allow-prereleases: true
+          architecture: x64
 
       - name: "Download coverage data"
         uses: actions/download-artifact@v4
@@ -56,19 +28,7 @@ jobs:
           merge-multiple: true
 
       - name: "Combine coverage data"
-        run: |
-          pip install nox==2023.4.22
-          pip install poetry==1.7.1
-
-          export SECRET_KEY=${{ secrets.SECRET_KEY }}
-          export EMAIL_HOST_PASSWORD=${{ secrets.EMAIL_HOST_PASSWORD }}
-          export DATABASE_URL=${{ secrets.DATABASE_URL }}
-          export SOCIALACCOUNT_APP_CLIENT_ID=${{ secrets.SOCIALACCOUNT_APP_CLIENT_ID }}
-          export SOCIALACCOUNT_APP_SECRET=${{ secrets.SOCIALACCOUNT_APP_SECRET }}
-
-          nox -s coverage-${{ matrix.python-version }}
-
-          export TOTAL=$(python -c "import json;print(json.load(open('coverage.json'))['totals']['percent_covered_display'])")
+          export TOTAL=$(python -c "import json;print(json.load(open('htmlcov/coverage.json'))['totals']['percent_covered_display'])")
           echo "total=$TOTAL" >> $GITHUB_ENV
           echo "### Total coverage: ${TOTAL}%" >> $GITHUB_STEP_SUMMARY
 
