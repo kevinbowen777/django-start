@@ -60,7 +60,7 @@ def coverage(session):
     session.run("coverage", "run", "-p", "-m", "pytest")
     session.run("coverage", "combine")
     session.run("coverage", "report", "-m", "--skip-covered")
-    session.run("coverage", "json")
+    session.run("coverage", "json", "-o", "htmlcov/coverage.json")
 
 
 @nox.session(python=PYTHON_VERSIONS)
