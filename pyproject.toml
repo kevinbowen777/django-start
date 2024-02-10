@@ -107,7 +107,7 @@ omit = [
     "*/__init__.py",
     "*/migrations/*",
     "*/factories.py",
-    "*/tests/*",
+    # "*/tests/*",
 ]
 plugins = [
     "django_coverage_plugin",
