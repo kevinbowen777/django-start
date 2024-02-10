@@ -55,16 +55,18 @@ jobs:
           merge-multiple: true
 
       - name: "Combine coverage data"
-        run: pip install nox==2023.4.22
-        run: pip install poetry==1.7.1
         run: |
+          pip install nox==2023.4.22
+          pip install poetry==1.7.1
+
           export SECRET_KEY=${{ secrets.SECRET_KEY }}
           export EMAIL_HOST_PASSWORD=${{ secrets.EMAIL_HOST_PASSWORD }}
           export DATABASE_URL=${{ secrets.DATABASE_URL }}
           export SOCIALACCOUNT_APP_CLIENT_ID=${{ secrets.SOCIALACCOUNT_APP_CLIENT_ID }}
           export SOCIALACCOUNT_APP_SECRET=${{ secrets.SOCIALACCOUNT_APP_SECRET }}
+
           nox -s coverage-${{ matrix.python-version }}
-        run: |
+
           export TOTAL=$(python -c "import json;print(json.load(open('coverage.json'))['totals']['percent_covered_display'])")
           echo "total=$TOTAL" >> $GITHUB_ENV
           echo "### Total coverage: ${TOTAL}%" >> $GITHUB_STEP_SUMMARY
