@@ -15,7 +15,6 @@ jobs:
       - name: "Set up Python"
         uses: actions/setup-python@v4
         with:
-        with:
           python-version: ${{ matrix.python-version }}
           allow-prereleases: true
           architecture: x64
