@@ -96,11 +96,11 @@
 ### Testing
  - `docker compose exec web python manage.py test`
  - `coverage run -m pytest`
- - Nox (includes sessions for black, lint, safety, tests)
+ - Nox (includes sessions for coverage, lint, safety, tests)
      - testing supported for Python 3.10, 3.11, 3.12
      - e.g. `nox`, `nox -rs lint-3.11`, `nox -s tests`
        - `nox`
-       - `nox -s black-3.12`
+       - `nox -s coverage-3.12`
        - `nox -s docs-3.11`
        - `nox -rs lint-3.10` (Use the 'r' flag to reuse existing session)
        - `nox -s safety` (will run tests against all Python versions)
