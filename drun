@@ -115,7 +115,7 @@ function nox:test {
 
 function nox:all {
   # Perform all nox code quality tests together
-   cmd nox -s coverage-3.12 "${@}"
+  cmd nox -s coverage-3.12 "${@}"
   cmd nox -s lint-3.12 "${@}"
   # cmd nox -s pyright-3.12 "${@}"
   cmd nox -s safety-3.12 "${@}"
