@@ -13,14 +13,13 @@ Features
    * For links to additional packages used in this repository, see the :doc:`Package Index <package_index>`
  * Dev/testing
 
-   * coverage_ reports are available in the `htmlcov` directory.
+   * coverage_ reports.
    * django-debug-toolbar_ available. See notes in `config/settings.py` for enabling.
    * Examples of using factories_ & pytest_ fixtures in account app testing.
    * shell_plus_ with IPython_ via the django-extensions_ package.
    * pre-commit_
    * nox_ testing sessions for latest Python 3.10, and 3.11, 3.12.
 
-     * black_
      * Sphinx_ documentation generation
      * linting
 
@@ -39,8 +38,7 @@ If you get tired of typing ``./run`` you can always create a shell alias with ``
  .. _Bootstrap4: https://pypi.org/project/django-bootstrap4/
  .. _crispy-forms: https://pypi.org/project/django-crispy-forms/
  .. _country flags: https://pypi.python.org/pypi/django-countries
- .. _coverage: https://pypi.org/project/coverage/
- .. _htmlcov:
+ .. _coverage: https://kevinbowen777.github.io/django-start/
  .. _django-debug-toolbar: https://pypi.org/project/django-debug-toolbar/
  .. _config/settings.py:
  .. _factories: https://pypi.org/project/factory-boy/
@@ -50,7 +48,6 @@ If you get tired of typing ``./run`` you can always create a shell alias with ``
  .. _django-extensions: https://pypi.python.org/pypi/django-extensions/
  .. _pre-commit: https://github.com/pre-commit/pre-commit
  .. _nox: https://pypi.org/project/nox/
- .. _black: https://pypi.org/project/black/
  .. _Sphinx: https://pypi.org/project/Sphinx/
  .. _ruff: https://beta.ruff.rs/docs/
  .. _safety: https://pypi.org/project/safety/

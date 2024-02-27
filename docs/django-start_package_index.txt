@@ -78,11 +78,6 @@ factory-boy
     - Tutorial:
     - Repository: https://github.com/FactoryBoy/factory_boy
     - PyPI package: https://pypi.org/project/factory-boy/
-black
-    - Documentation: https://black.readthedocs.io/en/stable
-    - Tutorial:
-    - Repository: https://github.com/psf/black
-    - PyPI package: https://pypi.org/project/black/
 Sphinx
     - Documentation: https://www.sphinx-doc.org/en/master/index.html
     - Tutorial: https://www.sphinx-doc.org/en/master/tutorial/index.html
@@ -95,27 +90,6 @@ nox
     - Repository: https://github.com/wntrblm/nox
     - PyPI package: https://pypi.org/project/nox/
 
-flake8
-    - Documentation: https://flake8.pycqa.org/en/latest/
-    - Tutorial:
-    - Repository: https://github.com/pycqa/flake8
-    - PyPI package: https://pypi.org/project/flake8/
-flake8-bandit
-    - Documentation:
-    - Tutorial:
-    - Repository: https://github.com/tylerwince/flake8-bandit
-    - PyPI package: https://pypi.org/project/flake8-bandit/
-flake8-bugbear
-    - Documentation:
-    - Tutorial:
-    - Repository: https://github.com/PyCQA/flake8-bugbear
-    - PyPI package: https://pypi.org/project/flake8-bugbear/
-flake8-import-order (currently in maintenance mode/not being developed
-    - Documentation:
-    - Tutorial:
-    - Repository: https://github.com/PyCQA/flake8-import-order
-    - PyPI package: https://pypi.org/project/flake8-import-order/
-    - News/gossip: https://github.com/PyCQA/flake8-import-order/issues/163
 safety
     - Documentation: https://docs.pyup.io/docs/getting-started-with-safety-cli
     - Tutorial:
@@ -136,4 +110,3 @@ friendly for local dev shell_plus
     - Tutorial:
     - Repository: https://github.com/friendly-traceback/friendly
     - PyPI package:  https://pypi.org/project/friendly/
-Add link to local coverage reports

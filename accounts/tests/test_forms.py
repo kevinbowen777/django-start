@@ -10,13 +10,11 @@ class TestUserCreationForm:
     def test_clean_username(self):
         user = UserFactory.build()
 
-        form = CustomUserCreationForm(
-            {
-                "username": user.username,
-                "password1": user._password,
-                "password2": user._password,
-            }
-        )
+        form = CustomUserCreationForm({
+            "username": user.username,
+            "password1": user._password,
+            "password2": user._password,
+        })
 
         assert form.is_valid()
         assert form.clean_username() == user.username
@@ -26,13 +24,11 @@ class TestUserCreationForm:
 
         # The user with proto_user params already exists,
         # hence cannot be created.
-        form = CustomUserCreationForm(
-            {
-                "username": user.username,
-                "password1": user._password,
-                "password2": user._password,
-            }
-        )
+        form = CustomUserCreationForm({
+            "username": user.username,
+            "password1": user._password,
+            "password2": user._password,
+        })
 
         assert not form.is_valid()
         assert len(form.errors) == 1

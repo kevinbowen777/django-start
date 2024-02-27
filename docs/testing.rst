@@ -31,15 +31,15 @@ The following sessions are available to run via ``nox``:
 
 ::
 
-    - black-3.12 -> Run black code formatter.
-    - black-3.11 -> Run black code formatter.
-    - black-3.10 -> Run black code formatter.
     - docs-3.12 -> Build the documentation.
     - docs-3.11 -> Build the documentation.
     - docs-3.10 -> Build the documentation.
     * lint-3.12 -> Lint using ruff.
     * lint-3.11 -> Lint using ruff.
     * lint-3.10 -> Lint using ruff.
+    * coverage-3.12 -> Generate coverage reports.
+    * coverage-3.11 -> Generate coverage reports.
+    * coverage-3.10 -> Generate coverage reports.
     * pyright-3.10 -> Check types
     * pyright-3.11 -> Check types
     * pyright-3.12 -> Check types
@@ -52,7 +52,7 @@ The following sessions are available to run via ``nox``:
 
     sessions marked with * are selected, sessions marked with - are skipped.
 
-The ``lint``, ``safety``, and ``tests`` are enabled to be run with ``nox -s tests``. Running ``black`` and generating documentation, (e.g. ``nox -s docs-3.11``) need to be run explicitly.
+The ``lint``, ``coverage``, ``safety``, and ``tests`` are enabled to be run with ``nox -s tests``. Generating documentation, (e.g. ``nox -s docs-3.11``) need to be run explicitly.
 
 Below are some example of ``nox`` commands run locally:
 
@@ -60,7 +60,7 @@ Below are some example of ``nox`` commands run locally:
 
    $ nox --list-sessions
    $ nox
-   $ nox -s black-3.12
+   $ nox -s coverage-3.12
    $ nox -s docs-3.11
    $ nox -rs lint-3.10  (Use the 'r' flag to reuse existing session)
    $ nox -s safety  (will run tests against all Python versions)
@@ -73,7 +73,7 @@ Below are examples of ``nox`` tests run against the Docker container:
    $ docker compose exec web python manage.py test
    $ docker compose exec web nox --list-sessions
    $ docker compose exec web nox
-   $ docker compose exec web nox -s black-3.12
+   $ docker compose exec web nox -s coverage-3.12
    $ docker compose exec web nox -s docs-3.11
    $ docker compose exec web nox -rs lint-3.10  (Use the 'r' flag to reuse existing session)
    $ docker compose exec web nox -s safety  (will run tests against all Python versions)

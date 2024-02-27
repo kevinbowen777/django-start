@@ -44,14 +44,6 @@ def install_with_constraints(session, *args, **kwargs):
         session.install(f"--requirement={requirements.name}", *args, **kwargs)
 
 
-@nox.session(python=PYTHON_VERSIONS)
-def black(session):
-    """Run black code formatter."""
-    args = session.posargs or locations
-    install_with_constraints(session, "black")
-    session.run("black", *args)
-
-
 # @nox.session(python=["3.12"])
 @nox.session(python=PYTHON_VERSIONS)
 def coverage(session):
