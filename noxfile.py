@@ -5,7 +5,7 @@ import tempfile
 import nox
 
 PYTHON_VERSIONS = ["3.12", "3.11", "3.10"]
-nox.options.sessions = "lint", "safety", "tests"
+nox.options.sessions = "lint", "coverage", "safety", "tests"
 locations = (
     "accounts",
     "config",
@@ -44,7 +44,6 @@ def install_with_constraints(session, *args, **kwargs):
         session.install(f"--requirement={requirements.name}", *args, **kwargs)
 
 
-# @nox.session(python=["3.12"])
 @nox.session(python=PYTHON_VERSIONS)
 def coverage(session):
     """Build JSON coverage report."""
@@ -53,6 +52,7 @@ def coverage(session):
     session.run("coverage", "combine")
     session.run("coverage", "report", "-m", "--skip-covered")
     session.run("coverage", "json", "-o", "htmlcov/coverage.json")
+    session.run("coverage", "html")
 
 
 @nox.session(python=PYTHON_VERSIONS)
@@ -126,7 +126,6 @@ def tests(session):
         "pytest-cov",
         "pytest-django",
     )
-    # session.run("pytest", *args)
     session.run(
         "python",
         "-Wonce::DeprecationWarning",
