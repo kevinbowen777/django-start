@@ -39,40 +39,40 @@ classifiers = [
 python = "^3.10"
 Django = "5.0.2"
 
-django-crispy-forms = "^2.0"
-django-allauth = ">=0.60.0, <= 0.70.0"
+django-allauth = ">=0.60.0, < 0.70"
 environs = { version = "^10", extras = ["django"] }
 django-extensions = "^3.2"
 whitenoise = "^6.1.0"
 psycopg2-binary = "^2.9.5"
 Pillow = "^10.0"
-django-countries = "^7.3.2"
 gunicorn = "^21.0"
-crispy-bootstrap4 = "^2023.0"
-django-types = "^0.19.0"
+crispy-bootstrap4 = "^2024.0"
+django-crispy-forms = "^2.0"
+django-countries = "^7.3.2"
 
 [tool.poetry.group.dev.dependencies]
 django-debug-toolbar = "^4.0.0"
 pre-commit = "^3.0.0"
+ruff = ">=0.1.0, <=0.2.9"
+nox = "2023.4.22"
 pytest = "^8.0"
+pytest-cov = "^4.0.0"
+pytest-django = "^4.5.2"
 pytest-sugar = "^1.0"
+coverage = { version = "^7.0.0", extras = ["toml"] }
+django-coverage-plugin = "^3.0.0"
+djlint = "^1.31.0"
+sphinx-lint = "^0.9.1"
+safety = "^3.0"
+factory-boy = "^3.2.0"
 ipython = "^8.4.0"
 friendly = "^0.7.0"
 colorama = "^0.4.4"
-django-coverage-plugin = "^3.0.0"
-nox = "2023.4.22"
-safety = "^3.0"
-factory-boy = "^3.2.0"
-coverage = { version = "^7.0.0", extras = ["toml"] }
-pytest-cov = "^4.0.0"
-pytest-django = "^4.5.2"
-djlint = "^1.31.0"
 werkzeug = "^3.0"
-pyopenssl = "^24.0"
+pyopenssl = ">=24.0, < 25.0"
 sphinx = ">= 7.2.5, < 7.3.0"
 furo = "^2024.0"
-ruff = ">=0.1.0, <=0.2.9"
-sphinx-lint = "^0.9.1"
+django-types = "^0.19.0"
 
 [tool.coverage.run]
 branch = true
@@ -107,16 +107,17 @@ show_contexts = true
 title = "django-start coverage report"
 
 [tool.djlint]
-exclude="htmlcov"
-files=["templates/"]
-indent=2
-max_line_length=120
-preserve_blank_lines=true
+exclude= ["htmlcov", "staticfiles"]
+files= ["templates/"]
+indent = 2
+max_line_length = 120
+preserve_blank_lines = true
 
 [tool.pyright]
 # See: https://github.com/microsoft/pyright/blob/main/docs/configuration.md
 include = ["config", "accounts", "pages",]
-exclude = ["**/tests",
+exclude = [
+    "**/tests",
     "**/__pycache__",
     "**/migrations",
 ]
@@ -161,7 +162,6 @@ DJANGO_SETTINGS_MODULE = "config.test"
 addopts = "--reuse-db -p no:warnings"
 python_files = ["test_*.py"]
 filterwarnings = [
-    "ignore::django.utils.deprecation.RemovedInDjango50Warning",
     "ignore::django.utils.deprecation.RemovedInDjango51Warning",
 ]
 
