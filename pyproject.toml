@@ -15,7 +15,11 @@ homepage = "https://github.com/kevinbowen777/django-start.git"
 repository = "https://github.com/kevinbowen777/django-start.git"
 documentation = "file:///docs/index.rst"
 
-keywords = ["django", "web-application", "template"]
+keywords = [
+    "django",
+    "web-application",
+    "template",
+]
 
 classifiers = [
     # https://pypi.org/pypi?:action=list_classifiers
