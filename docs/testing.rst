@@ -37,12 +37,12 @@ The following sessions are available to run via ``nox``:
     * lint-3.12 -> Lint using ruff.
     * lint-3.11 -> Lint using ruff.
     * lint-3.10 -> Lint using ruff.
-    * coverage-3.12 -> Generate coverage reports.
-    * coverage-3.11 -> Generate coverage reports.
-    * coverage-3.10 -> Generate coverage reports.
-    * pyright-3.10 -> Check types
-    * pyright-3.11 -> Check types
-    * pyright-3.12 -> Check types
+    * coverage-3.12 -> Check test coverage & generate HTML/JSON reports.
+    * coverage-3.11 -> Check test coverage & generate HTML/JSON reports.
+    * coverage-3.10 -> Check test coverage & generate HTML/JSON reports.
+    * pyright-3.12 -> Type checking with pyright.
+    * pyright-3.11 -> Type checking with pyright.
+    * pyright-3.10 -> Type checking with pyright.
     * safety-3.12 -> Scan dependencies for insecure packages.
     * safety-3.11 -> Scan dependencies for insecure packages.
     * safety-3.10 -> Scan dependencies for insecure packages.
@@ -60,9 +60,10 @@ Below are some example of ``nox`` commands run locally:
 
    $ nox --list-sessions
    $ nox
-   $ nox -s coverage-3.12
    $ nox -s docs-3.11
    $ nox -rs lint-3.10  (Use the 'r' flag to reuse existing session)
+   $ nox -s coverage-3.12
+   $ nox -s pyright-3.11
    $ nox -s safety  (will run tests against all Python versions)
    $ nox -s tests
 
