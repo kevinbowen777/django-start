@@ -26,7 +26,7 @@ classifiers = [
     "Development Status :: 4 - Beta",
     "Environment :: Web Environment",
     "Framework :: Django",
-    "Framework :: Django :: 5.0",
+    "Framework :: Django :: 5.1",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
@@ -45,12 +45,11 @@ package-mode = false
 python = "^3.10"
 Django = "5.1.1"
 
-django-allauth = ">=0.60.0, < 0.70"
+django-allauth = ">=65.0, <66.0.0"
 environs = { version = "^11", extras = ["django"] }
 django-extensions = "^3.2"
 whitenoise = "^6.1.0"
 psycopg = { version = "3.2.3", extras = ["binary"] } 
-# psycopg2-binary = "^2.9.5"
 Pillow = "^10.0"
 gunicorn = "^23.0"
 crispy-bootstrap4 = "^2024.0"
