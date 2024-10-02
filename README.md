@@ -14,7 +14,7 @@
  - A reference template of "best practices" & standards used in my collection
    of [Web Framework
    Projects](https://github.com/kevinbowen777/web-project-index). This
-   repository runs a Django 5.0.x web application demonstrating some of this
+   repository runs a Django 5.1.x web application demonstrating some of this
    functionality.
 
 ##### Table of Contents
@@ -44,7 +44,7 @@
      - Examples of using [Factories](https://pypi.org/project/factory-boy/) & [pytest](https://pypi.org/project/pytest/) fixtures in account app testing
      - [shell_plus](https://django-extensions.readthedocs.io/en/latest/shell_plus.html) with [IPython](https://pypi.org/project/ipython/) via [django-extensions](https://pypi.python.org/pypi/django-extensions/) package
      - [Pre-commit](https://github.com/pre-commit/pre-commit)
-     - [Nox](https://pypi.org/project/nox/) testing sessions for latest Python 3.10, 3.11, and 3.12
+     - [Nox](https://pypi.org/project/nox/) testing sessions for latest Python 3.10, 3.11, 3.12, and 3.13.
          - [Sphinx](https://pypi.org/project/Sphinx/) documentation generation (`nox -s docs`)
          - Generate [Coverage](https://pypi.org/project/coverage/) reports in `htmlcov` directory (`nox -s coverage`)
          - linting (`nox -s lint`)
@@ -52,7 +52,7 @@
              - [djlint](https://pypi.org/project/djlint/)
          - [safety](https://pypi.org/project/safety/)(python package vulnerability testing) (`nox -s safety`)
          - [pytest](https://docs.pytest.org/en/latest/) sessions with
-           [pytest-cov](https://pypi.org/project/pytest-cov/) &
+           [pytest-cov](https://pypi.org/project/pytest-cov/)
            [pytest-django](https://pypi.org/project/pytest-django/) (`coverage run -m pytest`) 
   - `run` command menu
       
@@ -97,7 +97,7 @@
  - `docker compose exec web python manage.py test`
  - `coverage run -m pytest`
  - Nox (includes sessions for coverage, lint, safety, tests)
-     - testing supported for Python 3.10, 3.11, 3.12
+     - testing supported for Python 3.10, 3.11, 3.12, 3.13
      - e.g. `nox`, `nox -rs lint-3.11`, `nox -s tests`
        - `nox`
        - `nox -s coverage-3.12`
