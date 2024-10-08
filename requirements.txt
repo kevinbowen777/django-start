@@ -1,9 +1,9 @@
 asgiref==3.8.1 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:3e1e3ecc849832fe52ccf2cb6686b7a55f82bb1d6aee72a58826471390335e47 \
     --hash=sha256:c343bd80a0bec947a9860adb4c432ffa7db769836c64238fc34bdc3fec84d590
-crispy-bootstrap4==2024.1 ; python_version >= "3.10" and python_version < "4.0" \
-    --hash=sha256:208673bf6a25892a656971af7a00e18ba2f7f06cd4a0d667923bd6134e64d276 \
-    --hash=sha256:46cf98777a28621d240bf71eb36d4a26ff86e9e19be1cfd822645f4043d18c31
+crispy-bootstrap4==2024.10 ; python_version >= "3.10" and python_version < "4.0" \
+    --hash=sha256:138a97884044ae4c4799c80595b36c42066e4e933431e2e971611e251c84f96c \
+    --hash=sha256:503e8922b0f3b5262a6fdf303a3a94eb2a07514812f1ca130b88f7c02dd25e2b
 dj-database-url==2.2.0 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:3e792567b0aa9a4884860af05fe2aa4968071ad351e033b6db632f97ac6db9de \
     --hash=sha256:9f9b05058ddf888f1e6f840048b8d705ff9395e3b52a07165daa3d8b9360551b
