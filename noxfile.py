@@ -96,7 +96,7 @@ def safety(session):
         install_with_constraints(session, "safety")
         session.run(
             "safety",
-            "check",
+            "scan",
             f"--file={requirements.name}",
             "--ignore",
             "70612",
