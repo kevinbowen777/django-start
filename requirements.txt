@@ -13,8 +13,8 @@ dj-email-url==1.0.6 ; python_version >= "3.10" and python_version < "4.0" \
 django==5.1.4 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:236e023f021f5ce7dee5779de7b286565fdea5f4ab86bae5338e3f7b69896cf0 \
     --hash=sha256:de450c09e91879fa5a307f696e57c851955c910a438a35e6b4c895e86bedc82a
-django-allauth==65.3.0 ; python_version >= "3.10" and python_version < "4.0" \
-    --hash=sha256:92e0242724af03458b05b88c5fa798b01112ab22a86d873a8a9fd8f0ec57bbbf
+django-allauth==65.3.1 ; python_version >= "3.10" and python_version < "4.0" \
+    --hash=sha256:e02e951b71a2753a746459f2efa114c7c72bf2cef6887dbe8607a577c0350587
 django-cache-url==3.4.5 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:5f350759978483ab85dc0e3e17b3d53eed3394a28148f6bf0f53d11d0feb5b3c \
     --hash=sha256:eb9fb194717524348c95cad9905b70b647452741c1d9e481fac6d2125f0ad917
