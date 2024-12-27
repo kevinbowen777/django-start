@@ -4,7 +4,7 @@ import tempfile
 
 import nox
 
-PYTHON_VERSIONS = ["3.13", "3.12", "3.11", "3.10"]
+PYTHON_VERSIONS = ["3.10", "3.11", "3.12", "3.13"]
 nox.options.sessions = "lint", "coverage", "safety", "tests"
 locations = (
     "accounts",
@@ -96,7 +96,7 @@ def safety(session):
         install_with_constraints(session, "safety")
         session.run(
             "safety",
-            "scan",
+            "check",
             f"--file={requirements.name}",
             "--ignore",
             "70612",
