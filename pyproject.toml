@@ -6,7 +6,7 @@ requires-python = ">=3.10.0, <3.14.0"
 dependencies = [
     "Django (==5.1.4)",
     "django-allauth (>=65.0, <66.0.0)",
-    "environs[django] (>=11.0, <13.0)",
+    "environs[django] (>=11.0, <15.0)",
     "django-extensions (>=3.2.0, <3.3.0)",
     "whitenoise (>=6.8.0, <6.9.0)",
     "psycopg[binary] (==3.2.3)",
@@ -49,7 +49,7 @@ package-mode = false
 
 [project.urls]
 Homepage = "https://github.com/kevinbowen777/django-start.git"
-Changelog = "https://github.com/kevinbowen777/NEWS"
+Changelog = "https://github.com/kevinbowen777/django-start/NEWS"
 Repository = "https://github.com/kevinbowen777/django-start.git"
 Documentation = "file:///docs/index.rst"
 
