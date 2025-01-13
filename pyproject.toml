@@ -18,7 +18,7 @@ dependencies = [
     "django-countries (>=7.3.2, <7.7.0)",
 ]
 authors = [
-    { name = "Kevin Bowen", email= "kevin.bowen@gmail.com" },
+    { name = "Kevin Bowen", email = "kevin.bowen@gmail.com" },
 ]
 maintainers = [
 ]
@@ -53,7 +53,6 @@ Changelog = "https://github.com/kevinbowen777/django-start/NEWS"
 Repository = "https://github.com/kevinbowen777/django-start.git"
 Documentation = "file:///docs/index.rst"
 
-
 [tool.poetry.group.dev.dependencies]
 django-debug-toolbar = ">=4.0.0, <5.0.0"
 pre-commit = ">=4.0, <5.0"
@@ -71,9 +70,12 @@ sphinx-lint = "1.0"
 safety = "3.2.3"
 factory-boy = "3.3.1"
 werkzeug = ">=3.1, <4.0"
-pyopenssl = ">=24.0, <25.0"
+pyopenssl = ">=24.0, <26.0"
 furo = ">=2024.0, <2025.0"
 django-types = ">=0.20.0, <0.21.0"
+
+[tool.poetry.requires-plugins]
+poetry-plugin-export = ">=1.8"
 
 [tool.coverage.run]
 branch = true
@@ -266,5 +268,5 @@ docstring-code-format = false
 docstring-code-line-length = "dynamic"
 
 [build-system]
-requires = ["poetry-core>=2.0"]
+requires = ["poetry-core>=2.0.0"]
 build-backend = "poetry.core.masonry.api"
