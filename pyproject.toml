@@ -203,6 +203,7 @@ exclude = [
 
 [tool.ruff.lint]
 select = [
+    "A",    # flake8-builtins
     "B",    # flake8-bugbear
     "C90",  # mccabe
     "DJ",   # flake8-django
@@ -235,6 +236,7 @@ dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
 "accounts/tests/*" = ["S101", "S106"]
 "config/test.py" = ["S101", "S106"]
 "pages/tests/*" = ["S101", "S106"]
+"docs/conf.py" = ["A001"]
 
 [tool.ruff.lint.mccabe]
 # Unlike Flake8, default to a complexity level of 10.
