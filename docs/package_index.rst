@@ -193,15 +193,6 @@ safety
   * PyPI package: https://pypi.org/project/safety/
   * Notes:
 
-ipython
-^^^^^^^
-
-  * Documentation: https://ipython.readthedocs.io/
-  * Tutorial:
-  * Repository: https://github.com/ipython/ipython
-  * PyPI package: https://pypi.org/project/ipython/
-  * Notes: for use with django-extensions shell_plus
-
 rich
 ^^^^
 

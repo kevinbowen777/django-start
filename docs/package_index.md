@@ -140,13 +140,6 @@ Use of Poetry for dependency management
   - PyPI package: [https://pypi.org/project/safety/](https://pypi.org/project/safety/)
   - Notes:
 
-### ipython
-  - Documentation: [https://ipython.readthedocs.io/](https://ipython.readthedocs.io/)
-  - Tutorial:
-  - Repository: [https://github.com/ipython/ipython](https://github.com/ipython/ipython)
-  - PyPI package: [https://pypi.org/project/ipython/](https://pypi.org/project/ipython/)
-  - Notes:
-
 ### rich for local dev shell_plus
   - Documentation: [https://rich.readthedocs.io/en/latest/](https://rich.readthedocs.io/en/latest/)
   - Tutorial:
