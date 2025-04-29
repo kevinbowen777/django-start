@@ -1,6 +1,6 @@
 [project]
 name = "django-start"
-version = "0.3.2"
+version = "0.3.3"
 description = "Basic Django project template"
 requires-python = ">=3.11.0, <3.14.0"
 dependencies = [
