@@ -1,4 +1,3 @@
-from django.core.mail import BadHeaderError
 from django.test import SimpleTestCase
 
 
@@ -37,6 +36,8 @@ class ContactFormTests(SimpleTestCase):
                 },
             )
             error_occured = False
-        except BadHeaderError:
-            error_occured = True
+        # except BadHeaderError:
+        #     error_occured = True
+        finally:
+            pass
         self.assertFalse(error_occured)
