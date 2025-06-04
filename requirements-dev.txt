@@ -567,9 +567,9 @@ nodeenv==1.9.1 ; python_version >= "3.11" and python_full_version < "3.14.0" \
 nox==2025.5.1 ; python_version >= "3.11" and python_full_version < "3.14.0" \
     --hash=sha256:2a571dfa7a58acc726521ac3cd8184455ebcdcbf26401c7b737b5bc6701427b2 \
     --hash=sha256:56abd55cf37ff523c254fcec4d152ed51e5fe80e2ab8317221d8b828ac970a31
-packageurl-python==0.16.0 ; python_version >= "3.11" and python_full_version < "3.14.0" \
-    --hash=sha256:5c3872638b177b0f1cf01c3673017b7b27ebee485693ae12a8bed70fa7fa7c35 \
-    --hash=sha256:69e3bf8a3932fe9c2400f56aaeb9f86911ecee2f9398dbe1b58ec34340be365d
+packageurl-python==0.17.0 ; python_version >= "3.11" and python_full_version < "3.14.0" \
+    --hash=sha256:3cc44a01c9549c237f14c34981bae1008eb57c858c0af9039f4f13091807e1f3 \
+    --hash=sha256:c2a8e48d7b393b18806fd096abe326260b3aed82a07eda6c6628689b36ba52c4
 packaging==25.0 ; python_version >= "3.11" and python_full_version < "3.14.0" \
     --hash=sha256:29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484 \
     --hash=sha256:d443872c98d677bf60f6a1f2f8c1cb748e8fe762d2bf9d3148b5599295b0fc4f
