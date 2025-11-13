@@ -1,6 +1,10 @@
 Testing
 =======
 
+.. note::
+   Assuming that this project has been installed with ``poetry``, most of the
+   commands in this document should be prefaced with ``poetry run``.
+
 Running tests against this project can be done in several ways:
 
   1. Running ``python manage.py test``
@@ -13,10 +17,10 @@ this file for how these tests can be run.
 If you would like to create "test" or "dummy" users, see the :doc:`create_new_users` sections for examples.
 
 Running the Tests
------------------
+=================
 
 Using ``coverage``
-^^^^^^^^^^^^^^^^^^
+------------------
 
 .. code-block:: console
 
@@ -25,30 +29,36 @@ Using ``coverage``
    $ coverage html (this will generate html reports available in the ``htmlcov`` directory)
 
 Using the ``nox`` test suite
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------
 
 The following sessions are available to run via ``nox``:
 
 ::
 
-    - docs-3.12 -> Build the documentation.
+    * coverage-3.11 -> Build JSON coverage report.
+    * coverage-3.12 -> Build JSON coverage report.
+    * coverage-3.13 -> Build JSON coverage report.
+    * coverage-3.14 -> Build JSON coverage report.
     - docs-3.11 -> Build the documentation.
-    - docs-3.10 -> Build the documentation.
-    * lint-3.12 -> Lint using ruff.
+    - docs-3.12 -> Build the documentation.
+    - docs-3.13 -> Build the documentation.
+    - docs-3.14 -> Build the documentation.
     * lint-3.11 -> Lint using ruff.
-    * lint-3.10 -> Lint using ruff.
-    * coverage-3.12 -> Check test coverage & generate HTML/JSON reports.
-    * coverage-3.11 -> Check test coverage & generate HTML/JSON reports.
-    * coverage-3.10 -> Check test coverage & generate HTML/JSON reports.
-    * pyright-3.12 -> Type checking with pyright.
-    * pyright-3.11 -> Type checking with pyright.
-    * pyright-3.10 -> Type checking with pyright.
-    * safety-3.12 -> Scan dependencies for insecure packages.
-    * safety-3.11 -> Scan dependencies for insecure packages.
-    * safety-3.10 -> Scan dependencies for insecure packages.
-    * tests-3.12 -> Run the test suite.
+    * lint-3.12 -> Lint using ruff.
+    * lint-3.13 -> Lint using ruff.
+    * lint-3.14 -> Lint using ruff.
+    - pyright-3.11 -> Run pyright type checker.
+    - pyright-3.12 -> Run pyright type checker.
+    - pyright-3.13 -> Run pyright type checker.
+    - pyright-3.14 -> Run pyright type checker.
+    * audit-3.11 -> Scan dependencies for insecure packages.
+    * audit-3.12 -> Scan dependencies for insecure packages.
+    * audit-3.13 -> Scan dependencies for insecure packages.
+    * audit-3.14 -> Scan dependencies for insecure packages.
     * tests-3.11 -> Run the test suite.
-    * tests-3.10 -> Run the test suite.
+    * tests-3.12 -> Run the test suite.
+    * tests-3.13 -> Run the test suite.
+    * tests-3.14 -> Run the test suite.
 
     sessions marked with * are selected, sessions marked with - are skipped.
 
@@ -60,11 +70,11 @@ Below are some example of ``nox`` commands run locally:
 
    $ nox --list-sessions
    $ nox
-   $ nox -s docs-3.11
-   $ nox -rs lint-3.10  (Use the 'r' flag to reuse existing session)
+   $ nox -s docs-3.14
+   $ nox -rs lint-3.13  (Use the 'r' flag to reuse existing session)
    $ nox -s coverage-3.12
-   $ nox -s pyright-3.11
-   $ nox -s safety  (will run tests against all Python versions)
+   $ nox -s pyright-3.14
+   $ nox -s safety  (will run tests against all available Python versions)
    $ nox -s tests
 
 Below are examples of ``nox`` tests run against the Docker container:
@@ -75,7 +85,7 @@ Below are examples of ``nox`` tests run against the Docker container:
    $ docker compose exec web nox --list-sessions
    $ docker compose exec web nox
    $ docker compose exec web nox -s coverage-3.12
-   $ docker compose exec web nox -s docs-3.11
-   $ docker compose exec web nox -rs lint-3.10  (Use the 'r' flag to reuse existing session)
+   $ docker compose exec web nox -s docs-3.14
+   $ docker compose exec web nox -rs lint-3.11  (Use the 'r' flag to reuse existing session)
    $ docker compose exec web nox -s safety  (will run tests against all Python versions)
    $ docker compose exec web nox -s tests
