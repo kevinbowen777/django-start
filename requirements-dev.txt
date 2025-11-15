@@ -22,9 +22,9 @@ beautifulsoup4==4.14.2 ; python_full_version >= "3.11.0" and python_full_version
 boolean-py==5.0 ; python_full_version >= "3.11.0" and python_full_version < "3.15.0" \
     --hash=sha256:60cbc4bad079753721d32649545505362c754e121570ada4658b852a3a318d95 \
     --hash=sha256:ef28a70bd43115208441b53a045d1549e2f0ec6e3d08a9d142cbc41c1938e8d9
-cachecontrol==0.14.3 ; python_version >= "3.11" and python_full_version < "3.15.0" \
-    --hash=sha256:73e7efec4b06b20d9267b441c1f733664f989fb8688391b670ca812d70795d11 \
-    --hash=sha256:b35e44a3113f17d2a31c1e6b27b9de6d4405f84ae51baa8c1d3cc5b633010cae
+cachecontrol==0.14.4 ; python_version >= "3.11" and python_full_version < "3.15.0" \
+    --hash=sha256:b7ac014ff72ee199b5f8af1de29d60239954f223e948196fa3d84adaffc71d2b \
+    --hash=sha256:e6220afafa4c22a47dd0badb319f84475d79108100d04e26e8542ef7d3ab05a1
 certifi==2025.11.12 ; python_version >= "3.11" and python_full_version < "3.15.0" \
     --hash=sha256:97de8790030bbd5c2d96b7ec782fc2f7820ef8dba6db909ccf95449f2d062d4b \
     --hash=sha256:d8ab5478f2ecd78af242878415affce761ca6bc54a22a27e026d7c25357c3316
@@ -429,9 +429,9 @@ django-coverage-plugin==3.2.0 ; python_version >= "3.11" and python_full_version
 django-crispy-forms==2.5 ; python_version >= "3.11" and python_full_version < "3.15.0" \
     --hash=sha256:066e72a8f152a1334f1c811cc37740868efe3265e5a218f79079ef89f848c3d8 \
     --hash=sha256:adc99d5901baca09479c53bf536b3909e80a9f2bb299438a223de4c106ebf1f9
-django-debug-toolbar==5.2.0 ; python_version >= "3.11" and python_full_version < "3.15.0" \
-    --hash=sha256:15627f4c2836a9099d795e271e38e8cf5204ccd79d5dbcd748f8a6c284dcd195 \
-    --hash=sha256:9e7f0145e1a1b7d78fcc3b53798686170a5b472d9cf085d88121ff823e900821
+django-debug-toolbar==6.1.0 ; python_version >= "3.11" and python_full_version < "3.15.0" \
+    --hash=sha256:e214dea4494087e7cebdcea84223819c5eb97f9de3110a3665ad673f0ba98413 \
+    --hash=sha256:e962ec350c9be8bdba918138e975a9cdb193f60ec396af2bb71b769e8e165519
 django-extensions==4.1 ; python_version >= "3.11" and python_full_version < "3.15.0" \
     --hash=sha256:0699a7af28f2523bf8db309a80278519362cd4b6e1fd0a8cd4bf063e1e023336 \
     --hash=sha256:7b70a4d28e9b840f44694e3f7feb54f55d495f8b3fa6c5c0e5e12bcb2aa3cdeb
