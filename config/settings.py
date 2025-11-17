@@ -4,6 +4,8 @@ from pathlib import Path
 
 from environs import Env
 
+# import socket  # Comment out if not using debug_toolbar
+
 env = Env()
 env.read_env()
 
@@ -35,7 +37,7 @@ INSTALLED_APPS = [
     "allauth.socialaccount.providers.github",
     "crispy_forms",
     "crispy_bootstrap4",
-    "debug_toolbar",
+    # "debug_toolbar",
     "django_countries",
     "django_extensions",
     # local apps
@@ -55,7 +57,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django.contrib.admindocs.middleware.XViewMiddleware",
-    "debug_toolbar.middleware.DebugToolbarMiddleware",
+    # "debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
 
 ROOT_URLCONF = "config.urls"
@@ -259,4 +261,4 @@ LOGGING = {
 # hostname, _, ips = socket.gethostbyname_ex(socket.gethostname())
 # INTERNAL_IPS = [ip[:-1] + "1" for ip in ips]
 # The following is for use locally:
-INTERNAL_IPS = ["127.0.0.1"]
+# INTERNAL_IPS = ["127.0.0.1"]
