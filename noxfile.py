@@ -59,7 +59,7 @@ def coverage(session):
 def docs(session):
     """Build the documentation."""
     install_with_constraints(session, "sphinx")
-    session.run("sphinx-build", "docs/source", "docs/build")
+    session.run("sphinx-build", "docs/source", "docs/html")
 
 
 @nox.session(python=PYTHON_VERSIONS)

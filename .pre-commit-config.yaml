@@ -36,13 +36,13 @@ repos:
       # Run the formatter
       - id: ruff-format
 
-  - repo: https://github.com/Riverside-Healthcare/djLint
-    rev: v1.36.4
-    hooks:
-      - id: djlint-reformat-django
-        exclude: "htmlcov"
-      - id: djlint-django
-        exclude: "htmlcov"
+  # - repo: https://github.com/Riverside-Healthcare/djLint
+  #   rev: v1.36.4
+  #   hooks:
+  #     - id: djlint-reformat-django
+  #       exclude: "htmlcov,docs/html/features"
+  #     - id: djlint-django
+  #       exclude: "htmlcov,docs/html/features"
 
   - repo: https://github.com/sphinx-contrib/sphinx-lint
     rev: v1.0.1
