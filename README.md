@@ -19,7 +19,6 @@
 
 ### Table of Contents
 
-- [Documentation](docs/html/index.html)
 - [Features](#features)
 - [Installation](#installation)
 - [Testing](#testing)
