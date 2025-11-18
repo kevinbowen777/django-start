@@ -19,6 +19,7 @@
 
 ### Table of Contents
 
+- [Documentation](docs/html/index.html)
 - [Features](#features)
 - [Installation](#installation)
 - [Testing](#testing)
@@ -102,7 +103,7 @@
         - `pre-commit autoupdate`
 - Documentation
     - `nox -s docs-3.14`
-    - Open browser to `docs/_build/index.html`
+    - Open browser to `docs/source/index.html`
 
 ---
 
