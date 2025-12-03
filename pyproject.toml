@@ -4,12 +4,12 @@ version = "0.3.4"
 description = "Basic Django project template"
 requires-python = ">=3.11.0"
 dependencies = [
-    "Django (==5.2.8)",
+    "Django (==5.2.9)",
     "django-allauth (>=65.0, <66.0.0)",
     "environs[django] (>=11.0, <15.0)",
     "django-extensions (>=4.1, <4.2.0)",
     "whitenoise (>=6.9.0, <7.0.0)",
-    "psycopg[binary] (==3.2.12)",
+    "psycopg[binary] (==3.3.1)",
     "Pillow (>=12.0, <13.0)",
     "gunicorn (>=23.0.0, <24.0.0)",
     # crispy-bootstrap4 uses calver, so version is unclamped
@@ -70,7 +70,7 @@ coverage = { version = ">=7.0.0, <8.0.0", extras = ["toml"] }
 django-coverage-plugin = ">=3.2.0, <3.3.0"
 sphinx = ">= 8.0, <9.0"
 djlint = ">=1.31.0, <1.40.0"
-sphinx-lint = "1.0.1"
+sphinx-lint = "1.0.2"
 factory-boy = "3.3.3"
 werkzeug = ">=3.1, <4.0"
 pyopenssl = ">=24.0, <26.0"

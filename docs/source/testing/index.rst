@@ -62,7 +62,7 @@ The following sessions are available to run via ``nox``:
 
     sessions marked with * are selected, sessions marked with - are skipped.
 
-The ``lint``, ``coverage``, ``safety``, and ``tests`` are enabled to be run with ``nox -s tests``. Generating documentation, (e.g. ``nox -s docs-3.11``) need to be run explicitly.
+The ``audit``, ``lint``, ``coverage``, and ``tests`` are enabled to be run with ``nox -s tests``. Generating documentation, (e.g. ``nox -s docs-3.14``) need to be run explicitly.
 
 Below are some example of ``nox`` commands run locally:
 
@@ -74,7 +74,7 @@ Below are some example of ``nox`` commands run locally:
    $ nox -rs lint-3.13  (Use the 'r' flag to reuse existing session)
    $ nox -s coverage-3.12
    $ nox -s pyright-3.14
-   $ nox -s safety  (will run tests against all available Python versions)
+   $ nox -s audit  (will run tests against all available Python versions)
    $ nox -s tests
 
 Below are examples of ``nox`` tests run against the Docker container:
@@ -87,5 +87,5 @@ Below are examples of ``nox`` tests run against the Docker container:
    $ docker compose exec web nox -s coverage-3.12
    $ docker compose exec web nox -s docs-3.14
    $ docker compose exec web nox -rs lint-3.11  (Use the 'r' flag to reuse existing session)
-   $ docker compose exec web nox -s safety  (will run tests against all Python versions)
+   $ docker compose exec web nox -s audit  (will run tests against all Python versions)
    $ docker compose exec web nox -s tests
