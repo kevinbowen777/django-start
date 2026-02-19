@@ -88,7 +88,7 @@ function migrate {
 }
 
 function nox:cov {
-  # Check code for formatting violations
+  # Check code for test coverage
   cmd nox -s coverage-3.14 "${@}"
 }
 
@@ -108,7 +108,7 @@ function nox:pyright {
 }
 
 function nox:audit {
-  # Check code/packages for vulnerabilites against Safety db
+  # Check code/packages for vulnerabilites against pip-audit
   cmd nox -s audit-3.14 "${@}"
 }
 
@@ -120,6 +120,27 @@ function nox:test {
 function nox:re-test {
   # Run several pytest and coverage checks
   cmd nox -rs tests-3.14 "${@}"
+}
+
+function nox:current {
+  # Run code quality tests only for latest supported Python version
+  # cmd nox -s coverage-3.14 "${@}"
+  # cmd nox -s lint-3.14 "${@}"
+  # cmd nox -s pyright-3.14 "${@}"
+  # cmd nox -s audit-3.14 "${@}"
+  # cmd nox -s tests-3.14 "${@}"
+  cmd nox -s lint-3.14 audit-3.14 tests-3.14 coverage-3.14 "${@}"
+}
+
+function nox:re-current {
+  # Run tests only for latest supported Python version
+  # DO NOT REBUILD VENVS
+  # cmd nox -rs coverage-3.14 "${@}"
+  # cmd nox -rs lint-3.14 "${@}"
+  # cmd nox -s pyright-3.14 "${@}"
+  # cmd nox -rs audit-3.14 "${@}"
+  # cmd nox -rs tests-3.14 "${@}"
+  cmd nox -s lint-3.14 audit-3.14 tests-3.14 coverage-3.14 "${@}"
 }
 
 function nox:all {
@@ -135,7 +156,7 @@ function nox:all {
 
 function nox:re-all {
   # Perform all nox code quality tests together
-  # cmd nox -s coverage-3.14 "${@}"
+  # cmd nox -rs coverage-3.14 "${@}"
   # cmd nox -rs lint-3.14 "${@}"
   # cmd nox -rs pyright-3.14 "${@}"
   # cmd nox -rs audit-3.14 "${@}"
@@ -199,7 +220,7 @@ function sh {
 }
 
 function sh+ {
-  # Start a shell_plus IPython session in the web container
+  # Start a shell_plus session in the web container
   # auto-import all models, and the datetime module
   # cmd python manage.py shell_plus "${@}"
   python manage.py shell_plus
