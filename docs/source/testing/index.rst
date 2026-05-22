@@ -35,27 +35,21 @@ The following sessions are available to run via ``nox``:
 
 ::
 
-    * coverage-3.11 -> Build JSON coverage report.
     * coverage-3.12 -> Build JSON coverage report.
     * coverage-3.13 -> Build JSON coverage report.
     * coverage-3.14 -> Build JSON coverage report.
-    - docs-3.11 -> Build the documentation.
     - docs-3.12 -> Build the documentation.
     - docs-3.13 -> Build the documentation.
     - docs-3.14 -> Build the documentation.
-    * lint-3.11 -> Lint using ruff.
     * lint-3.12 -> Lint using ruff.
     * lint-3.13 -> Lint using ruff.
     * lint-3.14 -> Lint using ruff.
-    - pyright-3.11 -> Run pyright type checker.
     - pyright-3.12 -> Run pyright type checker.
     - pyright-3.13 -> Run pyright type checker.
     - pyright-3.14 -> Run pyright type checker.
-    * audit-3.11 -> Scan dependencies for insecure packages.
     * audit-3.12 -> Scan dependencies for insecure packages.
     * audit-3.13 -> Scan dependencies for insecure packages.
     * audit-3.14 -> Scan dependencies for insecure packages.
-    * tests-3.11 -> Run the test suite.
     * tests-3.12 -> Run the test suite.
     * tests-3.13 -> Run the test suite.
     * tests-3.14 -> Run the test suite.
@@ -86,6 +80,6 @@ Below are examples of ``nox`` tests run against the Docker container:
    $ docker compose exec web nox
    $ docker compose exec web nox -s coverage-3.12
    $ docker compose exec web nox -s docs-3.14
-   $ docker compose exec web nox -rs lint-3.11  (Use the 'r' flag to reuse existing session)
+   $ docker compose exec web nox -rs lint-3.13  (Use the 'r' flag to reuse existing session)
    $ docker compose exec web nox -s audit  (will run tests against all Python versions)
    $ docker compose exec web nox -s tests
