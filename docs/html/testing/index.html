@@ -6,10 +6,10 @@
 <link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="Create new users" href="create_new_users.html"><link rel="prev" title="Package Index" href="../features/package_index.html">
         <link rel="prefetch" href="../_static/django_24.png" as="image">
 
-    <link rel="shortcut icon" href="../_static/django_24.png"><!-- Generated with Sphinx 8.2.3 and Furo 2025.09.25 -->
+    <link rel="shortcut icon" href="../_static/django_24.png"><!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
         <title>Testing - django-start</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d111a655" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=580074bf" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=8dab3a3b" />
     
     
@@ -297,27 +297,21 @@ this file for how these tests can be run.</p>
 <section id="using-the-nox-test-suite">
 <h2>Using the <code class="docutils literal notranslate"><span class="pre">nox</span></code> test suite<a class="headerlink" href="#using-the-nox-test-suite" title="Link to this heading">¶</a></h2>
 <p>The following sessions are available to run via <code class="docutils literal notranslate"><span class="pre">nox</span></code>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span> <span class="n">coverage</span><span class="o">-</span><span class="mf">3.11</span> <span class="o">-&gt;</span> <span class="n">Build</span> <span class="n">JSON</span> <span class="n">coverage</span> <span class="n">report</span><span class="o">.</span>
-<span class="o">*</span> <span class="n">coverage</span><span class="o">-</span><span class="mf">3.12</span> <span class="o">-&gt;</span> <span class="n">Build</span> <span class="n">JSON</span> <span class="n">coverage</span> <span class="n">report</span><span class="o">.</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span> <span class="n">coverage</span><span class="o">-</span><span class="mf">3.12</span> <span class="o">-&gt;</span> <span class="n">Build</span> <span class="n">JSON</span> <span class="n">coverage</span> <span class="n">report</span><span class="o">.</span>
 <span class="o">*</span> <span class="n">coverage</span><span class="o">-</span><span class="mf">3.13</span> <span class="o">-&gt;</span> <span class="n">Build</span> <span class="n">JSON</span> <span class="n">coverage</span> <span class="n">report</span><span class="o">.</span>
 <span class="o">*</span> <span class="n">coverage</span><span class="o">-</span><span class="mf">3.14</span> <span class="o">-&gt;</span> <span class="n">Build</span> <span class="n">JSON</span> <span class="n">coverage</span> <span class="n">report</span><span class="o">.</span>
-<span class="o">-</span> <span class="n">docs</span><span class="o">-</span><span class="mf">3.11</span> <span class="o">-&gt;</span> <span class="n">Build</span> <span class="n">the</span> <span class="n">documentation</span><span class="o">.</span>
 <span class="o">-</span> <span class="n">docs</span><span class="o">-</span><span class="mf">3.12</span> <span class="o">-&gt;</span> <span class="n">Build</span> <span class="n">the</span> <span class="n">documentation</span><span class="o">.</span>
 <span class="o">-</span> <span class="n">docs</span><span class="o">-</span><span class="mf">3.13</span> <span class="o">-&gt;</span> <span class="n">Build</span> <span class="n">the</span> <span class="n">documentation</span><span class="o">.</span>
 <span class="o">-</span> <span class="n">docs</span><span class="o">-</span><span class="mf">3.14</span> <span class="o">-&gt;</span> <span class="n">Build</span> <span class="n">the</span> <span class="n">documentation</span><span class="o">.</span>
-<span class="o">*</span> <span class="n">lint</span><span class="o">-</span><span class="mf">3.11</span> <span class="o">-&gt;</span> <span class="n">Lint</span> <span class="n">using</span> <span class="n">ruff</span><span class="o">.</span>
 <span class="o">*</span> <span class="n">lint</span><span class="o">-</span><span class="mf">3.12</span> <span class="o">-&gt;</span> <span class="n">Lint</span> <span class="n">using</span> <span class="n">ruff</span><span class="o">.</span>
 <span class="o">*</span> <span class="n">lint</span><span class="o">-</span><span class="mf">3.13</span> <span class="o">-&gt;</span> <span class="n">Lint</span> <span class="n">using</span> <span class="n">ruff</span><span class="o">.</span>
 <span class="o">*</span> <span class="n">lint</span><span class="o">-</span><span class="mf">3.14</span> <span class="o">-&gt;</span> <span class="n">Lint</span> <span class="n">using</span> <span class="n">ruff</span><span class="o">.</span>
-<span class="o">-</span> <span class="n">pyright</span><span class="o">-</span><span class="mf">3.11</span> <span class="o">-&gt;</span> <span class="n">Run</span> <span class="n">pyright</span> <span class="nb">type</span> <span class="n">checker</span><span class="o">.</span>
 <span class="o">-</span> <span class="n">pyright</span><span class="o">-</span><span class="mf">3.12</span> <span class="o">-&gt;</span> <span class="n">Run</span> <span class="n">pyright</span> <span class="nb">type</span> <span class="n">checker</span><span class="o">.</span>
 <span class="o">-</span> <span class="n">pyright</span><span class="o">-</span><span class="mf">3.13</span> <span class="o">-&gt;</span> <span class="n">Run</span> <span class="n">pyright</span> <span class="nb">type</span> <span class="n">checker</span><span class="o">.</span>
 <span class="o">-</span> <span class="n">pyright</span><span class="o">-</span><span class="mf">3.14</span> <span class="o">-&gt;</span> <span class="n">Run</span> <span class="n">pyright</span> <span class="nb">type</span> <span class="n">checker</span><span class="o">.</span>
-<span class="o">*</span> <span class="n">audit</span><span class="o">-</span><span class="mf">3.11</span> <span class="o">-&gt;</span> <span class="n">Scan</span> <span class="n">dependencies</span> <span class="k">for</span> <span class="n">insecure</span> <span class="n">packages</span><span class="o">.</span>
 <span class="o">*</span> <span class="n">audit</span><span class="o">-</span><span class="mf">3.12</span> <span class="o">-&gt;</span> <span class="n">Scan</span> <span class="n">dependencies</span> <span class="k">for</span> <span class="n">insecure</span> <span class="n">packages</span><span class="o">.</span>
 <span class="o">*</span> <span class="n">audit</span><span class="o">-</span><span class="mf">3.13</span> <span class="o">-&gt;</span> <span class="n">Scan</span> <span class="n">dependencies</span> <span class="k">for</span> <span class="n">insecure</span> <span class="n">packages</span><span class="o">.</span>
 <span class="o">*</span> <span class="n">audit</span><span class="o">-</span><span class="mf">3.14</span> <span class="o">-&gt;</span> <span class="n">Scan</span> <span class="n">dependencies</span> <span class="k">for</span> <span class="n">insecure</span> <span class="n">packages</span><span class="o">.</span>
-<span class="o">*</span> <span class="n">tests</span><span class="o">-</span><span class="mf">3.11</span> <span class="o">-&gt;</span> <span class="n">Run</span> <span class="n">the</span> <span class="n">test</span> <span class="n">suite</span><span class="o">.</span>
 <span class="o">*</span> <span class="n">tests</span><span class="o">-</span><span class="mf">3.12</span> <span class="o">-&gt;</span> <span class="n">Run</span> <span class="n">the</span> <span class="n">test</span> <span class="n">suite</span><span class="o">.</span>
 <span class="o">*</span> <span class="n">tests</span><span class="o">-</span><span class="mf">3.13</span> <span class="o">-&gt;</span> <span class="n">Run</span> <span class="n">the</span> <span class="n">test</span> <span class="n">suite</span><span class="o">.</span>
 <span class="o">*</span> <span class="n">tests</span><span class="o">-</span><span class="mf">3.14</span> <span class="o">-&gt;</span> <span class="n">Run</span> <span class="n">the</span> <span class="n">test</span> <span class="n">suite</span><span class="o">.</span>
@@ -343,7 +337,7 @@ this file for how these tests can be run.</p>
 <span class="gp">$ </span>docker<span class="w"> </span>compose<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>web<span class="w"> </span>nox
 <span class="gp">$ </span>docker<span class="w"> </span>compose<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>web<span class="w"> </span>nox<span class="w"> </span>-s<span class="w"> </span>coverage-3.12
 <span class="gp">$ </span>docker<span class="w"> </span>compose<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>web<span class="w"> </span>nox<span class="w"> </span>-s<span class="w"> </span>docs-3.14
-<span class="gp">$ </span>docker<span class="w"> </span>compose<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>web<span class="w"> </span>nox<span class="w"> </span>-rs<span class="w"> </span>lint-3.11<span class="w">  </span><span class="o">(</span>Use<span class="w"> </span>the<span class="w"> </span><span class="s1">&#39;r&#39;</span><span class="w"> </span>flag<span class="w"> </span>to<span class="w"> </span>reuse<span class="w"> </span>existing<span class="w"> </span>session<span class="o">)</span>
+<span class="gp">$ </span>docker<span class="w"> </span>compose<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>web<span class="w"> </span>nox<span class="w"> </span>-rs<span class="w"> </span>lint-3.13<span class="w">  </span><span class="o">(</span>Use<span class="w"> </span>the<span class="w"> </span><span class="s1">&#39;r&#39;</span><span class="w"> </span>flag<span class="w"> </span>to<span class="w"> </span>reuse<span class="w"> </span>existing<span class="w"> </span>session<span class="o">)</span>
 <span class="gp">$ </span>docker<span class="w"> </span>compose<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>web<span class="w"> </span>nox<span class="w"> </span>-s<span class="w"> </span>audit<span class="w">  </span><span class="o">(</span>will<span class="w"> </span>run<span class="w"> </span>tests<span class="w"> </span>against<span class="w"> </span>all<span class="w"> </span>Python<span class="w"> </span>versions<span class="o">)</span>
 <span class="gp">$ </span>docker<span class="w"> </span>compose<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>web<span class="w"> </span>nox<span class="w"> </span>-s<span class="w"> </span>tests
 </pre></div>
@@ -386,7 +380,7 @@ this file for how these tests can be run.</p>
             
             <a href="https://github.com/pradyunsg/furo">Furo</a>
             <div class="last-updated">
-              Last updated on Feb 15, 2026</div>
+              Last updated on May 21, 2026</div>
           </div>
           <div class="right-details">
             
@@ -402,8 +396,8 @@ this file for how these tests can be run.</p>
     </aside>
   </div>
 </div><script src="../_static/documentation_options.js?v=d5a15cff"></script>
-    <script src="../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
     </body>
 </html>

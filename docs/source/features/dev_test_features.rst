@@ -6,7 +6,7 @@ Dev & Testing Features
 * Examples of using factories_ & pytest_ fixtures in account app testing.
 * shell_plus_ with IPython_ via the django-extensions_ package.
 * pre-commit_
-* nox_ testing sessions for latest Python 3.11, 3.12, 3.13, 3.14
+* nox_ testing sessions for latest Python 3.12, 3.13, 3.14
 
   * Sphinx_ documentation generation
   * linting
