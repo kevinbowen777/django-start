@@ -5,7 +5,7 @@ description = "Basic Django project template"
 requires-python = ">=3.12.0"
 dependencies = [
     "Django (==5.2.15)",
-    "django-allauth (>=65.0, <66.0.0)",
+    "django-allauth (==65.18.0)",
     "environs[django] (==15.0.1)",
     "django-extensions (>=4.1, <4.2.0)",
     "whitenoise (>=6.9.0, <7.0.0)",
@@ -15,7 +15,7 @@ dependencies = [
     # crispy-bootstrap4 uses calver, so version is unclamped
     "crispy-bootstrap4 (>=2024.10)",
     "django-crispy-forms (>=2.6, <2.7)",
-    "django-countries (>=8.0, <9.0)",
+    "django-countries (==9.0.0)",
 ]
 authors = [
     { name = "Kevin Bowen", email = "kevin.bowen@gmail.com" },
