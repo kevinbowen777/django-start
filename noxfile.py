@@ -120,4 +120,5 @@ def tests(session):
         "-Im",
         "pytest",
         *args,
+        "--capture=no",
     )

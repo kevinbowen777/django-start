@@ -11,7 +11,7 @@
 
 - django-start - A Django framework reference repository
 
-- A reference template of "best practices" & standards used in my collection of [Web Framework Projects](https://github.com/kevinbowen777/web-project-index). This repository runs a Django 5.2.x web application demonstrating some of this functionality.
+- A reference template of "best practices" & standards used in my collection of [Web Framework Projects](https://github.com/kevinbowen777/web-project-index). This repository runs a Django 6.x web application demonstrating some of this functionality.
 
 ### Table of Contents
 
@@ -34,7 +34,7 @@
     - Image carousel
     - Pagination template
     - Centered account templates(login, registration, verification, etc.)
-    - For additional links to package resources used in this repository, see the [Package Index](docs/package_index.md)
+    - For additional links to package resources used in this repository, see the [Package Index](docs/source/features/package_index.md)
 - Dev/testing
     - Basic module testing templates
     - [Coverage](https://kevinbowen777.github.io/django-start/) reports on web
