@@ -117,6 +117,7 @@ def tests(session):
     session.run(
         "python",
         "-Wonce::DeprecationWarning",
+        # "-Walways::DeprecationWarning",
         "-Im",
         "pytest",
         *args,
