@@ -1,0 +1,1 @@
+Initial zizmor remediation. Pin gh actions to hashes
