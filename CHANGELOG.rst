@@ -27,6 +27,44 @@ with advance notice in the **Deprecations** section of releases.
 
 .. towncrier release notes start
 
+django-start 0.3.8 (2026-09-01)
+===============================
+
+Contributor-facing changes
+--------------------------
+
+-  (`#635 <https://github.com/kevinbowen777/django-start/issues/635>`_): Update django-debug-toolbar to 7.1.1
+
+-  (`#635 <https://github.com/kevinbowen777/django-start/issues/635>`_): Initial zizmor remediation. Pin gh actions to hashes
+
+-  (`#639 <https://github.com/kevinbowen777/django-start/issues/639>`_): Update nox to 2026.8.10
+
+-  (`#639 <https://github.com/kevinbowen777/django-start/issues/639>`_): Update testing to django-debug-toolbar to 7.1.0
+
+-  (`#639 <https://github.com/kevinbowen777/django-start/issues/639>`_): Update testing to Python 3.14.7, 3.13.15, and 3.12.14
+
+-  (`#639 <https://github.com/kevinbowen777/django-start/issues/639>`_): Update django-allauth to 65.19.1
+
+-  (`#644 <https://github.com/kevinbowen777/django-start/issues/644>`_): Update psycopg to 3.3.5
+
+-  (`#644 <https://github.com/kevinbowen777/django-start/issues/644>`_): Update Trove classifier
+
+-  (`#644 <https://github.com/kevinbowen777/django-start/issues/644>`_): Update nox to 2026.8.17
+
+
+New features
+------------
+
+-  (`#644 <https://github.com/kevinbowen777/django-start/issues/644>`_): Upgrade to Django 6.1
+
+django-start 0.3.7 (2026-08-05)
+===============================
+
+Improved documentation
+----------------------
+
+-  (`#613 <https://github.com/kevinbowen777/django-start/issues/613>`_): Add towncrier 25.8.0.
+
 django-start 0.3.6 (2026-08-05)
 ===============================
 

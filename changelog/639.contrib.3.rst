@@ -1,1 +1,0 @@
-Update testing to django-debug-toolbar to 7.1.0
