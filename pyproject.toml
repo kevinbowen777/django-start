@@ -4,8 +4,8 @@ version = "0.3.8"
 description = "Basic Django project template"
 requires-python = ">=3.12.0"
 dependencies = [
-    "Django (==6.1)",
-    "django-allauth (==65.19.1)",
+    "Django (==6.1.1)",
+    "django-allauth (==65.19.2)",
     "environs[django] (==15.2.0)",
     "django-extensions (==4.1.0)",
     "whitenoise (==6.12.0)",
@@ -47,7 +47,7 @@ classifiers = [
 Homepage = "https://github.com/kevinbowen777/django-start.git"
 Changelog = "https://github.com/kevinbowen777/django-start/NEWS"
 Repository = "https://github.com/kevinbowen777/django-start.git"
-Documentation = "file:///docs/build/index.html"
+Documentation = "file:///docs/html/index.html"
 
 [tool.poetry]
 package-mode = false
@@ -56,7 +56,7 @@ package-mode = false
 python = ">=3.12.0, <3.15.0"
 
 [tool.poetry.group.dev.dependencies]
-django-debug-toolbar = ">=7.0, <8.0"
+django-debug-toolbar = ">=8.0, <9.0"
 pre-commit = ">=4.0, <5.0"
 ruff = ">=0.8, <1.0"
 nox = "2026.8.17"
