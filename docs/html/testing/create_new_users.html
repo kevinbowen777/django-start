@@ -225,6 +225,17 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../features/package_index.html">Package Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html#django-start-0-3-8-2026-09-01">django-start 0.3.8 (2026-09-01)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html#django-start-0-3-7-2026-08-05">django-start 0.3.7 (2026-08-05)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html#django-start-0-3-6-2026-08-05">django-start 0.3.6 (2026-08-05)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html#django-start-0-3-5-2026-07-21">django-start 0.3.5 (2026-07-21)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html#django-start-0-3-4-2025-11-17">django-start 0.3.4 (2025-11-17)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html#django-start-0-3-3-2025-04-29">django-start 0.3.3 (2025-04-29)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html#django-start-0-3-2-2025-01-06">django-start 0.3.2 (2025-01-06)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html#django-start-0-3-0-2023-12-21">django-start 0.3.0 (2023-12-21)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html#django-start-0-2-0-2023-05-13">django-start 0.2.0 (2023-05-13)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html#django-start-0-1-0-2023-05-02">django-start 0.1.0 (2023-05-02)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html#django-start-0-0-1-2023-02-23">django-start 0.0.1 (2023-02-23)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
 </ul>
@@ -280,58 +291,58 @@ In the application directory, run the following command:</p>
 <h3>Sample user list<a class="headerlink" href="#sample-user-list" title="Link to this heading">¶</a></h3>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">User = get_user_model()</span>
 <span class="go">User.objects.create_user(</span>
-<span class="go">    username = &quot;john&quot;,</span>
-<span class="go">    name = &quot;John Doe&quot;,</span>
-<span class="go">    first_name = &quot;John&quot;,</span>
-<span class="go">    last_name = &quot;Doe&quot;,</span>
-<span class="go">    email = &quot;john@example.com&quot;,</span>
-<span class="go">    age = &quot;69&quot;,</span>
-<span class="go">    password=&quot;P@s5WoRd!&quot;,</span>
+<span class="go">    username = "john",</span>
+<span class="go">    name = "John Doe",</span>
+<span class="go">    first_name = "John",</span>
+<span class="go">    last_name = "Doe",</span>
+<span class="go">    email = "john@example.com",</span>
+<span class="go">    age = "69",</span>
+<span class="go">    password="P@s5WoRd!",</span>
 <span class="go">)</span>
 <span class="go">User.objects.create_user(</span>
-<span class="go">    username = &quot;susan&quot;,</span>
-<span class="go">    name = &quot;Susan Sontag&quot;,</span>
-<span class="go">    first_name = &quot;Susan&quot;,</span>
-<span class="go">    last_name = &quot;Sontag&quot;,</span>
-<span class="go">    email = &quot;susan@example.com&quot;,</span>
-<span class="go">    age = &quot;71&quot;,</span>
-<span class="go">    password=&quot;P@s5WoRd!&quot;,</span>
+<span class="go">    username = "susan",</span>
+<span class="go">    name = "Susan Sontag",</span>
+<span class="go">    first_name = "Susan",</span>
+<span class="go">    last_name = "Sontag",</span>
+<span class="go">    email = "susan@example.com",</span>
+<span class="go">    age = "71",</span>
+<span class="go">    password="P@s5WoRd!",</span>
 <span class="go">)</span>
 <span class="go">User.objects.create_user(</span>
-<span class="go">    username = &quot;mary&quot;,</span>
-<span class="go">    name = &quot;Mary Shelley&quot;,</span>
-<span class="go">    first_name = &quot;Mary&quot;,</span>
-<span class="go">    last_name = &quot;Shelley&quot;,</span>
-<span class="go">    email = &quot;mary@example.com&quot;,</span>
-<span class="go">    age = &quot;53&quot;,</span>
-<span class="go">    password=&quot;P@s5WoRd!&quot;,</span>
+<span class="go">    username = "mary",</span>
+<span class="go">    name = "Mary Shelley",</span>
+<span class="go">    first_name = "Mary",</span>
+<span class="go">    last_name = "Shelley",</span>
+<span class="go">    email = "mary@example.com",</span>
+<span class="go">    age = "53",</span>
+<span class="go">    password="P@s5WoRd!",</span>
 <span class="go">)</span>
 <span class="go">User.objects.create_user(</span>
-<span class="go">    username = &quot;david&quot;,</span>
-<span class="go">    name = &quot;David Hockney&quot;,</span>
-<span class="go">    first_name = &quot;David&quot;,</span>
-<span class="go">    last_name = &quot;Hockney&quot;,</span>
-<span class="go">    email = &quot;david@example.com&quot;,</span>
-<span class="go">    age = &quot;84&quot;,</span>
-<span class="go">    password=&quot;P@s5WoRd!&quot;,</span>
+<span class="go">    username = "david",</span>
+<span class="go">    name = "David Hockney",</span>
+<span class="go">    first_name = "David",</span>
+<span class="go">    last_name = "Hockney",</span>
+<span class="go">    email = "david@example.com",</span>
+<span class="go">    age = "84",</span>
+<span class="go">    password="P@s5WoRd!",</span>
 <span class="go">)</span>
 <span class="go">User.objects.create_user(</span>
-<span class="go">    username = &quot;alice&quot;,</span>
-<span class="go">    name = &quot;Alice Coltrane&quot;,</span>
-<span class="go">    first_name = &quot;Alice&quot;,</span>
-<span class="go">    last_name = &quot;Coltrane&quot;,</span>
-<span class="go">    email = &quot;alice@example.com&quot;,</span>
-<span class="go">    age = &quot;69&quot;,</span>
-<span class="go">    password=&quot;P@s5WoRd!&quot;,</span>
+<span class="go">    username = "alice",</span>
+<span class="go">    name = "Alice Coltrane",</span>
+<span class="go">    first_name = "Alice",</span>
+<span class="go">    last_name = "Coltrane",</span>
+<span class="go">    email = "alice@example.com",</span>
+<span class="go">    age = "69",</span>
+<span class="go">    password="P@s5WoRd!",</span>
 <span class="go">)</span>
 <span class="go">User.objects.create_user(</span>
-<span class="go">    username = &quot;testuser&quot;,</span>
-<span class="go">    name = &quot;Test User&quot;,</span>
-<span class="go">    first_name = &quot;Test&quot;,</span>
-<span class="go">    last_name = &quot;User&quot;,</span>
-<span class="go">    email = &quot;testuser@example.com&quot;,</span>
-<span class="go">    age = &quot;23&quot;,</span>
-<span class="go">    password=&quot;P@s5WoRd!&quot;,</span>
+<span class="go">    username = "testuser",</span>
+<span class="go">    name = "Test User",</span>
+<span class="go">    first_name = "Test",</span>
+<span class="go">    last_name = "User",</span>
+<span class="go">    email = "testuser@example.com",</span>
+<span class="go">    age = "23",</span>
+<span class="go">    password="P@s5WoRd!",</span>
 <span class="go">    is_staff=True,</span>
 <span class="go">)</span>
 </pre></div>
@@ -375,7 +386,7 @@ In the application directory, run the following command:</p>
             
             <a href="https://github.com/pradyunsg/furo">Furo</a>
             <div class="last-updated">
-              Last updated on Jul 21, 2026</div>
+              Last updated on Sep 19, 2026</div>
           </div>
           <div class="right-details">
             
@@ -412,7 +423,7 @@ In the application directory, run the following command:</p>
       
     </aside>
   </div>
-</div><script src="../_static/documentation_options.js?v=d5a15cff"></script>
+</div><script src="../_static/documentation_options.js?v=c1cae59a"></script>
     <script src="../_static/doctools.js?v=fd6eb6e6"></script>
     <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../_static/scripts/furo.js?v=46bd48cc"></script>

@@ -225,6 +225,17 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="package_index.html">Package Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html#django-start-0-3-8-2026-09-01">django-start 0.3.8 (2026-09-01)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html#django-start-0-3-7-2026-08-05">django-start 0.3.7 (2026-08-05)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html#django-start-0-3-6-2026-08-05">django-start 0.3.6 (2026-08-05)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html#django-start-0-3-5-2026-07-21">django-start 0.3.5 (2026-07-21)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html#django-start-0-3-4-2025-11-17">django-start 0.3.4 (2025-11-17)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html#django-start-0-3-3-2025-04-29">django-start 0.3.3 (2025-04-29)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html#django-start-0-3-2-2025-01-06">django-start 0.3.2 (2025-01-06)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html#django-start-0-3-0-2023-12-21">django-start 0.3.0 (2023-12-21)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html#django-start-0-2-0-2023-05-13">django-start 0.2.0 (2023-05-13)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html#django-start-0-1-0-2023-05-02">django-start 0.1.0 (2023-05-02)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html#django-start-0-0-1-2023-02-23">django-start 0.0.1 (2023-02-23)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
 </ul>
@@ -289,12 +300,12 @@
 </ol>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span># config/settings.py
 INSTALLED_APPS = [
-    &#39;django.contrib.admin&#39;,
+    'django.contrib.admin',
     ...
-    &#39;django.contrib.sites&#39;,
+    'django.contrib.sites',
 
     # Third-party
-    &#39;debug_toolbar&#39;,
+    'debug_toolbar',
 
     # Local
     ...
@@ -306,9 +317,9 @@ INSTALLED_APPS = [
 </ol>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span># config/settings.py
 MIDDLEWARE = [
-&#39;django.middleware.security.SecurityMiddleware&#39;,
+'django.middleware.security.SecurityMiddleware',
 ...
-&quot;debug_toolbar.middleware.DebugToolbarMiddleware&quot;,
+"debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
 </pre></div>
 </div>
@@ -319,9 +330,9 @@ MIDDLEWARE = [
 # import socket
 # Use the following in Docker only:
 # hostname, _, ips = socket.gethostbyname_ex(socket.gethostname())
-# INTERNAL_IPS = [ip[:-1] + &quot;1&quot; for ip in ips]
+# INTERNAL_IPS = [ip[:-1] + "1" for ip in ips]
 # The following is for use locally:
-INTERNAL_IPS = [&quot;127.0.0.1&quot;]
+INTERNAL_IPS = ["127.0.0.1"]
 </pre></div>
 </div>
 </li>
@@ -333,7 +344,7 @@ if settings.DEBUG:
   import debug_toolbar  # noqa: F401
 
     urlpatterns = [
-        path(&quot;__debug__/&quot;, include(debug_toolbar.urls)),
+        path("__debug__/", include(debug_toolbar.urls)),
     ] + urlpatterns
 </pre></div>
 </div>
@@ -342,7 +353,7 @@ if settings.DEBUG:
 import debug_toolbar  # noqa: F401  # pragma: no cover
 
 urlpatterns += [  # pragma: no cover
-    path(&quot;__debug__/&quot;, include(debug_toolbar.urls)),
+    path("__debug__/", include(debug_toolbar.urls)),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 </pre></div>
 </div>
@@ -359,32 +370,32 @@ for each ORM call.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>In [2]: from images.models import Image
 
 In [3]: Image.objects.get(id=1)
-SELECT &quot;images_image&quot;.&quot;id&quot;,
-   &quot;images_image&quot;.&quot;user_id&quot;,
-   &quot;images_image&quot;.&quot;title&quot;,
-   &quot;images_image&quot;.&quot;slug&quot;,
-   &quot;images_image&quot;.&quot;url&quot;,
-   &quot;images_image&quot;.&quot;image&quot;,
-   &quot;images_image&quot;.&quot;description&quot;,
-   &quot;images_image&quot;.&quot;created&quot;,
-   &quot;images_image&quot;.&quot;total_likes&quot;
-FROM &quot;images_image&quot;
-WHERE &quot;images_image&quot;.&quot;id&quot; = 1
+SELECT "images_image"."id",
+   "images_image"."user_id",
+   "images_image"."title",
+   "images_image"."slug",
+   "images_image"."url",
+   "images_image"."image",
+   "images_image"."description",
+   "images_image"."created",
+   "images_image"."total_likes"
+FROM "images_image"
+WHERE "images_image"."id" = 1
 LIMIT 21 [2.26ms]
-Out[3]: Image: Throbbing Gristle&#39;s Greatest Hits
+Out[3]: Image: Throbbing Gristle's Greatest Hits
 
 In [4]: Image.objects.get(id=4)
-SELECT &quot;images_image&quot;.&quot;id&quot;,
-   &quot;images_image&quot;.&quot;user_id&quot;,
-   &quot;images_image&quot;.&quot;title&quot;,
-   &quot;images_image&quot;.&quot;slug&quot;,
-   &quot;images_image&quot;.&quot;url&quot;,
-   &quot;images_image&quot;.&quot;image&quot;,
-   &quot;images_image&quot;.&quot;description&quot;,
-   &quot;images_image&quot;.&quot;created&quot;,
-   &quot;images_image&quot;.&quot;total_likes&quot;
-FROM &quot;images_image&quot;
-WHERE &quot;images_image&quot;.&quot;id&quot; = 4
+SELECT "images_image"."id",
+   "images_image"."user_id",
+   "images_image"."title",
+   "images_image"."slug",
+   "images_image"."url",
+   "images_image"."image",
+   "images_image"."description",
+   "images_image"."created",
+   "images_image"."total_likes"
+FROM "images_image"
+WHERE "images_image"."id" = 4
 LIMIT 21 [0.75ms]
 Out[4]: Image: Kinda Kinks — The Kinks
 </pre></div>
@@ -427,7 +438,7 @@ Out[4]: Image: Kinda Kinks — The Kinks
             
             <a href="https://github.com/pradyunsg/furo">Furo</a>
             <div class="last-updated">
-              Last updated on Jul 21, 2026</div>
+              Last updated on Sep 19, 2026</div>
           </div>
           <div class="right-details">
             
@@ -461,7 +472,7 @@ Out[4]: Image: Kinda Kinks — The Kinks
       
     </aside>
   </div>
-</div><script src="../_static/documentation_options.js?v=d5a15cff"></script>
+</div><script src="../_static/documentation_options.js?v=c1cae59a"></script>
     <script src="../_static/doctools.js?v=fd6eb6e6"></script>
     <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../_static/scripts/furo.js?v=46bd48cc"></script>
