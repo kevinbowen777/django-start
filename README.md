@@ -136,8 +136,8 @@
 
 ### Contributions
 
-At this time, this project is not accepting pull-requests. You are free to fork
-this repository and modify as you see fit.
+You are free to fork this repository and modify as you see fit. See
+[CONTRIBUTING](https://github.com/kevinbowen777/django-start/CONTRIBUTING) for details on reporting issues, etc.
 
 ---
 

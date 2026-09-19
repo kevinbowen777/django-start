@@ -1,1 +1,0 @@
-Update django-debug-toolbar to 8.0.0
