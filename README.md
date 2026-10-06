@@ -137,7 +137,7 @@
 ### Contributions
 
 You are free to fork this repository and modify as you see fit. See
-[CONTRIBUTING](https://github.com/kevinbowen777/django-start/CONTRIBUTING) for details on reporting issues, etc.
+[CONTRIBUTING](https://github.com/kevinbowen777/django-start/CONTRIBUTING.md) for details on reporting issues, etc.
 
 ---
 

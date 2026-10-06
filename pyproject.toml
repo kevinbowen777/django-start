@@ -1,11 +1,11 @@
 [project]
 name = "django-start"
-version = "0.3.9"
+version = "0.3.10"
 description = "Basic Django project template"
 requires-python = ">=3.12.0"
 dependencies = [
-    "Django (==6.1.1)",
-    "django-allauth (==65.19.4)",
+    "Django (==6.1.2)",
+    "django-allauth (==65.19.7)",
     "environs[django] (==15.2.0)",
     "django-extensions (==4.1.0)",
     "whitenoise (==6.12.0)",
@@ -80,11 +80,11 @@ towncrier = "26.9.0"
 myst-parser = "^5.1.0"
 
 [tool.poetry.requires-plugins]
-poetry-plugin-export = ">=1.10.0"
+poetry-plugin-export = ">=1.10.1"
 
 [tool.coverage.run]
 branch = true
-dynamic_context = "test_function"
+core = "ctrace"
 source = [
     "accounts",
     "config",
@@ -205,29 +205,35 @@ exclude = [
     "migrations",
     "images",
     "media",
-    "docs/html",
+    "docs/html/*",
 ]
 
 [tool.ruff.lint]
-select = [
-    "A",    # flake8-builtins
-    "B",    # flake8-bugbear
-    "C90",  # mccabe
-    "DJ",   # flake8-django
-    "E",    # pycodestyle errors
-    "F",    # pyflakes
-    "I",    # isort
-    "S",    # flake8-bandit
-    "W",    # pycodestyle warnings
+select = []
+    # "A",    # flake8-builtins
+    # "B",    # flake8-bugbear
+    # "C90",  # mccabe
+    # "DJ",   # flake8-django
+    # "E",    # pycodestyle errors
+    # "F",    # pyflakes
+    # "I",    # isort
+    # "S",    # flake8-bandit
+    # "W",    # pycodestyle warnings
     # "RUF",  # ruff checks
-]
+# ]
+
 ignore = [
-    "E501",    # line too long ({width} > {limit} characters)
+    "line-too-long",    # line too long ({width} > {limit} characters) [E501]
+    "module-import-not-at-top-of-file",    # module level import not at top of file [E402]
+    "bare-except",    # do not use bare except [E722]
+    "ERA",     # do not autoremove commented out code [ERA]
+    "non-empty-init-module",
+    # "E501",    # line too long ({width} > {limit} characters)
     # "E203",  # slice notation whitespace (not currently supported)
-    "E402",    # module level import not at top of file
-    "E722",    # do not use bare except
+    # "E402",    # module level import not at top of file
+    # "E722",    # do not use bare except
     # "W503",  # (not currently supported)
-    "ERA",     # do not autoremove commented out code
+    # "ERA",     # do not autoremove commented out code
 ]
 
 # Allow autofix for all enabled rules (when `--fix`) is provided.
@@ -285,10 +291,34 @@ issue_format = "`#{issue} <https://github.com/kevinbowen777/django-start/issues/
 template = "changelog/_template.rst"
 
 [[tool.towncrier.type]]
+# Declarations of future API removals and breaking changes in behavior.
+directory = "deprecation"
+name = "Deprecations (removal in next major release)"
+showcontent = true
+
+[[tool.towncrier.type]]
+# New behaviors, public APIs, etc.
+directory = "feature"
+name = "New features"
+showcontent = true
+
+[[tool.towncrier.type]]
 # Something we deemed an improper undesired behavior that got corrected
 # in the release to match pre-agreed expectations.
 directory = "bugfix"
 name = "Bug fixes"
+showcontent = true
+
+[[tool.towncrier.type]]
+# Notable updates to the documentation structure or build process.
+directory = "doc"
+name = "Improved documentation"
+showcontent = true
+
+[[tool.towncrier.type]]
+# Stuff that affects security. e.g. updating packages,
+directory = "security"
+name = "Security updated"
 showcontent = true
 
 [[tool.towncrier.type]]
@@ -299,33 +329,9 @@ name = "Contributor-facing changes"
 showcontent = true
 
 [[tool.towncrier.type]]
-# Declarations of future API removals and breaking changes in behavior.
-directory = "deprecation"
-name = "Deprecations (removal in next major release)"
-showcontent = true
-
-[[tool.towncrier.type]]
-# Notable updates to the documentation structure or build process.
-directory = "doc"
-name = "Improved documentation"
-showcontent = true
-
-[[tool.towncrier.type]]
-# New behaviors, public APIs, etc.
-directory = "feature"
-name = "New features"
-showcontent = true
-
-[[tool.towncrier.type]]
 # Changes that are hard to assign to any of the above categories.
 directory = "misc"
 name = "Miscellaneous internal changes"
-showcontent = true
-
-[[tool.towncrier.type]]
-# Stuff that affects security. e.g. updating packages,
-directory = "security"
-name = "Security updated"
 showcontent = true
 
 [[tool.towncrier.type]]

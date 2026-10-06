@@ -1,7 +1,7 @@
 # updated 20221117
 # from: https://github.com/github/gitignore
-docker-compose-prod.yml
 
+docker-compose-prod.yml
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -16,7 +16,7 @@ cert.key
 
 # Distribution / packaging
 .Python
-# build/
+build/
 develop-eggs/
 dist/
 downloads/
