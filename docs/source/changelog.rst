@@ -27,6 +27,28 @@ with advance notice in the **Deprecations** section of releases.
 
 .. towncrier release notes start
 
+django-start 0.3.10 (2026-10-07)
+================================
+
+Security updated
+----------------
+
+-  (`#557 <https://github.com/kevinbowen777/django-start/issues/557>`_): Update django-allauth to 65.19.7
+
+-  (`#655 <https://github.com/kevinbowen777/django-start/issues/655>`_): Update Django to 6.1.2
+
+
+Contributor-facing changes
+--------------------------
+
+-  (`#557 <https://github.com/kevinbowen777/django-start/issues/557>`_): Update djlint to 1.46.4
+
+-  (`#557 <https://github.com/kevinbowen777/django-start/issues/557>`_): Update werkzeug to 3.1.9
+
+-  (`#653 <https://github.com/kevinbowen777/django-start/issues/653>`_): Fix Factory DeprecationWarning
+
+-  (`#654 <https://github.com/kevinbowen777/django-start/issues/654>`_): Fix CentralCovContextWarning
+
 django-start 0.3.9 (2026-09-19)
 ===============================
 

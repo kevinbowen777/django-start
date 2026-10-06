@@ -143,7 +143,7 @@ function nox:current {
 function nox:re-current {
   # Run tests only for latest supported Python version
   # DO NOT REBUILD VENVS
-  nox -s lint-3.14 coverage-3.14 audit-3.14 tests-3.14 "${@}"
+  nox -rs lint-3.14 coverage-3.14 audit-3.14 tests-3.14 "${@}"
 }
 
 function nox:all {
