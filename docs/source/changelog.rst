@@ -27,6 +27,30 @@ with advance notice in the **Deprecations** section of releases.
 
 .. towncrier release notes start
 
+django-start 0.3.11 (2026-10-21)
+================================
+
+Security updated
+----------------
+
+-  (`#657 <https://github.com/kevinbowen777/django-start/issues/657>`_): Update pillow to 13.0.0
+
+-  (`#657 <https://github.com/kevinbowen777/django-start/issues/657>`_): Update django-allauth to 65.20.1
+
+-  (`#657 <https://github.com/kevinbowen777/django-start/issues/657>`_): Update pip to 26.2.2
+
+-  (`#657 <https://github.com/kevinbowen777/django-start/issues/657>`_): Update certifi to 2026.10.19
+
+
+Contributor-facing changes
+--------------------------
+
+-  (`#657 <https://github.com/kevinbowen777/django-start/issues/657>`_): Update nox to 2026.10.20
+
+-  (`#657 <https://github.com/kevinbowen777/django-start/issues/657>`_): Update djlint to 1.46.6
+
+-  (`#658 <https://github.com/kevinbowen777/django-start/issues/658>`_): Update ruff rules & fix reported errors
+
 django-start 0.3.10 (2026-10-07)
 ================================
 
