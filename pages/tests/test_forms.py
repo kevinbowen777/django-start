@@ -1,3 +1,4 @@
+from django.http.response import BadHeaderError
 from django.test import SimpleTestCase
 
 
@@ -38,6 +39,7 @@ class ContactFormTests(SimpleTestCase):
             error_occured = False
         # except BadHeaderError:
         #     error_occured = True
-        finally:
-            pass
-        self.assertFalse(error_occured)
+        # finally:
+        #     pass
+        except BadHeaderError:
+            self.assertFalse(error_occured)

@@ -1,3 +1,5 @@
+from typing import ClassVar
+
 from django.contrib.auth import get_user_model
 from factory.declarations import PostGenerationMethodCall
 from factory.django import DjangoModelFactory
@@ -33,5 +35,5 @@ class UserFactory(DjangoModelFactory):
 
     class Meta:
         model = get_user_model()
-        django_get_or_create = ["username"]
+        django_get_or_create: ClassVar[list[str]] = ["username"]
         skip_postgeneration_save = True
