@@ -27,6 +27,30 @@ with advance notice in the **Deprecations** section of releases.
 
 .. towncrier release notes start
 
+django-start 0.3.12 (2026-10-26)
+================================
+
+Security updated
+----------------
+
+-  (`#660 <https://github.com/kevinbowen777/django-start/issues/660>`_): Update django-allauth to 65.21.0
+
+-  (`#660 <https://github.com/kevinbowen777/django-start/issues/660>`_): Update certifi to 2026.10.23
+
+-  (`#660 <https://github.com/kevinbowen777/django-start/issues/660>`_): Update .python-version with 3.14.10, 3.13.18, 3.12.16
+
+
+Improved documentation
+----------------------
+
+-  (`#660 <https://github.com/kevinbowen777/django-start/issues/660>`_): Remove legacy license classifier
+
+
+Contributor-facing changes
+--------------------------
+
+-  (`#660 <https://github.com/kevinbowen777/django-start/issues/660>`_): Update djlint to 1.47.1
+
 django-start 0.3.11 (2026-10-21)
 ================================
 

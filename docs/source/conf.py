@@ -4,7 +4,7 @@
 project = "django-start"
 author = "Kevin Bowen"
 copyright = f"%Y, {author}"
-release = "0.3.11"
+release = "0.3.12"
 
 # -- General configuration --------------------------------------------
 extensions = [
