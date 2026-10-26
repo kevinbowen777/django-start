@@ -1,11 +1,11 @@
 [project]
 name = "django-start"
-version = "0.3.11"
+version = "0.3.12"
 description = "Basic Django project template"
 requires-python = ">=3.12.0"
 dependencies = [
     "Django (==6.1.2)",
-    "django-allauth (==65.20.1)",
+    "django-allauth (==65.21.0)",
     "environs[django] (==15.2.0)",
     "django-extensions (==4.1.0)",
     "whitenoise (==6.12.0)",
@@ -32,7 +32,6 @@ classifiers = [
     "Framework :: Django",
     "Framework :: Django :: 6.1",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
@@ -180,8 +179,6 @@ filterwarnings = [
     # "ignore::django.utils.deprecation.RemovedInDjango60Warning",
     "once::django.utils.deprecation.RemovedInDjango62Warning",
     "once::django.utils.deprecation.RemovedInDjango70",
-    "error::rest_framework.deprecation.RemovedInNextDRFVersionWarning",
-    "always::rest_framework.deprecation.RemovedAfterNextDRFVersionWarning",
 ]
 
 [tool.ruff]
