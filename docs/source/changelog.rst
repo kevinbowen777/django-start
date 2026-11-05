@@ -27,6 +27,28 @@ with advance notice in the **Deprecations** section of releases.
 
 .. towncrier release notes start
 
+django-start 0.3.13 (2026-11-05)
+================================
+
+Security updated
+----------------
+
+-  (`#662 <https://github.com/kevinbowen777/django-start/issues/662>`_): Update psycopg to 3.3.8
+
+-  (`#662 <https://github.com/kevinbowen777/django-start/issues/662>`_): Update Django to 6.1.3
+
+-  (`#662 <https://github.com/kevinbowen777/django-start/issues/662>`_): Update django-allauth to 65.21.1
+
+-  (`#662 <https://github.com/kevinbowen777/django-start/issues/662>`_): Update pip to 26.3
+
+
+Contributor-facing changes
+--------------------------
+
+-  (`#662 <https://github.com/kevinbowen777/django-start/issues/662>`_): Update coverage to 7.17.2
+
+-  (`#662 <https://github.com/kevinbowen777/django-start/issues/662>`_): Update djlint to 1.49.9
+
 django-start 0.3.12 (2026-10-26)
 ================================
 
