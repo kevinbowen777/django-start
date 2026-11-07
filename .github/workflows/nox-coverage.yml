@@ -10,7 +10,7 @@ jobs:
   coverage:
     name: Coverage
     runs-on: ubuntu-latest
-    environment: production
+    environment: github-pages
     strategy:
       matrix:
         python-version: ["3.14"]
