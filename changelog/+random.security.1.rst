@@ -1,1 +1,1 @@
-Update django-allauth to 65.22.1
+Update django-allauth to 65.23.0

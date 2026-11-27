@@ -1,1 +1,1 @@
-Update coverage to 7.17.3
+Update gunicorn to 27.0.1
